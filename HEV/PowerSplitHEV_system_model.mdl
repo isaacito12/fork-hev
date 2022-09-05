@@ -47,8 +47,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dc:creator>MathWorks</dc:creator>
   <dc:description></dc:description>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-06-28T15:00:23Z</dcterms:modified>
-  <cp:revision>5.146</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-09-05T11:14:28Z</dcterms:modified>
+  <cp:revision>5.150</cp:revision>
   <cp:version>R2022a</cp:version>
 </cp:coreProperties>
 
@@ -70,11 +70,11 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2022a Release -->
 <MathWorks_version_info>
-  <version>9.12.0.1975300</version>
+  <version>9.12.0.2046211</version>
   <release>R2022a</release>
-  <description>Update 3</description>
-  <date>Jun 02 2022</date>
-  <checksum>653640023</checksum>
+  <description>Update 6</description>
+  <date>Aug 20 2022</date>
+  <checksum>1008145695</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -153,8 +153,8 @@ PowerSplitHEV_system_model_setup
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">578332822</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.146&gt;</P>
+      <P Name="RTWModifiedTimeStamp">584280867</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.150&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ShowEditTimeWarnings">off</P>
@@ -2273,8 +2273,8 @@ Configuration</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="94e93da8-e3f1-46c4-9cc4-03edc39a629f">
-    <Interface type="Interface" uuid="14acb264-0d9e-461f-8ce6-d0919c012253"/>
+  <System type="System" uuid="03cec888-3810-44a4-bfb9-55c5ffcb37e4">
+    <Interface type="Interface" uuid="447f7578-2b75-4361-911b-8f31a0c7b0bf"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/LogicAnalyzerPlugin.xml
@@ -3092,27 +3092,27 @@ NOMO4P8Du44Dox28jwkAAAAASUVORK5CYII
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="19d853d5-4cdd-4e74-b2a6-81ef303efd4b">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="cb070101-cabe-468f-8e9e-822cc60e9e50">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="e7dec165-db76-4602-bfd3-32fb4e0d7cc6">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="380e0f69-9767-416e-866e-b05d2cfeb511"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="aa6bb89f-3092-4e49-9483-3412ff21e938">
-      <context type="sltp.mm.core.Context" uuid="19d853d5-4cdd-4e74-b2a6-81ef303efd4b"/>
+    <rootTask type="sltp.mm.core.Task" uuid="b35e2ef5-1548-4e92-904c-cc2dc845badb">
+      <context type="sltp.mm.core.Context" uuid="cb070101-cabe-468f-8e9e-822cc60e9e50"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="c2b9b420-7ce6-4fd5-977d-f0b19db971d3">
-        <tasks type="sltp.mm.core.Task" uuid="0ec279d3-8784-4ef6-ade9-fba3bc689a06">
+      <subgraph type="sltp.mm.core.Graph" uuid="60a68a8a-c546-4f95-b78f-397dba15a166">
+        <tasks type="sltp.mm.core.Task" uuid="c657af1b-7957-4fe3-91ab-a26d67b6de73">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="19d853d5-4cdd-4e74-b2a6-81ef303efd4b"/>
+          <context type="sltp.mm.core.Context" uuid="cb070101-cabe-468f-8e9e-822cc60e9e50"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="61743b46-9072-44e0-9442-73dac56fe149">
+          <rates type="sltp.mm.core.Rate" uuid="df21394e-631c-4147-adc1-772f7c9a9d43">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -3121,7 +3121,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="c94b3d4a-2701-477f-af9e-8430a6ecf70f">
+          <rates type="sltp.mm.core.Rate" uuid="6ce5edd9-b370-4dd1-b198-6afdf2250f29">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <hasBlocks>true</hasBlocks>
@@ -3131,7 +3131,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>1</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="cc84b852-8210-4329-b7fe-0b4a23cb0aac">
+          <rates type="sltp.mm.core.Rate" uuid="c36a86d1-ba9d-4194-a77a-3efa5ddebcbf">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -4586,7 +4586,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="SetExecutionDomain">off</P>
   <P Name="ExecutionDomainType">Deduce</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">16637</P>
+  <P Name="SIDHighWatermark">16983</P>
   <P Name="SimulinkSubDomain">Simulink</P>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="3324">
     <P Name="Ports">[4, 1]</P>
@@ -6214,7 +6214,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">758d041b-2a89-446a-a178-7700d6a6ccba</P>
     </Object>
-    <P Name="BDUuid" Class="char">4f1890ce-bb26-4e50-9362-5b70cc8f95c5</P>
+    <P Name="BDUuid" Class="char">1310ffe3-8c47-4745-b0af-92417f876092</P>
   </Object>
 </WindowsInfo>
 
