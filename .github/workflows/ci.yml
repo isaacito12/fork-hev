@@ -1,18 +1,41 @@
 # GitHub Actions Workflow with MATLAB Actions
+#
+# For a general overview of GitHub Actions, see
+# https://docs.github.com/en/actions
+#
+# For using MathWorks products in GitHub Actions, see
+# https://github.com/matlab-actions/overview
+#
+# For details about the syntax of this file, see
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
 # Copyright 2021-2022 The MathWorks, Inc.
 
-name: MATLAB R2022a Build
+name: MATLAB R2022a
 
 on:
   push:
     branches: [ main, R2022a ]
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '**.png'
+      - '**.svg'
+      - '**.txt'
+      - '**.xml'
 
   pull_request:
     branches: [ main, R2022a ]
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '**.png'
+      - '**.svg'
+      - '**.txt'
+      - '**.xml'
 
 jobs:
-  matlab-job-22a:
+  matlab-22a:
     runs-on: ubuntu-latest
     steps:
 
