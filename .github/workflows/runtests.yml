@@ -11,11 +11,11 @@
 
 # Copyright 2021-2022 The MathWorks, Inc.
 
-name: MATLAB R2022a
+name: MATLAB R2022b
 
 on:
   push:
-    branches: [ main, R2022a ]
+    branches: [ main, R2022b ]
     paths-ignore:
       - 'docs/**'
       - '**.md'
@@ -25,7 +25,7 @@ on:
       - '**.xml'
 
   pull_request:
-    branches: [ main, R2022a ]
+    branches: [ main, R2022b ]
     paths-ignore:
       - 'docs/**'
       - '**.md'
@@ -35,7 +35,7 @@ on:
       - '**.xml'
 
 jobs:
-  matlab-22a:
+  matlab-22b:
     runs-on: ubuntu-latest
     steps:
 
@@ -45,7 +45,7 @@ jobs:
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v1
         with:
-          release: R2022a
+          release: R2022b
 
       - name: Run tests
         uses: matlab-actions/run-command@v1

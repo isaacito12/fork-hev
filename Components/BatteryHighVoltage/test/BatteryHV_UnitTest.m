@@ -119,9 +119,9 @@ function blockParameters_BatteryHV_Electrical(testCase)
   % Dynamics
   verifyBlockDropdown_custom(testCase, blkpath, 'prm_dyn', '1')  % 1 for No dynamics
   % Fade
-  verifyBlockDropdown_custom(testCase, blkpath, 'prm_fade', 'ee.enum.batterybasic.prm_fade.disabled')
+  verifyBlockDropdown_custom(testCase, blkpath, 'prm_fade', 'simscape.enum.battery.prm_fade.disabled')
   % Calendar Aging
-  verifyBlockDropdown_custom(testCase, blkpath, 'prm_age', 'ee.enum.batterybasic.prm_age.disabled')
+  verifyBlockDropdown_custom(testCase, blkpath, 'prm_age', 'simscape.enum.battery.prm_age.disabled')
   % Temperature Dependence
   verifyBlockParameter_custom(testCase, blkpath, 'Vnom_T2', 'batteryHV.secondNominalVoltage_V', 'V')
   verifyBlockParameter_custom(testCase, blkpath, 'R1_T2', 'batteryHV.secondInternalResistance_Ohm', 'Ohm')

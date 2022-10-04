@@ -7,7 +7,7 @@ name: Check MATLAB Project
 on:
   push:
     branches:
-    - 'R2022a'
+    - 'R2022b'
 
 jobs:
   matlab-project-check-22a:
@@ -20,7 +20,7 @@ jobs:
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v1
         with:
-          release: R2022a
+          release: R2022b
 
       - name: Run tests
         uses: matlab-actions/run-command@v1

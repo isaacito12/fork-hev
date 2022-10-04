@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="BatteryHV_UnitTest" skipped="0" tests="15" time="49.9234">
+    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Basic" time="1.7463"/>
+    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Driveline" time="0.66821"/>
+    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Electrical" time="0.83141"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Basic_refsub" time="3.1036"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Driveline_refsub" time="2.8289"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Electrical_refsub" time="3.3222"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_Constant" time="0.030042"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_Charge" time="2.6659"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_Discharge" time="0.65579"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_LoadCurrentStep3" time="3.4975"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_testcase_Charge" time="4.3519"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_testcase_Discharge" time="3.4434"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_testcase_LoadCurrentStep3" time="2.8327"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_main_script_1" time="12.5189"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_takeScreenshots" time="7.4267"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="DrivePattern_UnitTest" skipped="0" tests="16" time="42.0857">
+    <testcase classname="DrivePattern_UnitTest" name="run_harness_model_1" time="4.206"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Constant" time="0.051359"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Step3" time="0.34621"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Step5" time="0.2418"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Accelerate_Decelerate" time="1.5645"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Accelerate_Decelerate_Twice" time="0.23"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_SimpleDrivePattern" time="0.22991"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_FTP75" time="0.031391"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_1" time="4.8833"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_2" time="4.5777"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_3" time="4.4346"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_4" time="4.0585"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_5" time="4.22"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_6" time="4.1259"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_7" time="3.8152"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_main_script_1" time="5.0694"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="Engine_UnitTest" skipped="0" tests="10" time="22.5213">
+    <testcase classname="Engine_UnitTest" name="defaultReferencedSubsystem_1" time="0.63143"/>
+    <testcase classname="Engine_UnitTest" name="defaultReferencedSubsystem_2" time="0.51982"/>
+    <testcase classname="Engine_UnitTest" name="run_harnessSimple_1" time="1.8407"/>
+    <testcase classname="Engine_UnitTest" name="run_harnessSimple_2_1" time="1.97"/>
+    <testcase classname="Engine_UnitTest" name="run_harnessSimple_2_2" time="2.0093"/>
+    <testcase classname="Engine_UnitTest" name="run_harnessPowerSplit_1" time="3.2172"/>
+    <testcase classname="Engine_UnitTest" name="run_harnessPowerSplit_2_1" time="3.453"/>
+    <testcase classname="Engine_UnitTest" name="run_harnessPowerSplit_2_2" time="3.1275"/>
+    <testcase classname="Engine_UnitTest" name="plot_script_1" time="1.0272"/>
+    <testcase classname="Engine_UnitTest" name="run_main_script_1" time="4.7252"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="PowerSplitDriveUnit_UnitTest" skipped="0" tests="10" time="81.2088">
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_harness_model_1" time="6.8183"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_harness_model_2_1" time="7.0518"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_harness_model_2_2" time="6.2014"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_main_script_1" time="14.0036"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_1" time="8.0553"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_2" time="7.9187"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_3" time="7.6483"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_4" time="7.4858"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_5" time="7.4095"/>
+    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_6" time="8.6161"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="Vehicle1D_UnitTest" skipped="0" tests="14" time="37.1055">
+    <testcase classname="Vehicle1D_UnitTest" name="blockParameters_Vehicle1D_Driveline" time="0.32502"/>
+    <testcase classname="Vehicle1D_UnitTest" name="blockParameters_Vehicle1D_Custom" time="0.41836"/>
+    <testcase classname="Vehicle1D_UnitTest" name="run_harness_model_1" time="1.8542"/>
+    <testcase classname="Vehicle1D_UnitTest" name="block_info_script_1" time="1.0539"/>
+    <testcase classname="Vehicle1D_UnitTest" name="input_Constant" time="0.072728"/>
+    <testcase classname="Vehicle1D_UnitTest" name="input_Brake3" time="0.31491"/>
+    <testcase classname="Vehicle1D_UnitTest" name="input_RoadGrade3" time="0.37528"/>
+    <testcase classname="Vehicle1D_UnitTest" name="input_DriveAxle" time="1.5213"/>
+    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_2" time="2.617"/>
+    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_3" time="2.5563"/>
+    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_4" time="2.4661"/>
+    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_5" time="2.4776"/>
+    <testcase classname="Vehicle1D_UnitTest" name="run_main_script_1" time="11.8477"/>
+    <testcase classname="Vehicle1D_UnitTest" name="harness_with_non_default_refsub_1" time="9.2051"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="PowerSplitHEV_DirectInput_UnitTest" skipped="0" tests="15" time="217.695">
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_1" time="11.0066"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_2_1" time="8.3567"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_2_2" time="8.9587"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Constant" time="9.745"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Downhill" time="9.6173"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Downhill_2" time="9.793"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_EngineDrive" time="9.0662"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG1Drive" time="11.765"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive" time="11.5803"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_2" time="12.0501"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_StartEng" time="9.3045"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_StartEng_2" time="8.0078"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Parked_EngChgBatt" time="8.1302"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_PowerSplitDrive" time="9.6526"/>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_main_script" time="80.6608"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="PowerSplitHEV_SpeedTracking_UnitTest" skipped="0" tests="10" time="349.7765">
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_1" time="12.3563"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_2_1" time="12.1505"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_2_2" time="12.618"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_basic" time="11.9935"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_highSpeed" time="16.5744"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_Accelerate_Decelerate" time="14.4683"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_SimpleDrivePattern" time="15.6473"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_FTP75" time="58.3718"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_main_script" time="116.9842"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_sweep" time="78.6122"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="PowerSplitHEV_UnitTest" skipped="0" tests="3" time="48.2921">
+    <testcase classname="PowerSplitHEV_UnitTest" name="run_system_model_1" time="13.3452"/>
+    <testcase classname="PowerSplitHEV_UnitTest" name="run_report_script_1" time="5.3069"/>
+    <testcase classname="PowerSplitHEV_UnitTest" name="run_main_script_1" time="29.6401"/>
+  </testsuite>
+</testsuites>

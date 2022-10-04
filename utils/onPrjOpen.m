@@ -4,8 +4,8 @@
 %
 % Copyright 2020-2022 The MathWorks, Inc.
 
-if not(contains(string(ver('matlab').Release), "R2022a"))
-  disp("This project was developed in R2022a.")
+if not(contains(string(ver('matlab').Release), "R2022b"))
+  disp("This project was developed in R2022b.")
   releaseStr = ver('matlab').Release;
   disp("This MATLAB Release is " + releaseStr(2:end-1) + ".")
   clear release
