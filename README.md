@@ -2,7 +2,7 @@
 
 [![View Hybrid Electric Vehicle Model in Simscape on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/92820-hybrid-electric-vehicle-model-in-simscape)
 
-Version 1.4 for MATLAB R2022a or newer
+Version 1.5
 
 ## Introduction
 
@@ -50,9 +50,15 @@ some components come with their own test setups.
 
 ![Plot of Simulation Result](utils/image_simulation_results_ftp75.png)
 
-## For MATLAB R2022a
+## For MATLAB R2022b
 
-The latest version 1.4 is available.
+The latest version 1.5 is available.
+
+You can download the ZIP archive of the project from the link below.
+It does not include Git repository data.
+
+- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/archive/refs/tags/v1.5.0.zip
+
 This version requires
 [MATLAB](https://www.mathworks.com/products/matlab.html),
 [Simulink&reg;](https://www.mathworks.com/products/simulink.html),
@@ -64,21 +70,26 @@ This version requires
 and optionally
 [Parallel Computing Toolbox&trade;](https://www.mathworks.com/products/parallel-computing.html).
 
-Fork or clone the repository.
-Note that the repository may be ahead of the released version and
+You can also fork or clone the repository.
+Note that the latest repository may be ahead of the released version and
 potentially broken.
 
-- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/tree/R2022a
+- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/tree/R2022b
 
-To download the released version without Git repository data,
-use the link below.
+## For previous MATLAB releases
+
+You can download the ZIP archive of the project from the links below.
+It does not include Git repository data.
+
+R2022a:
 
 - https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/archive/refs/tags/v1.4.0.zip
 
-## For MATLAB R2021a and R2021b
+R2021a, R2021b
 
-Version 1.2, which is in maintenance mode, is available.
-This version requires
+- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/archive/refs/tags/v1.2.0.zip
+
+These versions require
 [MATLAB](https://www.mathworks.com/products/matlab.html),
 [Simulink&reg;](https://www.mathworks.com/products/simulink.html),
 [Simscape](https://www.mathworks.com/products/simscape.html),
@@ -87,11 +98,7 @@ This version requires
 [Stateflow&reg;](https://www.mathworks.com/products/stateflow.html),
 [Powertrain Blockset](https://www.mathworks.com/products/powertrain.html)
 and optionally
-[Parallel Computing Toolbox&trade;](https://www.mathworks.com/products/parallel-computing.html)
-
-Download Project - This does not include Git repository data.
-
-- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/archive/refs/tags/v1.2.0.zip
+[Parallel Computing Toolbox&trade;](https://www.mathworks.com/products/parallel-computing.html).
 
 ## How to Use
 

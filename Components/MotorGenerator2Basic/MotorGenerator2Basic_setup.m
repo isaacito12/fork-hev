@@ -1,6 +1,8 @@
 %% Setup Script for Motor Generator 2
 
-% Copyright 2021 The MathWorks, Inc.
+% Copyright 2021-2022 The MathWorks, Inc.
+
+defineBus_HighVoltage
 
 [inputSignals_MG2, inputBus_MG2, t_end] = ...
   MotorGenerator2Basic_inputs("InputPattern","torque_drive");
@@ -32,3 +34,8 @@ motorGenerator2.elecLossConst_W = 30;
 
 motorGenerator2.rotorInertia_kg_m2 = 0.001;
 motorGenerator2.kDamp_Nm_per_radPerS = 0.005;
+
+motorGenerator2.dampSpringStiffness_Nm_per_rad = 10000;
+motorGenerator2.dampSpringFriction_Nm_per_rpm = 100;
+
+smoothing.mg2_dampSpringVelTol_rpm = 0.1;

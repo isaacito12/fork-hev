@@ -1,0 +1,26 @@
+function fig = MotorDriveUnit_Component_plotResultOutputs(nvpairs)
+% plots the simulation result.
+
+% Copyright 2021 The MathWorks, Inc.
+
+arguments
+  nvpairs.SimData timetable
+  nvpairs.FigureHeight (1,1) {mustBePositive} = 300
+end
+
+sigNames = [ ...
+  "Motor speed", ...
+  "Motor temperature", ...
+  "Battery power", ...
+  "Battery current", ...
+  "Battery voltage", ...
+  "Battery power loss", ...
+  "Battery charge", ...
+  "Battery SOC" ];
+
+for i = 1 : numel(sigNames)
+  fig = MotorDriveUnit_plotResultSignal(SimData = nvpairs.SimData, SignalName = sigNames(i));
+  fig.Position(4) = nvpairs.FigureHeight;
+end
+
+end  % function

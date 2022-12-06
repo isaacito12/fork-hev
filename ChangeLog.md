@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 1.5
+
+- Simulink Connection Bus is used in all high-voltage electrical ports.
+- Motor drive unit component uses
+  Motor & Drive block feom simscape Driveline.
+- Motor drive unit component has been updated with
+  new harness model and tests.
+
 ## Version 1.4
 
 Features
