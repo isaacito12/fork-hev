@@ -43,8 +43,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2020-08-04T16:40:34Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-06T16:00:29Z</dcterms:modified>
-  <cp:revision>6.48</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-07T15:09:36Z</dcterms:modified>
+  <cp:revision>6.50</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -114,7 +114,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.48&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.50&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="MultithreadedSim">on</P>
@@ -960,7 +960,7 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <P Name="NumRootInports">1</P>
   <Inport Name="Ctrl">
     <P Name="BusObject"/>
-    <P Name="BusData">{&quot;busObjects&quot;:null,&quot;leafNodes&quot;:[&quot;TrqCmd&quot;],&quot;version&quot;:&quot;0&quot;}</P>
+    <P Name="BusData">{&quot;busObjects&quot;:null,&quot;leafNodes&quot;:[&quot;signal1&quot;],&quot;version&quot;:&quot;0&quot;}</P>
     <P Name="OutputFunctionCall">off</P>
     <P Name="InportServerType">off</P>
     <P Name="SampleTime">-1</P>
@@ -1138,8 +1138,8 @@ Spring-Damper</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="df121a21-956d-4ddd-9604-994788b21304">
-    <Interface type="Interface" uuid="860278db-45ab-44a3-9a46-2f110e4daace"/>
+  <System type="System" uuid="ccb7f0a5-2feb-46c1-98f1-22492476f768">
+    <Interface type="Interface" uuid="56d65d1a-f9e0-4657-b3f6-29f0e0f6759e"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
@@ -2075,7 +2075,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48330.xml
     <P Name="ZOrder">49110</P>
     <PortProperties>
       <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">TrqCmd</P>
+        <P Name="PropagatedSignals">signal1</P>
       </Port>
     </PortProperties>
   </Block>
@@ -2153,13 +2153,13 @@ Converter</P>
 __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[17, 51, 1121, 751]</P>
+  <P Name="Location">[116, 83, 1280, 836]</P>
   <Block BlockType="Inport" Name="TrqCmd" SID="48369">
     <P Name="Position">[-55, -12, -25, 2]</P>
     <P Name="ZOrder">273</P>
     <PortProperties>
       <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">TrqCmd</P>
+        <P Name="PropagatedSignals">signal1</P>
       </Port>
     </PortProperties>
   </Block>
@@ -2401,7 +2401,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     <P Name="Points">[100, 0]</P>
     <Branch>
       <P Name="ZOrder">9</P>
-      <P Name="Points">[0, 135]</P>
+      <P Name="Points">[0, 130]</P>
       <P Name="Dst">48344#in:1</P>
     </Branch>
     <Branch>
@@ -2429,7 +2429,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </Branch>
     <Branch>
       <P Name="ZOrder">14</P>
-      <P Name="Points">[0, 110]</P>
+      <P Name="Points">[0, 115]</P>
       <P Name="Dst">48344#in:3</P>
     </Branch>
   </Line>
@@ -2586,11 +2586,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[0, 178, 1031, 898]</P>
-  <P Name="Open">on</P>
   <List ListType="InterfaceData">
     <P Name="Version">0</P>
-    <P Name="ModelData">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:null,&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfChildren&quot;:[{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;5c04288b-fa08-4e44-9d03-c22e03b4f594&quot;}],&quot;children&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8f8fab07-33c4-466f-9fc2-fff4de981bc2&quot;},&quot;indexOne&quot;:1,&quot;name&quot;:&quot;TrqCmd&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;5c04288b-fa08-4e44-9d03-c22e03b4f594&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;N*m&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;8c038da8-9308-470a-830a-c47bfb82d38d&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;2232c1e8-73c9-4487-8198-1790334f2be6&quot;}]},&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8f8fab07-33c4-466f-9fc2-fff4de981bc2&quot;},&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:null},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;000cafb8-8171-4376-873d-f7cf1445f838&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/mm_tree_node_datamodel/R2018b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
-    <P Name="Mappings">{&quot;port-tree&quot;:{&quot;bep-in&quot;:{&quot;1&quot;:&quot;000cafb8-8171-4376-873d-f7cf1445f838&quot;}}}</P>
+    <P Name="ModelData">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:null,&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfChildren&quot;:[{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;ca91ad96-c494-4c6d-af85-02a088a2590e&quot;}],&quot;children&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;3f334205-5bfc-40b3-80f0-ef3757b008ef&quot;},&quot;indexOne&quot;:1,&quot;name&quot;:&quot;signal1&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;ca91ad96-c494-4c6d-af85-02a088a2590e&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;N*m&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;12b972ce-2f19-4599-baab-556e6378ba15&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;fa961399-2aec-4fea-8da0-20dc814e6bbb&quot;}]},&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;3f334205-5bfc-40b3-80f0-ef3757b008ef&quot;},&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:null},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;b463557d-b154-4d97-8da7-048fc77950cd&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/mm_tree_node_datamodel/R2018b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <P Name="Mappings">{&quot;port-tree&quot;:{&quot;bep-in&quot;:{&quot;1&quot;:&quot;b463557d-b154-4d97-8da7-048fc77950cd&quot;}}}</P>
   </List>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">48370</P>
@@ -2604,7 +2603,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       <P Name="Version">0</P>
       <P Name="PortNumber">1</P>
       <P Name="PortName">Ctrl</P>
-      <P Name="Element">TrqCmd</P>
+      <P Name="Element">signal1</P>
       <P Name="PortBlockIndex">1</P>
       <P Name="IsComposite">1</P>
       <P Name="IsClientServer">0</P>
@@ -3045,152 +3044,152 @@ Spring-Damper</P>
     <P Name="ZOrder">49125</P>
   </Block>
   <Line LineType="Connection">
-    <P Name="ZOrder">173</P>
-    <P Name="Src">48282#lconn:1</P>
-    <P Name="Points">[-30, 0]</P>
-    <Branch ConnectType="DEST_DEST">
-      <P Name="Src">48290#rconn:1</P>
-      <P Name="Points">[10, 0]</P>
-    </Branch>
+    <P Name="ZOrder">68</P>
+    <P Name="Src">48290#rconn:1</P>
+    <P Name="Points">[10, 0]</P>
     <Branch ConnectType="DEST_SRC">
       <P Name="Dst">48281#rconn:3</P>
     </Branch>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">48282#lconn:1</P>
+      <P Name="Points">[-30, 0]</P>
+    </Branch>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">176</P>
-    <P Name="Src">48298#rconn:2</P>
-    <P Name="Points">[0, 72]</P>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Points">[95, 0]</P>
-      <P Name="Dst">48281#rconn:1</P>
-    </Branch>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Points">[-72, 0; 0, -80]</P>
-      <P Name="Dst">2#lconn:2</P>
-    </Branch>
-    <Branch ConnectType="DEST_DEST">
+    <P Name="ZOrder">71</P>
+    <P Name="Points">[460, 385; -72, 0; 0, -80; -13, 0]</P>
+    <P Name="Dst">2#lconn:2</P>
+    <Branch ConnectType="SRC_DEST">
       <P Name="Src">3#lconn:1</P>
       <P Name="Points">[0, 0]</P>
     </Branch>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48298#rconn:2</P>
+      <P Name="Points">[0, 72]</P>
+    </Branch>
+    <Branch ConnectType="SRC_SRC">
+      <P Name="Points">[95, 0]</P>
+      <P Name="Dst">48281#rconn:1</P>
+    </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">1988</P>
+    <P Name="ZOrder">2038</P>
     <P Name="Src">1#out:1</P>
     <P Name="Points">[21, 0]</P>
     <Branch>
-      <P Name="ZOrder">1987</P>
+      <P Name="ZOrder">2037</P>
       <P Name="Dst">48330#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1986</P>
+      <P Name="ZOrder">2036</P>
       <P Name="Points">[0, 25]</P>
       <P Name="Dst">48367#in:1</P>
     </Branch>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1989</P>
+    <P Name="ZOrder">2039</P>
     <P Name="Src">22#rconn:1</P>
     <P Name="Dst">2#rconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1990</P>
+    <P Name="ZOrder">2040</P>
     <P Name="Src">48282#rconn:2</P>
     <P Name="Dst">48284#lconn:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1991</P>
+    <P Name="ZOrder">2041</P>
     <P Name="Src">48284#out:1</P>
     <P Name="Dst">48339#in:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1992</P>
+    <P Name="ZOrder">2042</P>
     <P Name="Src">48282#rconn:1</P>
     <P Name="Points">[30, 0]</P>
     <P Name="Dst">48288#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1993</P>
+    <P Name="ZOrder">2043</P>
     <P Name="Src">48290#lconn:1</P>
     <P Name="Dst">48289#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1994</P>
+    <P Name="ZOrder">2044</P>
     <P Name="Src">48291#rconn:1</P>
     <P Name="Dst">48292#rconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1995</P>
+    <P Name="ZOrder">2045</P>
     <P Name="Src">48298#lconn:1</P>
     <P Name="Dst">2#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1996</P>
+    <P Name="ZOrder">2046</P>
     <P Name="Src">48298#rconn:1</P>
     <P Name="Points">[44, 0]</P>
     <P Name="Dst">48281#lconn:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1997</P>
+    <P Name="ZOrder">2047</P>
     <P Name="Src">48298#out:1</P>
     <P Name="Points">[0, -13]</P>
     <P Name="Dst">48311#in:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1998</P>
+    <P Name="ZOrder">2048</P>
     <P Name="Src">48316#rconn:1</P>
     <P Name="Dst">48291#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">1999</P>
+    <P Name="ZOrder">2049</P>
     <P Name="Src">48316#lconn:1</P>
     <P Name="Points">[-30, 0]</P>
     <P Name="Dst">48281#lconn:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2000</P>
+    <P Name="ZOrder">2050</P>
     <P Name="Src">48316#out:1</P>
     <P Name="Points">[0, -17]</P>
     <P Name="Dst">48329#in:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2001</P>
+    <P Name="ZOrder">2051</P>
     <P Name="Src">48281#lconn:2</P>
     <P Name="Points">[0, -130]</P>
     <P Name="Dst">48330#rconn:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2002</P>
+    <P Name="ZOrder">2052</P>
     <P Name="Src">48333#out:1</P>
     <P Name="Dst">48334#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2003</P>
+    <P Name="ZOrder">2053</P>
     <P Name="Src">48312#out:1</P>
     <P Name="Dst">48334#in:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2004</P>
+    <P Name="ZOrder">2054</P>
     <P Name="Src">48334#out:1</P>
     <P Name="Dst">48338#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2005</P>
+    <P Name="ZOrder">2055</P>
     <P Name="Src">48340#out:1</P>
     <P Name="Dst">48334#in:4</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2006</P>
+    <P Name="ZOrder">2056</P>
     <P Name="Src">48366#lconn:1</P>
     <P Name="Points">[-30, 0]</P>
     <P Name="Dst">48281#rconn:4</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2007</P>
+    <P Name="ZOrder">2057</P>
     <P Name="Src">48366#rconn:1</P>
     <P Name="Dst">48280#lconn:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2008</P>
+    <P Name="ZOrder">2058</P>
     <P Name="Src">48368#out:1</P>
     <P Name="Dst">48334#in:1</P>
   </Line>
@@ -3203,7 +3202,7 @@ p, li { white-space: pre-wrap; }
     <P Name="Position">[517, 529, 744, 545]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-5</P>
+    <P Name="ZOrder">-2</P>
   </Annotation>
 </System>
 
@@ -3318,7 +3317,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">3c062bd7-51a1-4e99-ba3e-7d230cab410b</P>
     </Object>
-    <P Name="BDUuid" Class="char">a97f1229-dbde-461d-bdb3-2d8e5bb4694a</P>
+    <P Name="BDUuid" Class="char">7ffe31b8-1598-452b-9ee5-605c9ba0f8eb</P>
   </Object>
 </WindowsInfo>
 

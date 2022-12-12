@@ -1,7 +1,7 @@
 function fig = MotorDriveUnit_Component_plotResultOutputs(nvpairs)
 % plots the simulation result.
 
-% Copyright 2021 The MathWorks, Inc.
+% Copyright 2021-2022 The MathWorks, Inc.
 
 arguments
   nvpairs.SimData timetable
