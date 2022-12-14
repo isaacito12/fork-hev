@@ -1,17 +1,17 @@
-# Motor Generator 1 Component
+# Motor Generator 2 Component
 
 This is a model of motor drive unit
-specifically parameterized for Motor Generator 1 (MG1),
+specifically parameterized for Motor Generator 2 (MG),
 which is used as part of power-split hybrid electric vehicle.
-MG1 controls the power splitting of internal combustion engine
-to distribute engine's mechanical power for
-driving vehicle axle and generating electric power.
+MG2 is the primary driving motor of a vehicle.
+It is also used for regenerative braking.
+
 This component is designed to be used
 as a reusable model.
 
 The main block is in Simulink library file
-`MotorGenerator1_refsub_library.mdl`.
-Harness model `MotorGenerator1_Component_harness_model.mdl`
+`MotorGenerator2_refsub_library.mdl`.
+Harness model `MotorGenerator2_Component_harness_model.mdl`
 in the `Harness` folder is used to test the block.
 
 This component depends on the Motor Drive Unit component.
@@ -26,16 +26,12 @@ of the model in various simulation scenarios as follows.
   All inputs are constant.
   This is used to check that the harness model runs.
 
-- Start engine ...
-  MG1 starts engine.
+- Drive ...
+  MG2 drives vehicle.
 
-- Generate ...
-  MG1 converts engine's mechanical power
+- Regen ...
+  MG2 converts vehicle's mechanical power
   to generate electric power.
-
-- Stop engine ...
-  Engine stops operating, and then
-  MG1 tries to spin engine crank in the reverse direction
-  which is prevented by sprag clutch.
+  This simulates regenerative braking.
 
 _Copyright 2022 The MathWorks, Inc._

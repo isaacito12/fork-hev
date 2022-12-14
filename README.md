@@ -2,7 +2,7 @@
 
 [![View Hybrid Electric Vehicle Model in Simscape on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/92820-hybrid-electric-vehicle-model-in-simscape)
 
-Version 1.5
+Version 1.6 (work-in-progress)
 
 ## Introduction
 
@@ -53,6 +53,7 @@ some components come with their own test setups.
 ## For MATLAB R2022b
 
 The latest version 1.5 is available.
+(Version 1.6 is in development.)
 
 You can download the ZIP archive of the project from the link below.
 It does not include Git repository data.

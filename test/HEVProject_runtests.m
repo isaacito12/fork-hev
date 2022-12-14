@@ -31,4 +31,4 @@ addPlugin(runner, plugin)
 
 results = run(runner, suite);
 
-disp(results)
+assertSuccess(results)

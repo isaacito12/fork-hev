@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 1.6 ... work-in-progress
+
+- Motor Drive Unit (MDU) component is revamped with
+  a new harness model and tests.
+- Motor Generator 1 component is updated to use the new MDU
+  and added tests.
+
 ## Version 1.5
 
 - Simulink Connection Bus is used in all high-voltage electrical ports.
