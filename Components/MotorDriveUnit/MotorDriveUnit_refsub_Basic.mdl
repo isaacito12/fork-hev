@@ -43,8 +43,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2020-08-04T16:40:34Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-14T08:38:24Z</dcterms:modified>
-  <cp:revision>6.51</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-20T12:46:18Z</dcterms:modified>
+  <cp:revision>6.63</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -108,13 +108,13 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <P Name="LastSavedArchitecture">glnxa64</P>
     <UserParameters>
       <P Name="PhysicalModelingChecksum">3154108171</P>
-      <P Name="PhysicalModelingParameterChecksum">2662396811</P>
+      <P Name="PhysicalModelingParameterChecksum">1201194735</P>
       <P Name="PhysicalModelingProducts">SimDriveline|Simscape</P>
     </UserParameters>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.51&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.63&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="MultithreadedSim">on</P>
@@ -1138,8 +1138,8 @@ Spring-Damper</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="b2589a4b-2eee-4609-8b2b-a1a006a22325">
-    <Interface type="Interface" uuid="10263ad6-fb45-4318-855b-ca858dd06882"/>
+  <System type="System" uuid="7f3b1725-7cb6-4827-90c7-adcfb28adb1e">
+    <Interface type="Interface" uuid="5f0aa439-f8d8-4a9e-8074-c4be65ecc6a8"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
@@ -1148,164 +1148,89 @@ __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
   <Display RunInitForIconRedraw="off"/>
   <Description>This block represents an abstract motor-drive unit. Key components include Motor &amp; Drive, Torsional Spring-Damper, and Air Thermal Mass.</Description>
   <MaskParameter Name="torque_max" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Maximum torque [N*m]</Prompt>
     <Value>motorDriveUnit.trqMax_Nm</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/torque_max</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="torque_max_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>N*m</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/torque_max_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
-  <MaskParameter Name="power_max" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+  <MaskParameter Name="Value" Type="promote" Tunable="off">
+    <Prompt>Maximum power [kW]</Prompt>
     <Value>motorDriveUnit.powerMax_kW</Value>
+    <Alias>constval</Alias>
     <TypeOptions>
+      <Option>Measurement/Power rate/Maximum power kW/Value</Option>
       <Option>Motor &amp; Drive (Driveline)/power_max</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="power_max_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>kW</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/power_max_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="Tc" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Torque control time constant [s]</Prompt>
     <Value>motorDriveUnit.responseTime_s</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/Tc</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="Tc_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>s</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/Tc_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="eff" Type="promote" Tunable="off">
-    <Prompt>Value (%)</Prompt>
+    <Prompt>Motor and driver overall efficiency [%]</Prompt>
     <Value>motorDriveUnit.efficiency_pct</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/eff</Option>
     </TypeOptions>
   </MaskParameter>
   <MaskParameter Name="w_eff" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Speed at which efficiency is measured [rpm]</Prompt>
     <Value>motorDriveUnit.spd_eff_rpm</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/w_eff</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="w_eff_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>rpm</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/w_eff_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="T_eff" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Torque at which efficiency is measured [N*m]</Prompt>
     <Value>motorDriveUnit.trq_eff_Nm</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/T_eff</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="T_eff_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>N*m</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/T_eff_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="thermal_mass" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Thermal mass [J/K]</Prompt>
     <Value>motorDriveUnit.thermalMass_J_perK</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/thermal_mass</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="thermal_mass_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>J/K</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/thermal_mass_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="temperature" Type="promote">
-    <Prompt>Value</Prompt>
-    <Value>initial.motorDriveUnitTemperature_degC</Value>
+    <Prompt>Initial temperature [K]</Prompt>
+    <Value>initial.MDU_Temperature_K</Value>
     <TypeOptions>
       <Option>Motor &amp; Drive (Driveline)/temperature</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="temperature_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>degC</Value>
-    <TypeOptions>
-      <Option>Motor &amp; Drive (Driveline)/temperature_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="k" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Spring stiffness [N*m/rad]</Prompt>
     <Value>motorDriveUnit.dampSpringStiffness_Nm_per_rad</Value>
     <TypeOptions>
       <Option>Torsional Spring-Damper/k</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="k_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>N*m/rad</Value>
-    <TypeOptions>
-      <Option>Torsional Spring-Damper/k_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="mu_visc" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
+    <Prompt>Viscous friction coefficient [N*m/rpm]</Prompt>
     <Value>motorDriveUnit.dampSpringFriction_Nm_per_rpm</Value>
     <TypeOptions>
       <Option>Torsional Spring-Damper/mu_visc</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="mu_visc_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>m*N/rpm</Value>
-    <TypeOptions>
-      <Option>Torsional Spring-Damper/mu_visc_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="w_tol" Type="promote" Tunable="off">
-    <Prompt>Value</Prompt>
-    <Value>smoothing.mdu_dampSpringVelTol_rpm</Value>
+    <Prompt>Velocity tolerance [rpm]</Prompt>
+    <Value>smoothing.MDU_dampSpringVelTol_rpm</Value>
     <TypeOptions>
       <Option>Torsional Spring-Damper/w_tol</Option>
     </TypeOptions>
   </MaskParameter>
-  <MaskParameter Name="w_tol_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>rpm</Value>
-    <TypeOptions>
-      <Option>Torsional Spring-Damper/w_tol_unit</Option>
-    </TypeOptions>
-  </MaskParameter>
   <MaskParameter Name="T" Type="promote">
-    <Prompt>Value</Prompt>
-    <Value>initial.AirTemp_degC</Value>
+    <Prompt>Initial temperature [K]</Prompt>
+    <Value>initial.MDU_AirTemp_K</Value>
     <TypeOptions>
       <Option>Air Thermal Mass/T</Option>
-    </TypeOptions>
-  </MaskParameter>
-  <MaskParameter Name="T_unit" Type="promote" Evaluate="off" Tunable="off">
-    <Prompt>Unit</Prompt>
-    <Value>degC</Value>
-    <TypeOptions>
-      <Option>Air Thermal Mass/T_unit</Option>
     </TypeOptions>
   </MaskParameter>
   <DialogControl Type="Group" Name="DescGroupVar">
@@ -1316,137 +1241,60 @@ __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
   </DialogControl>
   <DialogControl Type="Group" Name="ParameterGroupVar">
     <Prompt>Parameters</Prompt>
-    <DialogControl Type="CollapsiblePanel" Name="Container19">
+    <DialogControl Type="Group" Name="Container7">
       <Prompt>Motor and Drive</Prompt>
-      <DialogControl Type="Group" Name="Container3">
-        <Prompt>Maximum torque</Prompt>
-        <DialogControl Type="Edit" Name="torque_max">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="torque_max_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container4">
-        <Prompt>Maximum power</Prompt>
-        <DialogControl Type="Edit" Name="power_max">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="power_max_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container5">
-        <Prompt>Torque control time constant</Prompt>
-        <DialogControl Type="Edit" Name="Tc">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="Tc_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container7">
-        <Prompt>Motor and driver overall efficiency</Prompt>
-        <DialogControl Type="Edit" Name="eff">
-          <Prompt>Value (%)</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container6">
-        <Prompt>Speed at which efficiency is measured</Prompt>
-        <DialogControl Type="Edit" Name="w_eff">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="w_eff_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container8">
-        <Prompt>Torque at which efficiency is measured</Prompt>
-        <DialogControl Type="Edit" Name="T_eff">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="T_eff_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container9">
-        <Prompt>Thermal mass</Prompt>
-        <DialogControl Type="Edit" Name="thermal_mass">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="thermal_mass_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container10">
-        <Prompt>Initial temperature</Prompt>
-        <DialogControl Type="Edit" Name="temperature">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="temperature_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-    </DialogControl>
-    <DialogControl Type="CollapsiblePanel" Name="Container18">
-      <Prompt>Torsional Spring-Damper</Prompt>
-      <DialogControl Type="Group" Name="Container11">
-        <Prompt>Spring stiffness</Prompt>
-        <DialogControl Type="Edit" Name="k">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="k_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container12">
-        <Prompt>Viscous friction coefficient</Prompt>
-        <DialogControl Type="Edit" Name="mu_visc">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="mu_visc_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-      <DialogControl Type="Group" Name="Container13">
-        <Prompt>Velocity tolerance</Prompt>
-        <DialogControl Type="Edit" Name="w_tol">
-          <Prompt>Value</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-        <DialogControl Type="ComboBox" Name="w_tol_unit">
-          <Prompt>Unit</Prompt>
-          <ControlOptions PromptLocation="left"/>
-        </DialogControl>
-      </DialogControl>
-    </DialogControl>
-    <DialogControl Type="CollapsiblePanel" Name="Container17">
-      <Prompt>Initial air temperature</Prompt>
-      <DialogControl Type="Edit" Name="T">
-        <Prompt>Value</Prompt>
+      <DialogControl Type="Edit" Name="torque_max">
+        <Prompt>Maximum torque [N*m]</Prompt>
         <ControlOptions PromptLocation="left"/>
       </DialogControl>
-      <DialogControl Type="ComboBox" Name="T_unit">
-        <Prompt>Unit</Prompt>
+      <DialogControl Type="Edit" Name="Value">
+        <Prompt>Maximum power [kW]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="Tc">
+        <Prompt>Torque control time constant [s]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="eff">
+        <Prompt>Motor and driver overall efficiency [%]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="w_eff">
+        <Prompt>Speed at which efficiency is measured [rpm]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="T_eff">
+        <Prompt>Torque at which efficiency is measured [N*m]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="thermal_mass">
+        <Prompt>Thermal mass [J/K]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="temperature">
+        <Prompt>Initial temperature [K]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+    </DialogControl>
+    <DialogControl Type="Group" Name="Container6">
+      <Prompt>Torsional Spring-Damper</Prompt>
+      <DialogControl Type="Edit" Name="k">
+        <Prompt>Spring stiffness [N*m/rad]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="mu_visc">
+        <Prompt>Viscous friction coefficient [N*m/rpm]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+      <DialogControl Type="Edit" Name="w_tol">
+        <Prompt>Velocity tolerance [rpm]</Prompt>
+        <ControlOptions PromptLocation="left"/>
+      </DialogControl>
+    </DialogControl>
+    <DialogControl Type="Group" Name="Container5">
+      <Prompt>Air Thermal Mass</Prompt>
+      <DialogControl Type="Edit" Name="T">
+        <Prompt>Initial temperature [K]</Prompt>
         <ControlOptions PromptLocation="left"/>
       </DialogControl>
     </DialogControl>
@@ -1463,6 +1311,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_48334.xml.rels
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
   <Relationship Id="system_48344" Target="system_48344.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
+  <Relationship Id="system_48371" Target="system_48371.xml" Type="http://schemas.mathworks.com/simulink/2010/relationships/system"/>
 </Relationships>
 
 __MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_root.xml.rels
@@ -1477,7 +1326,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_root.xml.rels
 __MWOPC_PART_BEGIN__ /simulink/systems/system_48298.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[0, 178, 1031, 898]</P>
+  <P Name="Location">[123, 60, 1222, 760]</P>
   <Block BlockType="Reference" Name="Current Sensor" SID="48296">
     <PortCounts lconn="1" rconn="2"/>
     <P Name="Position">[180, 45, 220, 85]</P>
@@ -1694,83 +1543,83 @@ Converter</P>
       <P Name="IsClientServer">0</P>
     </List>
   </Block>
-  <Line LineType="Connection">
+  <Line>
     <P Name="ZOrder">1</P>
-    <P Name="Src">48297#rconn:2</P>
-    <P Name="Dst">48303#rconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2</P>
-    <P Name="Src">48296#rconn:2</P>
-    <P Name="Dst">48301#rconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">3</P>
-    <P Name="Src">48296#lconn:1</P>
-    <P Name="Points">[-25, 0]</P>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Dst">48300#rconn:1</P>
-    </Branch>
-    <Branch ConnectType="DEST_DEST">
-      <P Name="Src">48297#lconn:1</P>
-      <P Name="Points">[0, -35]</P>
-    </Branch>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">6</P>
-    <P Name="Src">48304#lconn:2</P>
-    <P Name="Points">[-18, 0]</P>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Points">[0, 45]</P>
-      <P Name="Dst">48307#lconn:1</P>
-    </Branch>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Points">[-112, 0]</P>
-      <P Name="Dst">48297#rconn:1</P>
-    </Branch>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">9</P>
-    <P Name="Src">48305#lconn:1</P>
-    <P Name="Points">[-70, 0]</P>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Points">[0, -50]</P>
-      <P Name="Dst">48296#rconn:1</P>
-    </Branch>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Points">[0, 40]</P>
-      <P Name="Dst">48304#lconn:1</P>
-    </Branch>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">12</P>
-    <P Name="Src">48304#rconn:1</P>
-    <P Name="Dst">48306#lconn:1</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">13</P>
-    <P Name="Src">48306#out:1</P>
+    <P Name="Src">48305#out:1</P>
     <P Name="Points">[35, 0]</P>
-    <P Name="Dst">48309#in:1</P>
+    <P Name="Dst">48308#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">14</P>
+    <P Name="ZOrder">2</P>
     <P Name="Src">48307#out:1</P>
     <P Name="Points">[35, 0]</P>
     <P Name="Dst">48310#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">15</P>
-    <P Name="Src">48305#out:1</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">48306#out:1</P>
     <P Name="Points">[35, 0]</P>
-    <P Name="Dst">48308#in:1</P>
+    <P Name="Dst">48309#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">4</P>
+    <P Name="Src">48304#rconn:1</P>
+    <P Name="Dst">48306#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">5</P>
+    <P Name="Points">[260, 125; 0, 40; 20, 0]</P>
+    <P Name="Dst">48304#lconn:1</P>
+    <Branch ConnectType="SRC_SRC">
+      <P Name="Points">[0, -50]</P>
+      <P Name="Dst">48296#rconn:1</P>
+    </Branch>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48305#lconn:1</P>
+      <P Name="Points">[-70, 0]</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">8</P>
+    <P Name="Points">[262, 180; -112, 0; 0, -10]</P>
+    <P Name="Dst">48297#rconn:1</P>
+    <Branch ConnectType="SRC_SRC">
+      <P Name="Points">[0, 45]</P>
+      <P Name="Dst">48307#lconn:1</P>
+    </Branch>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48304#lconn:2</P>
+      <P Name="Points">[-18, 0]</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">11</P>
+    <P Name="Src">48297#lconn:1</P>
+    <P Name="Points">[0, -35]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">48300#rconn:1</P>
+    </Branch>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">48296#lconn:1</P>
+      <P Name="Points">[-25, 0]</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">14</P>
+    <P Name="Src">48296#rconn:2</P>
+    <P Name="Dst">48301#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">15</P>
+    <P Name="Src">48297#rconn:2</P>
+    <P Name="Dst">48303#rconn:1</P>
   </Line>
 </System>
 
 __MWOPC_PART_BEGIN__ /simulink/systems/system_48316.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[0, 178, 1031, 898]</P>
+  <P Name="Location">[123, 60, 1222, 760]</P>
   <Block BlockType="Reference" Name="PS Product" SID="48320">
     <PortCounts lconn="2" rconn="1"/>
     <P Name="Position">[245, 102, 265, 133]</P>
@@ -1998,89 +1847,89 @@ Motion Sensor</P>
       <P Name="IsClientServer">0</P>
     </List>
   </Block>
-  <Line>
+  <Line LineType="Connection">
     <P Name="ZOrder">1</P>
-    <P Name="Src">48323#out:1</P>
-    <P Name="Points">[35, 0]</P>
-    <P Name="Dst">48328#in:1</P>
+    <P Name="Src">48320#rconn:1</P>
+    <P Name="Dst">48322#lconn:1</P>
   </Line>
-  <Line>
+  <Line LineType="Connection">
     <P Name="ZOrder">2</P>
-    <P Name="Src">48322#out:1</P>
-    <P Name="Points">[35, 0]</P>
-    <P Name="Dst">48327#in:1</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">3</P>
-    <P Name="Src">48321#out:1</P>
-    <P Name="Points">[35, 0]</P>
-    <P Name="Dst">48326#in:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">4</P>
-    <P Name="Src">48320#lconn:1</P>
-    <P Name="Points">[-7, 0; 0, -35]</P>
-    <Branch ConnectType="DEST_DEST">
-      <P Name="Src">48318#rconn:2</P>
-      <P Name="Points">[33, 0; 0, 25]</P>
-    </Branch>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Dst">48321#lconn:1</P>
-    </Branch>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">7</P>
-    <P Name="Src">48325#rconn:1</P>
-    <P Name="Dst">48318#rconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">8</P>
-    <P Name="Points">[97, 40; -32, 0]</P>
-    <P Name="Dst">48324#rconn:1</P>
-    <Branch ConnectType="SRC_DEST">
-      <P Name="Src">48317#lconn:1</P>
-      <P Name="Points">[-23, 0; 0, -120]</P>
-    </Branch>
-    <Branch ConnectType="SRC_DEST">
-      <P Name="Src">48318#lconn:1</P>
-      <P Name="Points">[-23, 0]</P>
-    </Branch>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">11</P>
-    <P Name="Src">48320#lconn:2</P>
-    <P Name="Points">[-7, 0; 0, 35]</P>
+    <P Name="Src">48323#lconn:1</P>
+    <P Name="Points">[-62, 0]</P>
     <Branch ConnectType="DEST_DEST">
       <P Name="Src">48317#rconn:1</P>
       <P Name="Points">[33, 0]</P>
     </Branch>
     <Branch ConnectType="DEST_DEST">
-      <P Name="Src">48323#lconn:1</P>
-      <P Name="Points">[-62, 0]</P>
+      <P Name="Src">48320#lconn:2</P>
+      <P Name="Points">[-7, 0; 0, 35]</P>
     </Branch>
   </Line>
   <Line LineType="Connection">
+    <P Name="ZOrder">5</P>
+    <P Name="Src">48318#lconn:1</P>
+    <P Name="Points">[-23, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">48317#lconn:1</P>
+      <P Name="Points">[-23, 0; 0, -120]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">48324#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">8</P>
+    <P Name="Src">48325#rconn:1</P>
+    <P Name="Dst">48318#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">9</P>
+    <P Name="Points">[223, 75; 62, 0]</P>
+    <P Name="Dst">48321#lconn:1</P>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48318#rconn:2</P>
+      <P Name="Points">[33, 0; 0, 25]</P>
+    </Branch>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48320#lconn:1</P>
+      <P Name="Points">[-7, 0; 0, -35]</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">12</P>
+    <P Name="Src">48321#out:1</P>
+    <P Name="Points">[35, 0]</P>
+    <P Name="Dst">48326#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">48322#out:1</P>
+    <P Name="Points">[35, 0]</P>
+    <P Name="Dst">48327#in:1</P>
+  </Line>
+  <Line>
     <P Name="ZOrder">14</P>
-    <P Name="Src">48320#rconn:1</P>
-    <P Name="Dst">48322#lconn:1</P>
+    <P Name="Src">48323#out:1</P>
+    <P Name="Points">[35, 0]</P>
+    <P Name="Dst">48328#in:1</P>
   </Line>
 </System>
 
 __MWOPC_PART_BEGIN__ /simulink/systems/system_48330.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[39, 195, 1070, 915]</P>
+  <P Name="Location">[123, 60, 1222, 760]</P>
   <Block BlockType="Inport" Name="TrqCmd" SID="48331">
-    <P Name="Position">[-80, 113, -50, 127]</P>
+    <P Name="Position">[-110, 113, -80, 127]</P>
     <P Name="ZOrder">49110</P>
     <PortProperties>
       <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">signal1</P>
+        <P Name="PropagatedSignals">TrqCmd</P>
       </Port>
     </PortProperties>
   </Block>
   <Block BlockType="Constant" Name="Constant" SID="48293">
-    <P Name="Position">[-15, 142, 10, 168]</P>
+    <P Name="Position">[-15, 127, 10, 153]</P>
     <P Name="ZOrder">49109</P>
     <P Name="Value">0</P>
   </Block>
@@ -2128,9 +1977,8 @@ Converter</P>
   </Block>
   <Line>
     <P Name="ZOrder">1</P>
-    <P Name="Src">48293#out:1</P>
-    <P Name="Points">[23, 0; 0, -15]</P>
-    <P Name="Dst">10#in:2</P>
+    <P Name="Src">48331#out:1</P>
+    <P Name="Dst">10#in:1</P>
   </Line>
   <Line LineType="Connection">
     <P Name="ZOrder">2</P>
@@ -2139,21 +1987,21 @@ Converter</P>
   </Line>
   <Line>
     <P Name="ZOrder">3</P>
-    <P Name="Src">48331#out:1</P>
-    <P Name="Dst">10#in:1</P>
+    <P Name="Src">48293#out:1</P>
+    <P Name="Dst">10#in:2</P>
   </Line>
 </System>
 
 __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[116, 83, 1280, 836]</P>
+  <P Name="Location">[39, 195, 1070, 915]</P>
   <Block BlockType="Inport" Name="TrqCmd" SID="48369">
     <P Name="Position">[-55, -12, -25, 2]</P>
     <P Name="ZOrder">273</P>
     <PortProperties>
       <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">signal1</P>
+        <P Name="PropagatedSignals">TrqCmd</P>
       </Port>
     </PortProperties>
   </Block>
@@ -2163,12 +2011,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     <P Name="Port">2</P>
   </Block>
   <Block BlockType="Inport" Name="Elec" SID="48337">
-    <P Name="Position">[-55, 158, -25, 172]</P>
+    <P Name="Position">[-55, 193, -25, 207]</P>
     <P Name="ZOrder">1</P>
     <P Name="Port">3</P>
   </Block>
   <Block BlockType="Inport" Name="Temp" SID="48343">
-    <P Name="Position">[-55, 328, -25, 342]</P>
+    <P Name="Position">[-55, 353, -25, 367]</P>
     <P Name="ZOrder">2</P>
     <P Name="Port">4</P>
   </Block>
@@ -2191,7 +2039,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
   </Block>
   <Block BlockType="BusSelector" Name="Bus&#xA;Selector1" SID="48355">
     <PortCounts in="1" out="3"/>
-    <P Name="Position">[20, 125, 25, 205]</P>
+    <P Name="Position">[20, 160, 25, 240]</P>
     <P Name="ZOrder">263</P>
     <P Name="OutputSignals">Current,ElecPower,Voltage</P>
     <PortProperties>
@@ -2208,14 +2056,21 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
   </Block>
   <Block BlockType="SubSystem" Name="Electrical Loss" SID="48344">
     <PortCounts in="3" out="1"/>
-    <P Name="Position">[160, 208, 230, 292]</P>
+    <P Name="Position">[180, 243, 250, 327]</P>
     <P Name="ZOrder">261</P>
     <P Name="HideAutomaticName">off</P>
     <P Name="ContentPreviewEnabled">on</P>
     <System Ref="system_48344"/>
   </Block>
+  <Block BlockType="SubSystem" Name="Power rate" SID="48371">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[180, 114, 255, 146]</P>
+    <P Name="ZOrder">275</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_48371"/>
+  </Block>
   <Block BlockType="Outport" Name="Out Bus Element" SID="48357">
-    <P Name="Position">[270, 35, 280, 45]</P>
+    <P Name="Position">[310, 35, 320, 45]</P>
     <P Name="ZOrder">265</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2230,7 +2085,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element1" SID="48358">
-    <P Name="Position">[270, 60, 280, 70]</P>
+    <P Name="Position">[310, 60, 320, 70]</P>
     <P Name="ZOrder">266</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2245,7 +2100,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element2" SID="48359">
-    <P Name="Position">[270, 85, 280, 95]</P>
+    <P Name="Position">[310, 85, 320, 95]</P>
     <P Name="ZOrder">267</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2260,7 +2115,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element3" SID="48360">
-    <P Name="Position">[270, 135, 280, 145]</P>
+    <P Name="Position">[310, 170, 320, 180]</P>
     <P Name="ZOrder">268</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2275,7 +2130,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element4" SID="48361">
-    <P Name="Position">[270, 160, 280, 170]</P>
+    <P Name="Position">[310, 195, 320, 205]</P>
     <P Name="ZOrder">269</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2290,7 +2145,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element5" SID="48362">
-    <P Name="Position">[270, 185, 280, 195]</P>
+    <P Name="Position">[310, 220, 320, 230]</P>
     <P Name="ZOrder">270</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2305,7 +2160,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element6" SID="48363">
-    <P Name="Position">[270, 245, 280, 255]</P>
+    <P Name="Position">[310, 280, 320, 290]</P>
     <P Name="ZOrder">271</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2320,7 +2175,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element7" SID="48364">
-    <P Name="Position">[270, 330, 280, 340]</P>
+    <P Name="Position">[310, 355, 320, 365]</P>
     <P Name="ZOrder">272</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2335,7 +2190,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
     </List>
   </Block>
   <Block BlockType="Outport" Name="Out Bus Element8" SID="48370">
-    <P Name="Position">[270, -10, 280, 0]</P>
+    <P Name="Position">[310, -10, 320, 0]</P>
     <P Name="ZOrder">274</P>
     <P Name="BackgroundColor">black</P>
     <P Name="ShowName">off</P>
@@ -2349,107 +2204,135 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48334.xml
       <P Name="IsClientServer">0</P>
     </List>
   </Block>
+  <Block BlockType="Outport" Name="Out Bus Element9" SID="48377">
+    <P Name="Position">[310, 125, 320, 135]</P>
+    <P Name="ZOrder">276</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="ShowName">off</P>
+    <List ListType="InterfaceData">
+      <P Name="Version">0</P>
+      <P Name="PortNumber">1</P>
+      <P Name="PortName">Info</P>
+      <P Name="Element">MotorPwrRate</P>
+      <P Name="PortBlockIndex">10</P>
+      <P Name="IsComposite">1</P>
+      <P Name="IsClientServer">0</P>
+    </List>
+  </Block>
   <Line>
     <P Name="ZOrder">1</P>
-    <P Name="Src">48369#out:1</P>
-    <P Name="Dst">48370#in:1</P>
+    <P Name="Src">48371#out:1</P>
+    <P Name="Dst">48377#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">2</P>
-    <P Name="Src">48335#out:1</P>
-    <P Name="Dst">48354#in:1</P>
+    <P Name="Src">48343#out:1</P>
+    <P Name="Dst">48364#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">3</P>
-    <P Name="Src">48337#out:1</P>
-    <P Name="Dst">48355#in:1</P>
-  </Line>
-  <Line>
-    <P Name="Name">&lt;Trq&gt;</P>
-    <P Name="ZOrder">4</P>
-    <P Name="Labels">[0, 0]</P>
-    <P Name="Src">48354#out:1</P>
-    <P Name="Points">[84, 0]</P>
-    <Branch>
-      <P Name="ZOrder">5</P>
-      <P Name="Points">[0, 210]</P>
-      <P Name="Dst">48344#in:2</P>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">6</P>
-      <P Name="Dst">48357#in:1</P>
-    </Branch>
-  </Line>
-  <Line>
-    <P Name="Name">&lt;MechPower&gt;</P>
-    <P Name="ZOrder">7</P>
-    <P Name="Labels">[0, 0]</P>
-    <P Name="Src">48354#out:2</P>
-    <P Name="Dst">48358#in:1</P>
-  </Line>
-  <Line>
-    <P Name="Name">&lt;Spd&gt;</P>
-    <P Name="ZOrder">8</P>
-    <P Name="Labels">[0, 0]</P>
-    <P Name="Src">48354#out:3</P>
-    <P Name="Points">[100, 0]</P>
-    <Branch>
-      <P Name="ZOrder">9</P>
-      <P Name="Points">[0, 130]</P>
-      <P Name="Dst">48344#in:1</P>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">10</P>
-      <P Name="Dst">48359#in:1</P>
-    </Branch>
-  </Line>
-  <Line>
-    <P Name="Name">&lt;Current&gt;</P>
-    <P Name="ZOrder">11</P>
-    <P Name="Labels">[0, 0]</P>
-    <P Name="Src">48355#out:1</P>
-    <P Name="Dst">48360#in:1</P>
-  </Line>
-  <Line>
-    <P Name="Name">&lt;ElecPower&gt;</P>
-    <P Name="ZOrder">12</P>
-    <P Name="Labels">[0, 0]</P>
-    <P Name="Src">48355#out:2</P>
-    <P Name="Points">[69, 0]</P>
-    <Branch>
-      <P Name="ZOrder">13</P>
-      <P Name="Points">[171, 0]</P>
-      <P Name="Dst">48361#in:1</P>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">14</P>
-      <P Name="Points">[0, 115]</P>
-      <P Name="Dst">48344#in:3</P>
-    </Branch>
+    <P Name="Src">48344#out:1</P>
+    <P Name="Dst">48363#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Voltage&gt;</P>
-    <P Name="ZOrder">15</P>
+    <P Name="ZOrder">4</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">48355#out:3</P>
     <P Name="Dst">48362#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">16</P>
-    <P Name="Src">48344#out:1</P>
-    <P Name="Dst">48363#in:1</P>
+    <P Name="Name">&lt;ElecPower&gt;</P>
+    <P Name="ZOrder">5</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">48355#out:2</P>
+    <P Name="Points">[69, 0]</P>
+    <Branch>
+      <P Name="ZOrder">6</P>
+      <P Name="Points">[0, 115]</P>
+      <P Name="Dst">48344#in:3</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">7</P>
+      <P Name="Dst">48361#in:1</P>
+    </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">17</P>
-    <P Name="Src">48343#out:1</P>
-    <P Name="Dst">48364#in:1</P>
+    <P Name="Name">&lt;Current&gt;</P>
+    <P Name="ZOrder">8</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">48355#out:1</P>
+    <P Name="Dst">48360#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;Spd&gt;</P>
+    <P Name="ZOrder">9</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">48354#out:3</P>
+    <P Name="Points">[100, 0]</P>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Dst">48359#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Points">[0, 165]</P>
+      <P Name="Dst">48344#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;MechPower&gt;</P>
+    <P Name="ZOrder">12</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">48354#out:2</P>
+    <P Name="Points">[120, 0]</P>
+    <Branch>
+      <P Name="ZOrder">13</P>
+      <P Name="Dst">48358#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">14</P>
+      <P Name="Points">[0, 65]</P>
+      <P Name="Dst">48371#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;Trq&gt;</P>
+    <P Name="ZOrder">15</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">48354#out:1</P>
+    <P Name="Points">[84, 0]</P>
+    <Branch>
+      <P Name="ZOrder">16</P>
+      <P Name="Dst">48357#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">17</P>
+      <P Name="Points">[0, 245]</P>
+      <P Name="Dst">48344#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">18</P>
+    <P Name="Src">48337#out:1</P>
+    <P Name="Dst">48355#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">19</P>
+    <P Name="Src">48335#out:1</P>
+    <P Name="Dst">48354#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">48369#out:1</P>
+    <P Name="Dst">48370#in:1</P>
   </Line>
 </System>
 
 __MWOPC_PART_BEGIN__ /simulink/systems/system_48344.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[111, 72, 1164, 734]</P>
+  <P Name="Location">[123, 60, 1172, 760]</P>
   <Block BlockType="Inport" Name="spd" SID="48345">
     <P Name="Position">[-30, 278, 0, 292]</P>
     <P Name="ZOrder">198</P>
@@ -2497,7 +2380,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48344.xml
   </Block>
   <Block BlockType="Product" Name="Product" SID="48349">
     <PortCounts in="2" out="1"/>
-    <P Name="Position">[165, 277, 195, 308]</P>
+    <P Name="Position">[180, 277, 210, 308]</P>
     <P Name="ZOrder">212</P>
   </Block>
   <Block BlockType="Sum" Name="Subtract" SID="48350">
@@ -2508,7 +2391,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48344.xml
     <P Name="Inputs">+-</P>
   </Block>
   <Block BlockType="Gain" Name="W to kW" SID="48351">
-    <P Name="Position">[230, 280, 290, 310]</P>
+    <P Name="Position">[245, 280, 305, 310]</P>
     <P Name="ZOrder">217</P>
     <P Name="Gain">1e-3</P>
     <PortProperties>
@@ -2518,7 +2401,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48344.xml
     </PortProperties>
   </Block>
   <Block BlockType="Gain" Name="rpm to rad/s" SID="48352">
-    <P Name="Position">[45, 270, 105, 300]</P>
+    <P Name="Position">[45, 270, 130, 300]</P>
     <P Name="ZOrder">213</P>
     <P Name="Gain">2*pi/60</P>
   </Block>
@@ -2530,49 +2413,109 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_48344.xml
     <P Name="Unit">kW</P>
   </Block>
   <Line>
+    <P Name="Name">Mechnical Power</P>
     <P Name="ZOrder">1</P>
-    <P Name="Src">48346#out:1</P>
-    <P Name="Points">[130, 0; 0, -35]</P>
-    <P Name="Dst">48349#in:2</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">48351#out:1</P>
+    <P Name="Dst">48350#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">2</P>
-    <P Name="Src">48345#out:1</P>
-    <P Name="Dst">48352#in:1</P>
+    <P Name="Src">48348#out:1</P>
+    <P Name="Dst">48353#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">3</P>
-    <P Name="Src">48352#out:1</P>
-    <P Name="Dst">48349#in:1</P>
+    <P Name="Src">48350#out:1</P>
+    <P Name="Dst">48348#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">4</P>
-    <P Name="Src">48349#out:1</P>
-    <P Name="Dst">48351#in:1</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">5</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">48347#out:1</P>
     <P Name="Points">[386, 0; 0, -85]</P>
     <P Name="Dst">48350#in:2</P>
   </Line>
   <Line>
+    <P Name="ZOrder">5</P>
+    <P Name="Src">48349#out:1</P>
+    <P Name="Dst">48351#in:1</P>
+  </Line>
+  <Line>
     <P Name="ZOrder">6</P>
-    <P Name="Src">48350#out:1</P>
-    <P Name="Dst">48348#in:1</P>
+    <P Name="Src">48352#out:1</P>
+    <P Name="Points">[45, 0]</P>
+    <P Name="Dst">48349#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">7</P>
-    <P Name="Src">48348#out:1</P>
-    <P Name="Dst">48353#in:1</P>
+    <P Name="Src">48345#out:1</P>
+    <P Name="Dst">48352#in:1</P>
   </Line>
   <Line>
-    <P Name="Name">Mechnical Power</P>
     <P Name="ZOrder">8</P>
-    <P Name="Labels">[0, 0]</P>
-    <P Name="Src">48351#out:1</P>
-    <P Name="Dst">48350#in:1</P>
+    <P Name="Src">48346#out:1</P>
+    <P Name="Points">[155, 0; 0, -35; 20, 0]</P>
+    <P Name="Dst">48349#in:2</P>
+  </Line>
+</System>
+
+__MWOPC_PART_BEGIN__ /simulink/systems/system_48371.xml
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[39, 195, 1070, 915]</P>
+  <Block BlockType="Inport" Name="Pwr" SID="48372">
+    <P Name="Position">[195, 103, 225, 117]</P>
+    <P Name="ZOrder">-1</P>
+    <P Name="AttributesFormatString">%&lt;Unit&gt;</P>
+    <P Name="Unit">kW</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">&lt;MechPower&gt;</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Product" Name="Divide" SID="48374">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[335, 102, 365, 133]</P>
+    <P Name="ZOrder">1</P>
+    <P Name="Inputs">*/</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="48376">
+    <P Name="Position">[420, 105, 475, 135]</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Gain">100</P>
+  </Block>
+  <Block BlockType="Constant" Name="Maximum power kW" SID="48375">
+    <P Name="Position">[150, 175, 275, 205]</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Value">Value</P>
+  </Block>
+  <Block BlockType="Outport" Name="Rate" SID="48373">
+    <P Name="Position">[525, 113, 555, 127]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="Unit">%</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">48375#out:1</P>
+    <P Name="Points">[25, 0; 0, -65]</P>
+    <P Name="Dst">48374#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">48376#out:1</P>
+    <P Name="Dst">48373#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">48374#out:1</P>
+    <P Name="Dst">48376#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">4</P>
+    <P Name="Src">48372#out:1</P>
+    <P Name="Dst">48374#in:1</P>
   </Line>
 </System>
 
@@ -2583,11 +2526,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="Open">on</P>
   <List ListType="InterfaceData">
     <P Name="Version">0</P>
-    <P Name="ModelData">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:null,&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfChildren&quot;:[{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;6d8362ca-8efc-4bef-86be-b688747b17e0&quot;}],&quot;children&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;3db306a1-f4d7-4571-9998-a020c4a1ae8b&quot;},&quot;indexOne&quot;:1,&quot;name&quot;:&quot;TrqCmd&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;6d8362ca-8efc-4bef-86be-b688747b17e0&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;N*m&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;f3fc650c-686e-4606-b73b-7dc782cdbc1c&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;17c2ea38-566c-4873-8fab-8a1d93367386&quot;}]},&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;3db306a1-f4d7-4571-9998-a020c4a1ae8b&quot;},&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:null},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;e1f5c515-aff1-4695-a567-739343215348&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/mm_tree_node_datamodel/R2018b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
-    <P Name="Mappings">{&quot;port-tree&quot;:{&quot;bep-in&quot;:{&quot;1&quot;:&quot;e1f5c515-aff1-4695-a567-739343215348&quot;}}}</P>
+    <P Name="ModelData">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:null,&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfChildren&quot;:[{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;f9f74cec-5302-462c-bc03-0865ab3a91b2&quot;}],&quot;children&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;e0be3345-2549-4d8c-9887-32ac69045083&quot;},&quot;indexOne&quot;:1,&quot;name&quot;:&quot;TrqCmd&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;f9f74cec-5302-462c-bc03-0865ab3a91b2&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;N*m&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;8846eeba-f4e1-474d-9ecc-73e3a9775250&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;a40cfa46-eb2d-4687-acb3-1e6f3a9ee901&quot;}]},&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;e0be3345-2549-4d8c-9887-32ac69045083&quot;},&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:null},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;15eb06cc-0601-40af-a637-cc6fccfe6eb6&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/mm_tree_node_datamodel/R2018b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <P Name="Mappings">{&quot;port-tree&quot;:{&quot;bep-in&quot;:{&quot;1&quot;:&quot;15eb06cc-0601-40af-a637-cc6fccfe6eb6&quot;}}}</P>
   </List>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">48370</P>
+  <P Name="SIDHighWatermark">48377</P>
   <Block BlockType="Inport" Name="In Bus Element" SID="1">
     <P Name="Position">[330, 165, 340, 175]</P>
     <P Name="ZOrder">7791</P>
@@ -2644,7 +2587,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       <P Name="T_specify">on</P>
       <P Name="T_priority">High</P>
       <P Name="T">T</P>
-      <P Name="T_unit">degC</P>
+      <P Name="T_unit">K</P>
       <P Name="T_nominal_specify">off</P>
       <P Name="T_nominal_unit">K</P>
       <P Name="T_nominal_value">1</P>
@@ -2841,7 +2784,7 @@ Rotational Reference</P>
       <P Name="torque_max">torque_max</P>
       <P Name="torque_max_unit">N*m</P>
       <P Name="torque_max_conf">compiletime</P>
-      <P Name="power_max">power_max</P>
+      <P Name="power_max">Value</P>
       <P Name="power_max_unit">kW</P>
       <P Name="power_max_conf">compiletime</P>
       <P Name="Tc">Tc</P>
@@ -2865,7 +2808,7 @@ Rotational Reference</P>
       <P Name="temperature_specify">on</P>
       <P Name="temperature_priority">High</P>
       <P Name="temperature">temperature</P>
-      <P Name="temperature_unit">degC</P>
+      <P Name="temperature_unit">K</P>
       <P Name="temperature_nominal_specify">off</P>
       <P Name="temperature_nominal_unit">K</P>
       <P Name="temperature_nominal_value">1</P>
@@ -3039,154 +2982,155 @@ Spring-Damper</P>
     <P Name="ZOrder">49125</P>
   </Block>
   <Line LineType="Connection">
-    <P Name="ZOrder">68</P>
-    <P Name="Src">48290#rconn:1</P>
-    <P Name="Points">[10, 0]</P>
-    <Branch ConnectType="DEST_SRC">
-      <P Name="Dst">48281#rconn:3</P>
-    </Branch>
+    <P Name="ZOrder">826</P>
+    <P Name="Src">48298#rconn:2</P>
+    <P Name="Points">[0, 72]</P>
     <Branch ConnectType="DEST_DEST">
-      <P Name="Src">48282#lconn:1</P>
-      <P Name="Points">[-30, 0]</P>
-    </Branch>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">71</P>
-    <P Name="Points">[460, 385; -72, 0; 0, -80; -13, 0]</P>
-    <P Name="Dst">2#lconn:2</P>
-    <Branch ConnectType="SRC_DEST">
       <P Name="Src">3#lconn:1</P>
       <P Name="Points">[0, 0]</P>
     </Branch>
-    <Branch ConnectType="SRC_DEST">
-      <P Name="Src">48298#rconn:2</P>
-      <P Name="Points">[0, 72]</P>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[-72, 0; 0, -80]</P>
+      <P Name="Dst">2#lconn:2</P>
     </Branch>
-    <Branch ConnectType="SRC_SRC">
+    <Branch ConnectType="DEST_SRC">
       <P Name="Points">[95, 0]</P>
       <P Name="Dst">48281#rconn:1</P>
     </Branch>
   </Line>
-  <Line>
-    <P Name="ZOrder">2038</P>
-    <P Name="Src">1#out:1</P>
-    <P Name="Points">[21, 0]</P>
-    <Branch>
-      <P Name="ZOrder">2037</P>
-      <P Name="Dst">48330#in:1</P>
+  <Line LineType="Connection">
+    <P Name="ZOrder">830</P>
+    <P Name="Points">[605, 470; 0, -90]</P>
+    <P Name="Dst">48281#rconn:3</P>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48290#rconn:1</P>
+      <P Name="Points">[10, 0]</P>
     </Branch>
-    <Branch>
-      <P Name="ZOrder">2036</P>
-      <P Name="Points">[0, 25]</P>
-      <P Name="Dst">48367#in:1</P>
+    <Branch ConnectType="SRC_DEST">
+      <P Name="Src">48282#lconn:1</P>
+      <P Name="Points">[-30, 0]</P>
     </Branch>
   </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2039</P>
-    <P Name="Src">22#rconn:1</P>
-    <P Name="Dst">2#rconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2040</P>
-    <P Name="Src">48282#rconn:2</P>
-    <P Name="Dst">48284#lconn:1</P>
-  </Line>
   <Line>
-    <P Name="ZOrder">2041</P>
-    <P Name="Src">48284#out:1</P>
-    <P Name="Dst">48339#in:1</P>
+    <P Name="ZOrder">3522</P>
+    <P Name="Src">48368#out:1</P>
+    <P Name="Dst">48334#in:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2042</P>
-    <P Name="Src">48282#rconn:1</P>
-    <P Name="Points">[30, 0]</P>
-    <P Name="Dst">48288#lconn:1</P>
+    <P Name="ZOrder">3523</P>
+    <P Name="Src">48366#rconn:1</P>
+    <P Name="Dst">48280#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2043</P>
-    <P Name="Src">48290#lconn:1</P>
-    <P Name="Dst">48289#lconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2044</P>
-    <P Name="Src">48291#rconn:1</P>
-    <P Name="Dst">48292#rconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2045</P>
-    <P Name="Src">48298#lconn:1</P>
-    <P Name="Dst">2#lconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2046</P>
-    <P Name="Src">48298#rconn:1</P>
-    <P Name="Points">[44, 0]</P>
-    <P Name="Dst">48281#lconn:1</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">2047</P>
-    <P Name="Src">48298#out:1</P>
-    <P Name="Points">[0, -13]</P>
-    <P Name="Dst">48311#in:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2048</P>
-    <P Name="Src">48316#rconn:1</P>
-    <P Name="Dst">48291#lconn:1</P>
-  </Line>
-  <Line LineType="Connection">
-    <P Name="ZOrder">2049</P>
-    <P Name="Src">48316#lconn:1</P>
+    <P Name="ZOrder">3524</P>
+    <P Name="Src">48366#lconn:1</P>
     <P Name="Points">[-30, 0]</P>
-    <P Name="Dst">48281#lconn:3</P>
+    <P Name="Dst">48281#rconn:4</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2050</P>
-    <P Name="Src">48316#out:1</P>
-    <P Name="Points">[0, -17]</P>
-    <P Name="Dst">48329#in:1</P>
+    <P Name="ZOrder">3525</P>
+    <P Name="Src">48340#out:1</P>
+    <P Name="Dst">48334#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3526</P>
+    <P Name="Src">48334#out:1</P>
+    <P Name="Dst">48338#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3527</P>
+    <P Name="Src">48312#out:1</P>
+    <P Name="Dst">48334#in:3</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3528</P>
+    <P Name="Src">48333#out:1</P>
+    <P Name="Dst">48334#in:2</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2051</P>
+    <P Name="ZOrder">3529</P>
     <P Name="Src">48281#lconn:2</P>
     <P Name="Points">[0, -130]</P>
     <P Name="Dst">48330#rconn:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2052</P>
-    <P Name="Src">48333#out:1</P>
-    <P Name="Dst">48334#in:2</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">2053</P>
-    <P Name="Src">48312#out:1</P>
-    <P Name="Dst">48334#in:3</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">2054</P>
-    <P Name="Src">48334#out:1</P>
-    <P Name="Dst">48338#in:1</P>
-  </Line>
-  <Line>
-    <P Name="ZOrder">2055</P>
-    <P Name="Src">48340#out:1</P>
-    <P Name="Dst">48334#in:4</P>
+    <P Name="ZOrder">3530</P>
+    <P Name="Src">48316#out:1</P>
+    <P Name="Points">[0, -17]</P>
+    <P Name="Dst">48329#in:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2056</P>
-    <P Name="Src">48366#lconn:1</P>
+    <P Name="ZOrder">3531</P>
+    <P Name="Src">48316#lconn:1</P>
     <P Name="Points">[-30, 0]</P>
-    <P Name="Dst">48281#rconn:4</P>
+    <P Name="Dst">48281#lconn:3</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">2057</P>
-    <P Name="Src">48366#rconn:1</P>
-    <P Name="Dst">48280#lconn:1</P>
+    <P Name="ZOrder">3532</P>
+    <P Name="Src">48316#rconn:1</P>
+    <P Name="Dst">48291#lconn:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">2058</P>
-    <P Name="Src">48368#out:1</P>
-    <P Name="Dst">48334#in:1</P>
+    <P Name="ZOrder">3533</P>
+    <P Name="Src">48298#out:1</P>
+    <P Name="Points">[0, -13]</P>
+    <P Name="Dst">48311#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3534</P>
+    <P Name="Src">48298#rconn:1</P>
+    <P Name="Points">[44, 0]</P>
+    <P Name="Dst">48281#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3535</P>
+    <P Name="Src">48298#lconn:1</P>
+    <P Name="Dst">2#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3536</P>
+    <P Name="Src">48291#rconn:1</P>
+    <P Name="Dst">48292#rconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3537</P>
+    <P Name="Src">48290#lconn:1</P>
+    <P Name="Dst">48289#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3538</P>
+    <P Name="Src">48282#rconn:1</P>
+    <P Name="Points">[30, 0]</P>
+    <P Name="Dst">48288#lconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3539</P>
+    <P Name="Src">48284#out:1</P>
+    <P Name="Dst">48339#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3540</P>
+    <P Name="Src">48282#rconn:2</P>
+    <P Name="Dst">48284#lconn:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">3541</P>
+    <P Name="Src">22#rconn:1</P>
+    <P Name="Dst">2#rconn:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3544</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Points">[21, 0]</P>
+    <Branch>
+      <P Name="ZOrder">3543</P>
+      <P Name="Points">[0, 25]</P>
+      <P Name="Dst">48367#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">3542</P>
+      <P Name="Dst">48330#in:1</P>
+    </Branch>
   </Line>
   <Annotation SID="2188">
     <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -3197,7 +3141,7 @@ p, li { white-space: pre-wrap; }
     <P Name="Position">[517, 529, 744, 545]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-2</P>
+    <P Name="ZOrder">-66</P>
   </Annotation>
 </System>
 
@@ -3219,7 +3163,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Object PropName="ExplorerBarInfo" ObjectID="4" ClassName="Simulink.ExplorerBarInfo">
         <P Name="Visible" Class="logical">1</P>
       </Object>
-      <Array PropName="EditorsInfo" Type="Simulink.EditorInfo" Dimension="1*6">
+      <Array PropName="EditorsInfo" Type="Simulink.EditorInfo" Dimension="1*7">
         <Object ObjectID="5">
           <P Name="IsActive" Class="logical">1</P>
           <P Name="IsTabbed" Class="logical">1</P>
@@ -3234,13 +3178,33 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">48334</P>
+          <P Name="Extents" Class="double">[985.0, 482.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[-331.984375, -55.25]</P>
+          <P Name="SceneRectInView" Class="double">[-331.984375, -55.25, 985.0, 482.0]</P>
+        </Object>
+        <Object ObjectID="7">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
+          <P Name="LoadSaveID" Class="char">48371</P>
+          <P Name="Extents" Class="double">[985.0, 482.0]</P>
+          <P Name="ZoomFactor" Class="double">1.0</P>
+          <P Name="Offset" Class="double">[-139.5, -79.0]</P>
+          <P Name="SceneRectInView" Class="double">[-139.5, -79.0, 985.0, 482.0]</P>
+        </Object>
+        <Object ObjectID="8">
+          <P Name="IsActive" Class="logical">0</P>
+          <P Name="IsTabbed" Class="logical">0</P>
+          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">48330</P>
           <P Name="Extents" Class="double">[985.0, 482.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[-450.0, -101.0]</P>
           <P Name="SceneRectInView" Class="double">[-450.0, -101.0, 985.0, 482.0]</P>
         </Object>
-        <Object ObjectID="7">
+        <Object ObjectID="9">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
@@ -3250,7 +3214,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[-250.0, -141.0]</P>
           <P Name="SceneRectInView" Class="double">[-250.0, -141.0, 985.0, 482.0]</P>
         </Object>
-        <Object ObjectID="8">
+        <Object ObjectID="10">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
@@ -3260,17 +3224,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Offset" Class="double">[-239.1953125, -79.4063375]</P>
           <P Name="SceneRectInView" Class="double">[-239.1953125, -79.4063375, 985.0, 482.0]</P>
         </Object>
-        <Object ObjectID="9">
-          <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">0</P>
-          <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
-          <P Name="LoadSaveID" Class="char">48334</P>
-          <P Name="Extents" Class="double">[985.0, 483.0]</P>
-          <P Name="ZoomFactor" Class="double">1.0</P>
-          <P Name="Offset" Class="double">[-331.984375, -70.5]</P>
-          <P Name="SceneRectInView" Class="double">[-331.984375, -70.5, 985.0, 483.0]</P>
-        </Object>
-        <Object ObjectID="10">
+        <Object ObjectID="11">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
@@ -3282,7 +3236,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
         </Object>
       </Array>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
-        <Object ObjectID="11">
+        <Object ObjectID="12">
           <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
           <P Name="ID" Class="char">Property Inspector</P>
           <P Name="Visible" Class="logical">0</P>
@@ -3294,7 +3248,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Height" Class="int32">480</P>
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
-        <Object ObjectID="12">
+        <Object ObjectID="13">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">0</P>
@@ -3312,7 +3266,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">3c062bd7-51a1-4e99-ba3e-7d230cab410b</P>
     </Object>
-    <P Name="BDUuid" Class="char">7ffe31b8-1598-452b-9ee5-605c9ba0f8eb</P>
+    <P Name="BDUuid" Class="char">73137fb1-c2c9-40b1-8e8d-683fe8cc78a8</P>
   </Object>
 </WindowsInfo>
 

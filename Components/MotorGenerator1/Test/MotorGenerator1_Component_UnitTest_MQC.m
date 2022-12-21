@@ -43,7 +43,7 @@ end
 function MQC_run_setup(~)
   close all
   bdclose all
-  MotorGenerator1_Component_harness_params
+  MotorGenerator1_Component_harness_setup
   close all
   bdclose all
 end

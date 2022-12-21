@@ -23,10 +23,10 @@ motorGenerator1.dampSpringFriction_Nm_per_rpm = 100;
 % motorGenerator1.rotorInertia_kg_m2 = 0.001;
 % motorGenerator1.kDamp_Nm_per_radPerS = 0.005;
 
-smoothing.mg1_dampSpringVelTol_rpm = 0.1;
+smoothing.MG1_dampSpringVelTol_rpm = 0.1;
 
 %% Initial conditions
 
-initial.motorGenerator1Temperature_degC = 20;
+initial.MG1_Temperature_degC = 20;
 
-initial.AirTemp_degC = 20;
+initial.MG1_AirTemp_degC = 20;

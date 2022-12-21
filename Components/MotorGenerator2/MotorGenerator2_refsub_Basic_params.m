@@ -21,10 +21,10 @@ motorGenerator2.thermalMass_J_perK = 5000;
 motorGenerator2.dampSpringStiffness_Nm_per_rad = 10000;
 motorGenerator2.dampSpringFriction_Nm_per_rpm = 100;
 
-smoothing.mg2_dampSpringVelTol_rpm = 0.1;
+smoothing.MG2_dampSpringVelTol_rpm = 0.1;
 
 %% Initial conditions
 
-initial.MG2_Temperature_degC = 20;
+initial.MG2_Temperature_K = 273.15 + 20;
 
-initial.MG2_AirTemp_degC = 20;
+initial.MG2_AirTemp_K = 273.15 + 20;

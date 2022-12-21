@@ -18,10 +18,10 @@ motorDriveUnit.thermalMass_J_perK = 5000;
 motorDriveUnit.dampSpringStiffness_Nm_per_rad = 10000;
 motorDriveUnit.dampSpringFriction_Nm_per_rpm = 100;
 
-smoothing.mdu_dampSpringVelTol_rpm = 0.1;
+smoothing.MDU_dampSpringVelTol_rpm = 0.1;
 
 %% Initial conditions
 
-initial.motorDriveUnitTemperature_degC = 20;
+initial.MDU_Temperature_K = 273.15 + 20;
 
-initial.AirTemp_degC = 20;
+initial.MDU_AirTemp_K = 273.15 + 20;

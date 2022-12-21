@@ -40,8 +40,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2022-12-06T14:53:49Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-13T13:16:55Z</dcterms:modified>
-  <cp:revision>1.6</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-20T13:59:42Z</dcterms:modified>
+  <cp:revision>1.7</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -107,7 +107,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.6&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.7&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -886,8 +886,8 @@ __MWOPC_PART_BEGIN__ /simulink/hdlParams.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="e35cd169-c22d-4f91-8177-a652ea6877db">
-    <Interface type="Interface" uuid="eb0b1fd0-ec2c-4729-acae-663300d5158c"/>
+  <System type="System" uuid="4931eeb5-21e5-4ec0-b396-26def9fc4d10">
+    <Interface type="Interface" uuid="9a505610-18e6-466c-9984-ee12a7ca17c9"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
@@ -905,28 +905,17 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="ReferencedSubsystem">MotorDriveUnit_refsub_Basic</P>
     <P Name="PortSchema">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;sides&quot;:[{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;In1&quot;,&quot;LConn1&quot;]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;02d16a10-ccfb-4288-a5a1-1144159c5ca2&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[&quot;Out1&quot;,&quot;LConn2&quot;],&quot;side&quot;:&quot;RIGHT&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;b2601986-efe5-4f5e-bd54-3f5cb03e9252&quot;},{&quot;content&quot;:{&quot;connectorIds&quot;:[],&quot;side&quot;:&quot;TOP&quot;},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedRectSide&quot;,&quot;uuid&quot;:&quot;248805f0-4416-4f49-8b0b-c2d3fe77e89e&quot;}]},&quot;type&quot;:&quot;ConnectorPlacement.EquallySpacedConnector&quot;,&quot;uuid&quot;:&quot;35449164-35fe-478e-9b2e-66e853caa6da&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/Connector/R2020b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
     <P Name="torque_max">motorGenerator2.trqMax_Nm</P>
-    <P Name="torque_max_unit">N*m</P>
-    <P Name="power_max">motorGenerator2.powerMax_kW</P>
-    <P Name="power_max_unit">kW</P>
+    <P Name="Value">motorGenerator2.powerMax_kW</P>
     <P Name="Tc">motorGenerator2.responseTime_s</P>
-    <P Name="Tc_unit">s</P>
     <P Name="eff">motorGenerator2.efficiency_pct</P>
     <P Name="w_eff">motorGenerator2.spd_eff_rpm</P>
-    <P Name="w_eff_unit">rpm</P>
     <P Name="T_eff">motorGenerator2.trq_eff_Nm</P>
-    <P Name="T_eff_unit">N*m</P>
     <P Name="thermal_mass">motorGenerator2.thermalMass_J_perK</P>
-    <P Name="thermal_mass_unit">J/K</P>
-    <P Name="temperature">initial.MG2_Temperature_degC</P>
-    <P Name="temperature_unit">degC</P>
+    <P Name="temperature">initial.MG2_Temperature_K</P>
     <P Name="k">motorGenerator2.dampSpringStiffness_Nm_per_rad</P>
-    <P Name="k_unit">N*m/rad</P>
     <P Name="mu_visc">motorGenerator2.dampSpringFriction_Nm_per_rpm</P>
-    <P Name="mu_visc_unit">m*N/rpm</P>
-    <P Name="w_tol">smoothing.mg2_dampSpringVelTol_rpm</P>
-    <P Name="w_tol_unit">rpm</P>
-    <P Name="T">initial.MG2_AirTemp_degC</P>
-    <P Name="T_unit">degC</P>
+    <P Name="w_tol">smoothing.MG2_dampSpringVelTol_rpm</P>
+    <P Name="T">initial.MG2_AirTemp_K</P>
   </Block>
 </System>
 
