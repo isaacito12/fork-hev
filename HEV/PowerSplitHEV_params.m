@@ -6,6 +6,7 @@
 %% Load bus defition
 
 defineBus_HighVoltage
+defineBus_Rotational
 
 %% Ambient
 % These parameters are used when thermal model is enabled
