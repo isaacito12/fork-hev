@@ -13,7 +13,7 @@ end
 logsout = nvpair.Dataset;
 parent = nvpair.PlotParent;
 
-vals = getValuesFromLogsout(logsout.get("Vehicle Speed km/h"));
+vals = getValuesFromLogsout(logsout.get("Vehicle speed kph"));
 x_end = vals.Time(end);
 
 %% Plot
@@ -24,7 +24,7 @@ tl = tiledlayout(parent, 3, 2, ...
       'TileSpacing','compact', 'Padding','compact' );
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Vehicle Speed km/h"));
+vals = getValuesFromLogsout(logsout.get("Vehicle speed kph"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 vals = getValuesFromLogsout(logsout.get("Vehicle Speed Reference (km/hr)"));
@@ -35,7 +35,7 @@ title(ax, "Vehicle Speed & Reference (km/hr)")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Road Incline"));
+vals = getValuesFromLogsout(logsout.get("Incline"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 vals = getValuesFromLogsout(logsout.get("Road Grade"));
@@ -46,7 +46,7 @@ title(ax, "Road Incline (deg) & Road Grade (%)")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Vehicle G Force"));
+vals = getValuesFromLogsout(logsout.get("Vehicle G force"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])
@@ -64,7 +64,7 @@ title(ax, "Brake On Off")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Axle Speed"));
+vals = getValuesFromLogsout(logsout.get("Axle speed"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 vals = logsout.get("Axle Speed Reference").Values;

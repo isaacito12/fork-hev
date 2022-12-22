@@ -13,7 +13,7 @@ end
 logsout = nvpairs.Dataset;
 parent = nvpairs.PlotParent;
 
-vals = getValuesFromLogsout(logsout.get("Vehicle Speed km/h"));
+vals = getValuesFromLogsout(logsout.get("Vehicle speed kph"));
 x_end = vals.Time(end);
 
 %% Plot
@@ -24,7 +24,7 @@ tl = tiledlayout(parent, 3, 3, ...
       'TileSpacing','compact', 'Padding','compact' );
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Vehicle Speed km/h"));
+vals = getValuesFromLogsout(logsout.get("Vehicle speed kph"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])
@@ -42,7 +42,7 @@ title(ax, "MG2 Speed (rpm)")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("MG2 Mechanical Power"));
+vals = getValuesFromLogsout(logsout.get("MG2 Mech Power"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])
@@ -52,7 +52,7 @@ hold off
 
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Vehicle G Force"));
+vals = getValuesFromLogsout(logsout.get("G Force"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])
@@ -70,7 +70,7 @@ title(ax, "MG1 Speed (rpm)")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("MG1 Mechanical Power"));
+vals = getValuesFromLogsout(logsout.get("MG1 Mech Power"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])
@@ -89,7 +89,7 @@ title(ax, "HV Battery SOC (%)")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Engine Speed"));
+vals = getValuesFromLogsout(logsout.get("Eng Speed"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])

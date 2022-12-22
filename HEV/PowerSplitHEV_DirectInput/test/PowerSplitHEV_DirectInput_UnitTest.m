@@ -209,13 +209,13 @@ function runLiveScript_DirectInput_MG2Drive_StartEng_2(~)
   bdclose all
 end
 
-function runLiveScript_DirectInput_Parked_EngChgBatt(~)
-  close all
-  bdclose all
-  PowerSplitHEV_DI_testcase_Parked_EngineChargeBattery
-  close all
-  bdclose all
-end
+% function runLiveScript_DirectInput_Parked_EngChgBatt(~)
+%   close all
+%   bdclose all
+%   PowerSplitHEV_DI_testcase_Parked_EngineChargeBattery
+%   close all
+%   bdclose all
+% end
 
 function runLiveScript_DirectInput_PowerSplitDrive(~)
   close all

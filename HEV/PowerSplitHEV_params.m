@@ -3,15 +3,14 @@
 
 % Copyright 2021-2022 The MathWorks, Inc.
 
-%% Load bus defition
+%% Load bus defitions
 
 defineBus_HighVoltage
 defineBus_Rotational
 
 %% Ambient
-% These parameters are used when thermal model is enabled
-% somewhere in the model, such as in the Battery component.
-% These are not used by the Basic version of the referenced subsystems.
+% These parameters are used when thermal model is enabled in the model,
+% such as in the Battery component.
 
 ambient.mass_t = 10000;  % tonnes
 ambient.SpecificHeat_J_per_Kkg = 1000;
@@ -113,14 +112,21 @@ motorGenerator2.responseTime_s = 0.05;
 motorGenerator2.efficiency_pct = 98;
 motorGenerator2.spd_eff_rpm = 2000;
 motorGenerator2.trq_eff_Nm = 50;
+
+motorGenerator2.thermalMass_J_perK = 5000;
+
 motorGenerator2.iron_loss_to_nominal_ratio = 0.1;
 motorGenerator2.elecLossConst_W = 30;
 motorGenerator2.rotorInertia_kg_m2 = 0.002;
 motorGenerator2.kDamp_Nm_per_radPerS = 0.005;
+
 motorGenerator2.dampSpringStiffness_Nm_per_rad = 10000;
 motorGenerator2.dampSpringFriction_Nm_per_rpm = 100;
 
-smoothing.mg2_dampSpringVelTol_rpm = 0.1;
+smoothing.MG2_dampSpringVelTol_rpm = 0.1;
+
+initial.MG2_Temperature_K = 273.15 + 20;
+initial.MG2_AirTemp_K = 273.15 + 20;
 
 initial.motorGenerator2_speed_rpm = 0;
 
@@ -133,14 +139,21 @@ motorGenerator1.responseTime_s = 0.05;
 motorGenerator1.efficiency_pct = 95;
 motorGenerator1.spd_eff_rpm = 2000;
 motorGenerator1.trq_eff_Nm = 20;
+
+motorGenerator1.thermalMass_J_perK = 5000;
+
 motorGenerator1.iron_loss_to_nominal_ratio = 0.1;
 motorGenerator1.elecLossConst_W = 20;
 motorGenerator1.rotorInertia_kg_m2 = 0.002;
 motorGenerator1.kDamp_Nm_per_radPerS = 0.005;
+
 motorGenerator1.dampSpringStiffness_Nm_per_rad = 10000;
 motorGenerator1.dampSpringFriction_Nm_per_rpm = 100;
 
-smoothing.mg1_dampSpringVelTol_rpm = 0.1;
+smoothing.MG1_dampSpringVelTol_rpm = 0.1;
+
+initial.MG1_Temperature_K = 273.15 + 20;
+initial.MG1_AirTemp_K = 273.15 + 20;
 
 initial.motorGenerator1_speed_rpm = 0;
 
@@ -159,6 +172,7 @@ engine.lag_s = 0.1;
 engine.inertia_kg_m2 = 0.02;
 
 engine.damping_Nm_per_rpm = 0.02;
+
 engine.dampSpringStiffness_Nm_per_rad = 10000;
 engine.dampSpringFriction_Nm_per_rpm = 100;
 

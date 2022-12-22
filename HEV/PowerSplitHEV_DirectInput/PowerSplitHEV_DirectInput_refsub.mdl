@@ -1,9 +1,9 @@
 # MathWorks OPC Text Package
 Model {
-  Version  10.5
-  Description "Simulink model saved in R2022a"
+  Version  10.6
+  Description "Simulink model saved in R2022b"
 }
-__MWOPC_PACKAGE_BEGIN__ R2022a
+__MWOPC_PACKAGE_BEGIN__ R2022b
 __MWOPC_PART_BEGIN__ /[Content_Types].xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
@@ -19,8 +19,6 @@ __MWOPC_PART_BEGIN__ /[Content_Types].xml
   <Override ContentType="application/vnd.mathworks.simulink.mf0+xml" PartName="/simulink/modelDictionary.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.modelMask+xml" PartName="/simulink/modelMask.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.pluginParameters+xml" PartName="/simulink/plugins/SimscapeModelParametersPlugin.xml"/>
-  <Override ContentType="application/vnd.mathworks.simulink.ScheduleCore+xml" PartName="/simulink/ScheduleCore.xml"/>
-  <Override ContentType="application/vnd.mathworks.simulink.ScheduleEditor+xml" PartName="/simulink/ScheduleEditor.xml"/>
   <Override ContentType="application/vnd.mathworks.stateflow.machine+xml" PartName="/simulink/stateflow/machine.xml"/>
   <Override ContentType="application/vnd.mathworks.simulink.blockDiagram+xml" PartName="/simulink/windowsInfo.xml"/>
 </Types>
@@ -46,9 +44,9 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2020-08-04T16:28:06Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-05-14T12:18:21Z</dcterms:modified>
-  <cp:revision>5.3</cp:revision>
-  <cp:version>R2022a</cp:version>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-22T15:11:08Z</dcterms:modified>
+  <cp:revision>6.1</cp:revision>
+  <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
@@ -56,7 +54,7 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2012/coreProperties">
   <contentType>application/vnd.mathworks.simulink.model</contentType>
   <contentTypeFriendlyName>Simulink Model</contentTypeFriendlyName>
-  <matlabRelease>R2022a</matlabRelease>
+  <matlabRelease>R2022b</matlabRelease>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
@@ -67,20 +65,18 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Version information for MathWorks R2022a Release -->
+<!-- Version information for MathWorks R2022b Release -->
 <MathWorks_version_info>
-  <version>9.12.0.1884302</version>
-  <release>R2022a</release>
-  <description></description>
-  <date>Feb 16 2022</date>
-  <checksum>915613965</checksum>
+  <version>9.13.0.2143701</version>
+  <release>R2022b</release>
+  <description>Update 3</description>
+  <date>Dec 08 2022</date>
+  <checksum>3517180572</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-  <Relationship Id="ScheduleCore" Target="ScheduleCore.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleCore"/>
-  <Relationship Id="ScheduleEditor" Target="ScheduleEditor.xml" Type="http://schemas.mathworks.com/simulink/2013/relationships/ScheduleEditor"/>
   <Relationship Id="SimscapeModelParametersPlugin" Target="plugins/SimscapeModelParametersPlugin.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/pluginParameters"/>
   <Relationship Id="graphicalInterface" Target="graphicalInterface.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/graphicalInterface"/>
   <Relationship Id="stateflow_machine" Target="stateflow/machine.xml" Type="http://schemas.mathworks.com/simulinkModel/2014/relationships/stateflowMachine"/>
@@ -111,12 +107,11 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <ModelInformation Version="1.0">
   <Subsystem>
     <P Name="ModelUUID">bc617e7f-b2b5-4666-8b21-0e38660a7b38</P>
-    <P Name="LastSavedArchitecture">win64</P>
+    <P Name="LastSavedArchitecture">glnxa64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">574435088</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.3&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.1&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ScheduleConnectors">off</P>
@@ -135,7 +130,268 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
         </Array>
       </Object>
       <Object PropName="InstrumentedSignals" ObjectID="2" ClassName="Simulink.HMI.InstrumentedSignals">
-        <P Name="Persistence" Class="struct">[]</P>
+        <Array PropName="Persistence" Type="Struct" Dimension="13*1">
+          <MATStruct>
+            <Field Name="UUID" Class="char">adfa09ae-6d12-4b3d-a3e7-87e4a59b4ee3</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/Constant</Field>
+            <Field Name="SID_" Class="char">4541</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">e139476a-fbe1-430f-a223-1ff1789bc8f4</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/Constant1</Field>
+            <Field Name="SID_" Class="char">4543</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">33d26eef-6880-4875-ac74-83b2fa64887a</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/Constant2</Field>
+            <Field Name="SID_" Class="char">4544</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">8ea6f33a-7bf0-48f0-bf8d-94b83050cb2b</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/Constant3</Field>
+            <Field Name="SID_" Class="char">4546</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">7361993f-b0e0-4c49-af09-213880d5e22e</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/Constant4</Field>
+            <Field Name="SID_" Class="char">4548</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">02292a14-0d98-4e91-ae12-1e6c3e51892d</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From</Field>
+            <Field Name="SID_" Class="char">3353</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">97254885-ace3-4da1-9ed4-3b375c88e3ff</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From1</Field>
+            <Field Name="SID_" Class="char">3354</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">71222a6e-5258-4da9-8e5d-9c153f36c4d9</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From2</Field>
+            <Field Name="SID_" Class="char">3355</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">73b1df4d-c0c3-42bd-a6c0-bdf255a1dadb</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From3</Field>
+            <Field Name="SID_" Class="char">3356</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">b8acc011-f4c5-4d97-a0ca-b7b6d28596ab</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From4</Field>
+            <Field Name="SID_" Class="char">3357</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">679309a7-fb24-403e-997d-080c71ad8c4e</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From5</Field>
+            <Field Name="SID_" Class="char">3490</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">cef06c47-1440-4677-b7b9-14fc926c0463</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From6</Field>
+            <Field Name="SID_" Class="char">3491</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+          <MATStruct>
+            <Field Name="UUID" Class="char">2818c72d-4b9f-4c1d-afa0-51f8f5849487</Field>
+            <Field Name="BlockPath_" Class="char">Measurement/From7</Field>
+            <Field Name="SID_" Class="char">3497</Field>
+            <Field Name="SubPath_" Class="char"/>
+            <Field Name="OutputPortIndex_" Class="double">1.0</Field>
+            <Field Name="LogicalPortIndex_" Class="double">0.0</Field>
+            <Field Name="SignalName_" Class="char"/>
+            <Field Name="SubSysPath_" Class="char"/>
+            <Field Name="Decimation_" Class="double">1.0</Field>
+            <Field Name="MaxPoints_" Class="double">0.0</Field>
+            <Field Name="TargetBufferedStreaming_" Class="double">0.0</Field>
+            <Field Name="IsFrameBased_" Class="double">0.0</Field>
+            <Field Name="HideInSDI_" Class="double">0.0</Field>
+            <Field Name="DomainType_" Class="char"/>
+            <Array PropName="DomainParams_" Type="Struct" Dimension="1*1">
+              <MATStruct/>
+            </Array>
+            <Field Name="VisualType_" Class="char"/>
+          </MATStruct>
+        </Array>
       </Object>
     </SimulationSettings>
     <EngineSettings>
@@ -156,11 +412,11 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
 <?xml version="1.0" encoding="utf-8"?>
 <ConfigSet>
-  <Object Version="22.0.0" ClassName="Simulink.ConfigSet">
+  <Object Version="22.1.0" ClassName="Simulink.ConfigSet">
     <P Name="DisabledProps" Class="double">[]</P>
     <P Name="Description"/>
     <Array PropName="Components" Type="Handle" Dimension="1*10">
-      <Object ObjectID="2" Version="22.0.0" ClassName="Simulink.SolverCC">
+      <Object ObjectID="2" Version="22.1.0" ClassName="Simulink.SolverCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -205,7 +461,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="MaxZcPerStep">2</P>
         <P Name="MaxZcBracketingIterations">10</P>
       </Object>
-      <Object ObjectID="3" Version="22.0.0" ClassName="Simulink.DataIOCC">
+      <Object ObjectID="3" Version="22.1.0" ClassName="Simulink.DataIOCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -246,7 +502,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="LoggingFileName">out.mat</P>
         <P Name="LoggingIntervals">[-inf, inf]</P>
       </Object>
-      <Object ObjectID="4" Version="22.0.0" ClassName="Simulink.OptimizationCC">
+      <Object ObjectID="4" Version="22.1.0" ClassName="Simulink.OptimizationCC">
         <Array PropName="DisabledProps" Type="Cell" Dimension="1*9">
           <Cell Class="char">BooleansAsBitfields</Cell>
           <Cell Class="char">PassReuseOutputArgsAs</Cell>
@@ -273,6 +529,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="InlineInvariantSignals">off</P>
         <P Name="OptimizeBlockIOStorage">on</P>
         <P Name="BufferReuse">on</P>
+        <P Name="ReuseModelBlockBuffer">off</P>
         <P Name="EnhancedBackFolding">off</P>
         <P Name="CachingGlobalReferences">off</P>
         <P Name="GlobalBufferReuse">on</P>
@@ -316,7 +573,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DenormalBehavior">GradualUnderflow</P>
         <P Name="EfficientTunableParamExpr">off</P>
       </Object>
-      <Object ObjectID="5" Version="22.0.0" ClassName="Simulink.DebuggingCC">
+      <Object ObjectID="5" Version="22.1.0" ClassName="Simulink.DebuggingCC">
         <Array PropName="DisabledProps" Type="Cell" Dimension="1*1">
           <Cell Class="char">UseOnlyExistingSharedCode</Cell>
         </Array>
@@ -395,7 +652,6 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="StateNameClashWarn">none</P>
         <P Name="OperatingPointInterfaceChecksumMismatchMsg">warning</P>
         <P Name="NonCurrentReleaseOperatingPointMsg">error</P>
-        <P Name="ChecksumConsistencyForSSReuse">none</P>
         <P Name="PregeneratedLibrarySubsystemCodeDiagnostic">warning</P>
         <P Name="MatchCodeGenerationContextForUpdateDiagram">none</P>
         <P Name="InitInArrayFormatMsg">warning</P>
@@ -432,8 +688,10 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DebugExecutionForFMUViaOutOfProcess">off</P>
         <P Name="ArithmeticOperatorsInVariantConditions">error</P>
         <P Name="VariantConditionMismatch">none</P>
+        <P Name="InheritVATfromSVC">warning</P>
+        <P Name="VariantConfigNotUsedByTopModel">warning</P>
       </Object>
-      <Object ObjectID="6" Version="22.0.0" ClassName="Simulink.HardwareCC">
+      <Object ObjectID="6" Version="22.1.0" ClassName="Simulink.HardwareCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -481,7 +739,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="UseSimulinkCoderFeatures">on</P>
         <P Name="HardwareBoardFeatureSet">EmbeddedCoderHSP</P>
       </Object>
-      <Object ObjectID="7" Version="22.0.0" ClassName="Simulink.ModelReferenceCC">
+      <Object ObjectID="7" Version="22.1.0" ClassName="Simulink.ModelReferenceCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -500,7 +758,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SupportModelReferenceSimTargetCustomCode">off</P>
         <P Name="UseModelRefSolver">off</P>
       </Object>
-      <Object ObjectID="8" Version="22.0.0" ClassName="Simulink.SFSimCC">
+      <Object ObjectID="8" Version="22.1.0" ClassName="Simulink.SFSimCC">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
@@ -547,8 +805,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SimDLTargetLibrary">mkl-dnn</P>
         <P Name="SimDLAutoTuning">on</P>
       </Object>
-      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="22.0.0" ClassName="Simulink.RTWCC">
-        <Array PropName="DisabledProps" Type="Cell" Dimension="1*17">
+      <Object BackupClass="Simulink.RTWCC" ObjectID="9" Version="22.1.0" ClassName="Simulink.RTWCC">
+        <Array PropName="DisabledProps" Type="Cell" Dimension="1*16">
           <Cell Class="char">IncludeHyperlinkInReport</Cell>
           <Cell Class="char">GenerateTraceInfo</Cell>
           <Cell Class="char">GenerateTraceReport</Cell>
@@ -562,13 +820,13 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
           <Cell Class="char">GenerateMissedCodeReplacementReport</Cell>
           <Cell Class="char">GenerateErtSFunction</Cell>
           <Cell Class="char">CreateSILPILBlock</Cell>
-          <Cell Class="char">CodeExecutionProfiling</Cell>
-          <Cell Class="char">CodeProfilingSaveOptions</Cell>
           <Cell Class="char">CodeProfilingInstrumentation</Cell>
           <Cell Class="char">CodeStackProfiling</Cell>
+          <Cell Class="char">EmbeddedCoderDictionary</Cell>
         </Array>
         <P Name="Description"/>
         <P Name="SystemTargetFile">grt.tlc</P>
+        <P Name="EmbeddedCoderDictionary"/>
         <P Name="HardwareBoard">None</P>
         <P Name="ShowCustomHardwareApp">off</P>
         <P Name="ShowEmbeddedHardwareApp">off</P>
@@ -651,7 +909,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="DLArmComputeVersion">19.05</P>
         <P Name="DLArmComputeArch">unspecified</P>
         <Array PropName="Components" Type="Handle" Dimension="1*2">
-          <Object ObjectID="10" Version="22.0.0" ClassName="Simulink.CodeAppCC">
+          <Object ObjectID="10" Version="22.1.0" ClassName="Simulink.CodeAppCC">
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*28">
               <Cell Class="char">IgnoreCustomStorageClasses</Cell>
               <Cell Class="char">IgnoreTestpoints</Cell>
@@ -735,7 +993,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
             <P Name="ReservedNameArray" Class="double">[]</P>
             <P Name="EnumMemberNameClash">error</P>
           </Object>
-          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="22.0.0" ClassName="Simulink.GRTTargetCC">
+          <Object BackupClass="Simulink.TargetCC" ObjectID="11" Version="22.1.0" ClassName="Simulink.GRTTargetCC">
             <Array PropName="DisabledProps" Type="Cell" Dimension="1*19">
               <Cell Class="char">IncludeMdlTerminateFcn</Cell>
               <Cell Class="char">SuppressErrorStatus</Cell>
@@ -826,6 +1084,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
             <P Name="ExtMode">off</P>
             <P Name="ExtModeStaticAlloc">off</P>
             <P Name="ExtModeTesting">off</P>
+            <P Name="ExtModeAutomaticAllocSize">on</P>
+            <P Name="ExtModeMaxTrigDuration">10</P>
             <P Name="ExtModeStaticAllocSize">1000000</P>
             <P Name="ExtModeTransport">0</P>
             <P Name="ExtModeMexFile">ext_comm</P>
@@ -840,7 +1100,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
           </Object>
         </Array>
       </Object>
-      <Object ObjectID="12" Version="22.0.0" ClassName="SlCovCC.ConfigComp">
+      <Object ObjectID="12" Version="22.1.0" ClassName="SlCovCC.ConfigComp">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description">Simulink Coverage Configuration Component</P>
         <P Name="Components" Class="double">[]</P>
@@ -878,7 +1138,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="CovMcdcMode">Masking</P>
         <P Name="CovExcludeInactiveVariants">off</P>
       </Object>
-      <Object ObjectID="13" Version="22.0.0" ClassName="hdlcoderui.hdlcc">
+      <Object ObjectID="13" Version="22.1.0" ClassName="hdlcoderui.hdlcc">
         <P Name="DisabledProps" Class="double">[]</P>
         <P Name="Description">HDL Coder custom configuration component</P>
         <P Name="Components" Class="double">[]</P>
@@ -1055,9 +1315,9 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="a1a14f96-bee2-4c78-bd80-622c1a7a9f35">
-    <Interface type="Interface" uuid="d0432a6f-7366-40ce-a4d8-de36e92cd417"/>
+<MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
+  <System type="System" uuid="0746548d-b666-4cb8-9d2c-782395fd6581">
+    <Interface type="Interface" uuid="ba5a58ea-37e3-4b12-8157-9342d05bb938"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
@@ -1146,43 +1406,11 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
   <P Name="SimscapeDaeAutoSolver">ode23t</P>
 </SimscapeModelParametersPlugin>
 
-__MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="8f45db27-e3f8-4a0c-a7f1-71eb8e82ebfd">
-    <editorState type="sltp.mm.core.EditorState" uuid="434b8890-3c8a-4ca0-9000-1091625f456d">
-      <panelState type="sltp.mm.core.EditorPanelState" uuid="fe5a9184-a06a-4645-8f96-80ace6dc2efc"/>
-    </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="43599f4b-083a-4611-8215-d43fb54fe661">
-      <context type="sltp.mm.core.Context" uuid="8f45db27-e3f8-4a0c-a7f1-71eb8e82ebfd"/>
-      <explicit>false</explicit>
-      <name>Default</name>
-      <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="78b9e2b8-a63d-4249-b8d7-b8dc26694b64"/>
-    </rootTask>
-  </sltp.mm.core.Context>
-</sltp_graph>
-__MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
-<?xml version="1.0" encoding="UTF-8"?>
-<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2022a_202109161050">
-  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="b9329f54-a1d9-4415-8d8b-616e2e1e3d21">
-    <syntaxElement type="sltp.mm.syntax.Graph" uuid="0f2a5623-e2d9-4c55-8357-53235618eb83"/>
-    <title>Default</title>
-    <type>graph.Graph</type>
-  </diagram.editor.model.Diagram>
-  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="eb8f8836-4bb2-4b45-b492-d17ba93f9c9c">
-    <rootGraph type="sltp.mm.syntax.Graph" uuid="0f2a5623-e2d9-4c55-8357-53235618eb83">
-      <priorityDirection>HighNumberFirst</priorityDirection>
-      <title>Default</title>
-      <diagramElement type="diagram.editor.model.Diagram" uuid="b9329f54-a1d9-4415-8d8b-616e2e1e3d21"/>
-    </rootGraph>
-  </sltp.mm.syntax.Context>
-</sltp_editor>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/machine.xml
 <?xml version="1.0" encoding="utf-8"?>
 <Stateflow>
   <machine id="1">
-    <P Name="sfVersion">80000049</P>
+    <P Name="sfVersion">80000051</P>
     <Children>
       <target id="2" name="sfun">
         <P Name="description">Default Simulink S-Function Target.</P>
@@ -1201,199 +1429,189 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_3329.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[87, 19, 1213, 793]</P>
-  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
-  <P Name="SetExecutionDomain">off</P>
-  <P Name="ExecutionDomainType">Deduce</P>
-  <P Name="SimulinkSubDomain">Simulink</P>
   <Block BlockType="Inport" Name="Info" SID="3330">
     <P Name="Position">[-265, -27, -235, -13]</P>
     <P Name="ZOrder">-1</P>
   </Block>
   <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="3347">
-    <P Name="Ports">[1, 8]</P>
+    <PortCounts in="1" out="8"/>
     <P Name="Position">[-200, -120, -195, 75]</P>
     <P Name="ZOrder">2</P>
-    <P Name="OutputSignals">RoadGrade,BrakeForce,Mg2TrqCmd,Mg1TrqCmd,EngTrqCmd,VehSpdRef,SOC,ChgLvl</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">&lt;RoadGrade&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">2</P>
-      <P Name="Name">&lt;BrakeForce&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">3</P>
-      <P Name="Name">&lt;Mg2TrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">4</P>
-      <P Name="Name">&lt;Mg1TrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">5</P>
-      <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">6</P>
-      <P Name="Name">&lt;VehSpdRef&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">7</P>
-      <P Name="Name">&lt;SOC&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">8</P>
-      <P Name="Name">&lt;ChgLvl&gt;</P>
-    </Port>
+    <P Name="OutputSignals">RoadGrade,BrakeForce,MG2TrqCmd,MG1TrqCmd,EngTrqCmd,VehSpdRef,SOC,ChgLvl</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">&lt;RoadGrade&gt;</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">&lt;BrakeForce&gt;</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">&lt;MG2TrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">&lt;MG1TrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="5">
+        <P Name="Name">&lt;EngTrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="6">
+        <P Name="Name">&lt;VehSpdRef&gt;</P>
+      </Port>
+      <Port Type="out" Index="7">
+        <P Name="Name">&lt;SOC&gt;</P>
+      </Port>
+      <Port Type="out" Index="8">
+        <P Name="Name">&lt;ChgLvl&gt;</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Constant" Name="Constant" SID="4541">
     <P Name="Position">[220, 75, 250, 95]</P>
     <P Name="ZOrder">419</P>
     <P Name="NameLocation">left</P>
     <P Name="Value">0</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Engine for Driving</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Engine for Driving</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Constant" Name="Constant1" SID="4543">
     <P Name="Position">[220, 105, 250, 125]</P>
     <P Name="ZOrder">421</P>
     <P Name="NameLocation">left</P>
     <P Name="Value">0</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Engine for Generating</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Engine for Generating</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Constant" Name="Constant2" SID="4544">
     <P Name="Position">[220, 135, 250, 155]</P>
     <P Name="ZOrder">423</P>
     <P Name="NameLocation">left</P>
     <P Name="Value">0</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">MG2 Regen On Off</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">MG2 Regen On Off</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Constant" Name="Constant3" SID="4546">
     <P Name="Position">[220, 165, 250, 185]</P>
     <P Name="ZOrder">425</P>
     <P Name="NameLocation">left</P>
     <P Name="Value">0</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Brake On Off</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Brake On Off</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Constant" Name="Constant4" SID="4548">
     <P Name="Position">[220, 200, 250, 220]</P>
     <P Name="ZOrder">427</P>
     <P Name="NameLocation">left</P>
     <P Name="Value">0</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Axle Speed Reference</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Axle Speed Reference</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From" SID="3353">
     <P Name="Position">[155, -108, 250, -92]</P>
     <P Name="ZOrder">8</P>
     <P Name="NameLocation">left</P>
     <P Name="GotoTag">Grade</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Road Grade</P>
-      <P Name="PropagatedSignals">RoadGrade</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Road Grade</P>
+        <P Name="PropagatedSignals">RoadGrade</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From1" SID="3354">
     <P Name="Position">[155, -83, 250, -67]</P>
     <P Name="ZOrder">9</P>
     <P Name="NameLocation">left</P>
     <P Name="GotoTag">BrkF</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Brake Force</P>
-      <P Name="PropagatedSignals">BrakeForce</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Brake Force</P>
+        <P Name="PropagatedSignals">BrakeForce</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From2" SID="3355">
     <P Name="Position">[155, -58, 250, -42]</P>
     <P Name="ZOrder">10</P>
     <P Name="NameLocation">left</P>
     <P Name="GotoTag">MG2TrqCmd</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">MG2 Torque Command</P>
-      <P Name="PropagatedSignals">Mg2TrqCmd</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">MG2 Torque Command</P>
+        <P Name="PropagatedSignals">MG2TrqCmd</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From3" SID="3356">
     <P Name="Position">[155, -33, 250, -17]</P>
     <P Name="ZOrder">11</P>
     <P Name="NameLocation">left</P>
     <P Name="GotoTag">MG1TrqCmd</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">MG1 Torque Command</P>
-      <P Name="PropagatedSignals">Mg1TrqCmd</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">MG1 Torque Command</P>
+        <P Name="PropagatedSignals">MG1TrqCmd</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From4" SID="3357">
     <P Name="Position">[155, -8, 250, 8]</P>
     <P Name="ZOrder">12</P>
     <P Name="NameLocation">left</P>
     <P Name="GotoTag">EngTrqCmd</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Engine Torque Command</P>
-      <P Name="PropagatedSignals">EngTrqCmd</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Engine Torque Command</P>
+        <P Name="PropagatedSignals">EngTrqCmd</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From5" SID="3490">
     <P Name="Position">[-160, 122, -65, 138]</P>
     <P Name="ZOrder">16</P>
     <P Name="GotoTag">VehSpdRef</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">Vehicle Speed Reference (km/hr)</P>
-      <P Name="PropagatedSignals">VehSpdRef</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Vehicle Speed Reference (km/hr)</P>
+        <P Name="PropagatedSignals">VehSpdRef</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From6" SID="3491">
     <P Name="Position">[-160, 157, -65, 173]</P>
     <P Name="ZOrder">17</P>
     <P Name="GotoTag">SOC</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">HV Battery SOC</P>
-      <P Name="PropagatedSignals">SOC</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">HV Battery SOC</P>
+        <P Name="PropagatedSignals">SOC</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From7" SID="3497">
     <P Name="Position">[-160, 192, -65, 208]</P>
     <P Name="ZOrder">22</P>
     <P Name="GotoTag">ChgLvl</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">HV Battery Charge Level (0/1/2/3)</P>
-      <P Name="PropagatedSignals">ChgLvl</P>
-      <P Name="DataLogging">on</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">HV Battery Charge Level (0/1/2/3)</P>
+        <P Name="PropagatedSignals">ChgLvl</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Goto" Name="Goto" SID="3348">
     <P Name="Position">[-55, -118, 40, -102]</P>
@@ -1444,7 +1662,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_3329.xml
     <P Name="GotoTag">ChgLvl</P>
   </Block>
   <Block BlockType="Scope" Name="Scope Direct Input" SID="3358">
-    <P Name="Ports">[5]</P>
+    <PortCounts in="5"/>
     <P Name="Position">[475, -112, 555, 12]</P>
     <P Name="ZOrder">13</P>
     <P Name="HideAutomaticName">off</P>
@@ -1569,14 +1787,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_3329.xml
     <P Name="Dst">3349#in:1</P>
   </Line>
   <Line>
-    <P Name="Name">&lt;Mg2TrqCmd&gt;</P>
+    <P Name="Name">&lt;MG2TrqCmd&gt;</P>
     <P Name="ZOrder">13</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3347#out:3</P>
     <P Name="Dst">3350#in:1</P>
   </Line>
   <Line>
-    <P Name="Name">&lt;Mg1TrqCmd&gt;</P>
+    <P Name="Name">&lt;MG1TrqCmd&gt;</P>
     <P Name="ZOrder">14</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3347#out:4</P>
@@ -1642,19 +1860,15 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[87, 19, 1213, 793]</P>
-  <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
-  <P Name="SetExecutionDomain">off</P>
-  <P Name="ExecutionDomainType">Deduce</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">12650</P>
-  <P Name="SimulinkSubDomain">Simulink</P>
+  <P Name="SIDHighWatermark">17753</P>
   <Block BlockType="Inport" Name="FromPlant" SID="3177">
     <P Name="Position">[70, 13, 100, 27]</P>
     <P Name="ZOrder">26314</P>
     <P Name="NameLocation">left</P>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="2190">
-    <P Name="Ports">[3, 1]</P>
+    <PortCounts in="3" out="1"/>
     <P Name="Position">[475, 102, 480, 178]</P>
     <P Name="ZOrder">26240</P>
     <P Name="Inputs">3</P>
@@ -1662,7 +1876,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="InheritFromInputs">on</P>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator1" SID="3234">
-    <P Name="Ports">[8, 1]</P>
+    <PortCounts in="8" out="1"/>
     <P Name="Position">[495, -171, 500, 26]</P>
     <P Name="ZOrder">26321</P>
     <P Name="Inputs">8</P>
@@ -1670,7 +1884,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="InheritFromInputs">on</P>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator2" SID="3247">
-    <P Name="Ports">[2, 1]</P>
+    <PortCounts in="2" out="1"/>
     <P Name="Position">[495, 52, 500, 103]</P>
     <P Name="ZOrder">26337</P>
     <P Name="Inputs">2</P>
@@ -1678,78 +1892,76 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="InheritFromInputs">on</P>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator3" SID="3333">
-    <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[615, 186, 620, 214]</P>
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[290, 201, 295, 229]</P>
     <P Name="ZOrder">26348</P>
+    <P Name="NameLocation">top</P>
     <P Name="Inputs">1</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
   </Block>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator4" SID="3334">
-    <P Name="Ports">[1, 1]</P>
-    <P Name="Position">[615, 236, 620, 264]</P>
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[615, 201, 620, 229]</P>
     <P Name="ZOrder">26349</P>
+    <P Name="NameLocation">top</P>
     <P Name="Inputs">1</P>
     <P Name="DisplayOption">bar</P>
     <P Name="InheritFromInputs">on</P>
   </Block>
   <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="3343">
-    <P Name="Ports">[1, 2]</P>
+    <PortCounts in="1" out="2"/>
     <P Name="Position">[350, -175, 355, -120]</P>
     <P Name="ZOrder">26354</P>
     <P Name="OutputSignals">RoadGrade,BrakeForce</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">&lt;RoadGrade&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">2</P>
-      <P Name="Name">&lt;BrakeForce&gt;</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">&lt;RoadGrade&gt;</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">&lt;BrakeForce&gt;</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="BusSelector" Name="Bus&#xA;Selector1" SID="3346">
-    <P Name="Ports">[1, 3]</P>
+    <PortCounts in="1" out="3"/>
     <P Name="Position">[325, -122, 330, -48]</P>
     <P Name="ZOrder">26357</P>
-    <P Name="OutputSignals">Mg2TrqCmd,Mg1TrqCmd,EngTrqCmd</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">&lt;Mg2TrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">2</P>
-      <P Name="Name">&lt;Mg1TrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">3</P>
-      <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    </Port>
+    <P Name="OutputSignals">MG2TrqCmd,MG1TrqCmd,EngTrqCmd</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">&lt;MG2TrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">&lt;MG1TrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">&lt;EngTrqCmd&gt;</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="BusSelector" Name="Bus&#xA;Selector4" SID="2218">
-    <P Name="Ports">[1, 5]</P>
+    <PortCounts in="1" out="5"/>
     <P Name="Position">[325, 51, 330, 179]</P>
     <P Name="ZOrder">26266</P>
-    <P Name="OutputSignals">RoadGrade,BrakeForce,Mg2TrqCmd,Mg1TrqCmd,EngTrqCmd</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">&lt;RoadGrade&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">2</P>
-      <P Name="Name">&lt;BrakeForce&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">3</P>
-      <P Name="Name">&lt;Mg2TrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">4</P>
-      <P Name="Name">&lt;Mg1TrqCmd&gt;</P>
-    </Port>
-    <Port>
-      <P Name="PortNumber">5</P>
-      <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    </Port>
+    <P Name="OutputSignals">RoadGrade,BrakeForce,MG2TrqCmd,MG1TrqCmd,EngTrqCmd</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">&lt;RoadGrade&gt;</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">&lt;BrakeForce&gt;</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">&lt;MG2TrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">&lt;MG1TrqCmd&gt;</P>
+      </Port>
+      <Port Type="out" Index="5">
+        <P Name="Name">&lt;EngTrqCmd&gt;</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="From" Name="From" SID="3345">
     <P Name="Position">[225, -93, 295, -77]</P>
@@ -1757,7 +1969,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="GotoTag">DrvUnit</P>
   </Block>
   <Block BlockType="FromWorkspace" Name="From Workspace" SID="2219">
-    <P Name="Position">[155, 100, 295, 130]</P>
+    <P Name="Position">[135, 100, 295, 130]</P>
     <P Name="ZOrder">26265</P>
     <P Name="HideAutomaticName">off</P>
     <P Name="AttributesFormatString">%&lt;OutDataTypeStr&gt;
@@ -1786,49 +1998,52 @@ Interpolate: %&lt;Interpolate&gt;</P>
     <P Name="GotoTag">Veh</P>
   </Block>
   <Block BlockType="Ground" Name="Ground" SID="3335">
-    <P Name="Position">[555, 190, 575, 210]</P>
+    <P Name="Position">[230, 205, 250, 225]</P>
     <P Name="ZOrder">26345</P>
   </Block>
   <Block BlockType="Ground" Name="Ground1" SID="3336">
-    <P Name="Position">[455, 240, 475, 260]</P>
+    <P Name="Position">[455, 205, 475, 225]</P>
     <P Name="ZOrder">26347</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">HeatFlow</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">HeatFlow</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground2" SID="3339">
     <P Name="Position">[330, -45, 350, -25]</P>
     <P Name="ZOrder">26350</P>
     <P Name="NameLocation">left</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">VehSpdRef</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">VehSpdRef</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground3" SID="3340">
     <P Name="Position">[330, -20, 350, 0]</P>
     <P Name="ZOrder">26351</P>
     <P Name="NameLocation">left</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">SOC</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">SOC</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="Ground" Name="Ground4" SID="3495">
     <P Name="Position">[330, 5, 350, 25]</P>
     <P Name="ZOrder">26358</P>
     <P Name="NameLocation">left</P>
-    <Port>
-      <P Name="PortNumber">1</P>
-      <P Name="Name">ChgLvl</P>
-    </Port>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">ChgLvl</P>
+      </Port>
+    </PortProperties>
   </Block>
   <Block BlockType="SubSystem" Name="Measurement" SID="3329">
-    <P Name="Ports">[1]</P>
+    <PortCounts in="1"/>
     <P Name="Position">[570, -170, 670, -120]</P>
     <P Name="ZOrder">26343</P>
-    <P Name="RequestExecContextInheritance">off</P>
     <System Ref="system_3329"/>
   </Block>
   <Block BlockType="Terminator" Name="Terminator1" SID="3246">
@@ -1853,20 +2068,20 @@ Interpolate: %&lt;Interpolate&gt;</P>
     <P Name="Port">3</P>
   </Block>
   <Block BlockType="Outport" Name="DcDc" SID="3337">
-    <P Name="Position">[655, 193, 685, 207]</P>
+    <P Name="Position">[330, 208, 360, 222]</P>
     <P Name="ZOrder">26344</P>
     <P Name="NameLocation">right</P>
     <P Name="Port">4</P>
   </Block>
   <Block BlockType="Outport" Name="HVBatt" SID="3338">
-    <P Name="Position">[655, 243, 685, 257]</P>
+    <P Name="Position">[655, 208, 685, 222]</P>
     <P Name="ZOrder">26346</P>
     <P Name="NameLocation">right</P>
     <P Name="Port">5</P>
   </Block>
   <Line>
     <P Name="Name">&lt;RoadGrade&gt;</P>
-    <P Name="ZOrder">1127</P>
+    <P Name="ZOrder">1191</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:1</P>
     <P Name="Points">[160, 0]</P>
@@ -1874,170 +2089,169 @@ Interpolate: %&lt;Interpolate&gt;</P>
   </Line>
   <Line>
     <P Name="Name">&lt;BrakeForce&gt;</P>
-    <P Name="ZOrder">1128</P>
+    <P Name="ZOrder">1192</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:2</P>
     <P Name="Points">[160, 0]</P>
     <P Name="Dst">3247#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1131</P>
+    <P Name="ZOrder">1195</P>
     <P Name="Src">2190#out:1</P>
     <P Name="Points">[48, 0]</P>
     <Branch>
-      <P Name="ZOrder">1130</P>
+      <P Name="ZOrder">1194</P>
       <P Name="Points">[0, -25]</P>
       <P Name="Dst">3344#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1129</P>
+      <P Name="ZOrder">1193</P>
       <P Name="Dst">2191#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="Name">&lt;Mg2TrqCmd&gt;</P>
-    <P Name="ZOrder">1132</P>
+    <P Name="Name">&lt;MG2TrqCmd&gt;</P>
+    <P Name="ZOrder">1196</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:3</P>
     <P Name="Dst">2190#in:1</P>
   </Line>
   <Line>
-    <P Name="Name">&lt;Mg1TrqCmd&gt;</P>
-    <P Name="ZOrder">1133</P>
+    <P Name="Name">&lt;MG1TrqCmd&gt;</P>
+    <P Name="ZOrder">1197</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:4</P>
     <P Name="Dst">2190#in:2</P>
   </Line>
   <Line>
     <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    <P Name="ZOrder">1134</P>
+    <P Name="ZOrder">1198</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:5</P>
     <P Name="Dst">2190#in:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1135</P>
+    <P Name="ZOrder">1199</P>
     <P Name="Src">2219#out:1</P>
     <P Name="Dst">2218#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1138</P>
+    <P Name="ZOrder">1202</P>
     <P Name="Src">3234#out:1</P>
     <P Name="Points">[25, 0]</P>
     <Branch>
-      <P Name="ZOrder">1137</P>
+      <P Name="ZOrder">1201</P>
       <P Name="Dst">3236#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1136</P>
+      <P Name="ZOrder">1200</P>
       <P Name="Points">[0, -75]</P>
       <P Name="Dst">3329#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">1139</P>
+    <P Name="ZOrder">1203</P>
     <P Name="Src">3177#out:1</P>
     <P Name="Dst">3246#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1142</P>
+    <P Name="ZOrder">1206</P>
     <P Name="Src">3247#out:1</P>
     <P Name="Points">[28, 0]</P>
     <Branch>
-      <P Name="ZOrder">1141</P>
+      <P Name="ZOrder">1205</P>
       <P Name="Dst">3248#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1140</P>
+      <P Name="ZOrder">1204</P>
       <P Name="Points">[0, -20]</P>
       <P Name="Dst">3342#in:1</P>
     </Branch>
   </Line>
   <Line>
     <P Name="Name">HeatFlow</P>
-    <P Name="ZOrder">1143</P>
-    <P Name="Labels">[2, 1]</P>
+    <P Name="ZOrder">1207</P>
+    <P Name="Labels">[1, 1]</P>
     <P Name="Src">3336#out:1</P>
-    <P Name="Points">[-5, 0]</P>
     <P Name="Dst">3334#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1144</P>
+    <P Name="ZOrder">1208</P>
     <P Name="Src">3334#out:1</P>
     <P Name="Dst">3338#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1145</P>
+    <P Name="ZOrder">1209</P>
     <P Name="Src">3333#out:1</P>
     <P Name="Dst">3337#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1146</P>
+    <P Name="ZOrder">1210</P>
     <P Name="Src">3335#out:1</P>
     <P Name="Dst">3333#in:1</P>
   </Line>
   <Line>
     <P Name="Name">VehSpdRef</P>
-    <P Name="ZOrder">1147</P>
+    <P Name="ZOrder">1211</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3339#out:1</P>
     <P Name="Dst">3234#in:6</P>
   </Line>
   <Line>
     <P Name="Name">SOC</P>
-    <P Name="ZOrder">1148</P>
+    <P Name="ZOrder">1212</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3340#out:1</P>
     <P Name="Dst">3234#in:7</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1149</P>
+    <P Name="ZOrder">1213</P>
     <P Name="Src">3341#out:1</P>
     <P Name="Dst">3343#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;RoadGrade&gt;</P>
-    <P Name="ZOrder">1150</P>
+    <P Name="ZOrder">1214</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3343#out:1</P>
     <P Name="Dst">3234#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;BrakeForce&gt;</P>
-    <P Name="ZOrder">1151</P>
+    <P Name="ZOrder">1215</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3343#out:2</P>
     <P Name="Dst">3234#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1152</P>
+    <P Name="ZOrder">1216</P>
     <P Name="Src">3345#out:1</P>
     <P Name="Dst">3346#in:1</P>
   </Line>
   <Line>
-    <P Name="Name">&lt;Mg2TrqCmd&gt;</P>
-    <P Name="ZOrder">1153</P>
+    <P Name="Name">&lt;MG2TrqCmd&gt;</P>
+    <P Name="ZOrder">1217</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3346#out:1</P>
     <P Name="Dst">3234#in:3</P>
   </Line>
   <Line>
-    <P Name="Name">&lt;Mg1TrqCmd&gt;</P>
-    <P Name="ZOrder">1154</P>
+    <P Name="Name">&lt;MG1TrqCmd&gt;</P>
+    <P Name="ZOrder">1218</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3346#out:2</P>
     <P Name="Dst">3234#in:4</P>
   </Line>
   <Line>
     <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    <P Name="ZOrder">1155</P>
+    <P Name="ZOrder">1219</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3346#out:3</P>
     <P Name="Dst">3234#in:5</P>
   </Line>
   <Line>
     <P Name="Name">ChgLvl</P>
-    <P Name="ZOrder">1156</P>
+    <P Name="ZOrder">1220</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3495#out:1</P>
     <P Name="Dst">3234#in:8</P>
@@ -2048,10 +2262,10 @@ Interpolate: %&lt;Interpolate&gt;</P>
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Arial&apos;; font-size:12px; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;Copyright 2021-2022 The MathWorks, Inc.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
-    <P Name="Position">[272, 289, 499, 305]</P>
+    <P Name="Position">[273, 236, 500, 252]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-1265</P>
+    <P Name="ZOrder">-557</P>
   </Annotation>
 </System>
 
@@ -2126,7 +2340,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">1c1326c8-8e3c-43be-a3c7-67492addd3a2</P>
     </Object>
-    <P Name="BDUuid" Class="char">ede0de19-63b7-4dd8-a476-991c70b9dc18</P>
+    <P Name="BDUuid" Class="char">82321360-b38e-450d-a11e-530a41d67c93</P>
   </Object>
 </WindowsInfo>
 

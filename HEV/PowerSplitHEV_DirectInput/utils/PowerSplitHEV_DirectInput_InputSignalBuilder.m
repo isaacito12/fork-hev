@@ -6,8 +6,8 @@ classdef PowerSplitHEV_DirectInput_InputSignalBuilder < handle
 properties
   % ### Signals
 
-  Mg2TrqCmd timetable
-  Mg1TrqCmd timetable
+  MG2TrqCmd timetable
+  MG1TrqCmd timetable
   EngTrqCmd timetable
   BrakeForce timetable
   RoadGrade timetable
@@ -856,8 +856,8 @@ methods
     end
 
     syncedInputs = synchronize( ...
-                      inpObj.Mg2TrqCmd, ...
-                      inpObj.Mg1TrqCmd, ...
+                      inpObj.MG2TrqCmd, ...
+                      inpObj.MG1TrqCmd, ...
                       inpObj.EngTrqCmd, ...
                       inpObj.BrakeForce, ...
                       inpObj.RoadGrade );
@@ -867,8 +867,8 @@ methods
         + " (" + string(tt.Properties.VariableUnits) + ")";
 
     dispLbl = { ...
-      addUnitString(inpObj.Mg2TrqCmd), ...
-      addUnitString(inpObj.Mg1TrqCmd), ...
+      addUnitString(inpObj.MG2TrqCmd), ...
+      addUnitString(inpObj.MG1TrqCmd), ...
       addUnitString(inpObj.EngTrqCmd), ...
       addUnitString(inpObj.BrakeForce), ...
       addUnitString(inpObj.RoadGrade) };
@@ -926,12 +926,12 @@ methods (Access = private)
       nvpairs.Time (:,1) duration
       nvpairs.TimeStep (1,1) duration = seconds(0.01)
     end
-    inpObj.Mg2TrqCmd = timetable(nvpairs.Data, 'RowTimes',nvpairs.Time);
-    inpObj.Mg2TrqCmd.Properties.VariableNames = {'Mg2TrqCmd'};
-    inpObj.Mg2TrqCmd.Properties.VariableUnits = {'N*m'};
-    inpObj.Mg2TrqCmd.Properties.VariableContinuity = {'continuous'};
-    inpObj.Mg2TrqCmd = ...
-      retime(inpObj.Mg2TrqCmd, 'regular','makima', 'TimeStep',nvpairs.TimeStep);
+    inpObj.MG2TrqCmd = timetable(nvpairs.Data, 'RowTimes',nvpairs.Time);
+    inpObj.MG2TrqCmd.Properties.VariableNames = {'MG2TrqCmd'};
+    inpObj.MG2TrqCmd.Properties.VariableUnits = {'N*m'};
+    inpObj.MG2TrqCmd.Properties.VariableContinuity = {'continuous'};
+    inpObj.MG2TrqCmd = ...
+      retime(inpObj.MG2TrqCmd, 'regular','makima', 'TimeStep',nvpairs.TimeStep);
   end
 
   function inpObj = BuildSignal_MG1TorqueCommand(inpObj, nvpairs)
@@ -942,12 +942,12 @@ methods (Access = private)
       nvpairs.Time (:,1) duration
       nvpairs.TimeStep (1,1) duration = seconds(0.01)
     end
-    inpObj.Mg1TrqCmd = timetable(nvpairs.Data, 'RowTimes',nvpairs.Time);
-    inpObj.Mg1TrqCmd.Properties.VariableNames = {'Mg1TrqCmd'};
-    inpObj.Mg1TrqCmd.Properties.VariableUnits = {'N*m'};
-    inpObj.Mg1TrqCmd.Properties.VariableContinuity = {'continuous'};
-    inpObj.Mg1TrqCmd = ...
-      retime(inpObj.Mg1TrqCmd, 'regular','makima', 'TimeStep',nvpairs.TimeStep);
+    inpObj.MG1TrqCmd = timetable(nvpairs.Data, 'RowTimes',nvpairs.Time);
+    inpObj.MG1TrqCmd.Properties.VariableNames = {'MG1TrqCmd'};
+    inpObj.MG1TrqCmd.Properties.VariableUnits = {'N*m'};
+    inpObj.MG1TrqCmd.Properties.VariableContinuity = {'continuous'};
+    inpObj.MG1TrqCmd = ...
+      retime(inpObj.MG1TrqCmd, 'regular','makima', 'TimeStep',nvpairs.TimeStep);
   end
 
   function inpObj = BuildSignal_EngineTorqueCommand(inpObj, nvpairs)
@@ -999,16 +999,16 @@ methods (Access = private)
 
   function signalData = BundleSignals(inpObj)
   %%
-    signalData.Signals.Mg2TrqCmd = inpObj.Mg2TrqCmd;
-    signalData.Signals.Mg1TrqCmd = inpObj.Mg1TrqCmd;
+    signalData.Signals.MG2TrqCmd = inpObj.MG2TrqCmd;
+    signalData.Signals.MG1TrqCmd = inpObj.MG1TrqCmd;
     signalData.Signals.EngTrqCmd = inpObj.EngTrqCmd;
     signalData.Signals.BrakeForce = inpObj.BrakeForce;
     signalData.Signals.RoadGrade = inpObj.RoadGrade;
 
     signalData.Bus = Simulink.Bus;
     sigs = {
-      inpObj.Mg2TrqCmd ...
-      inpObj.Mg1TrqCmd ...
+      inpObj.MG2TrqCmd ...
+      inpObj.MG1TrqCmd ...
       inpObj.EngTrqCmd ...
       inpObj.BrakeForce ...
       inpObj.RoadGrade };

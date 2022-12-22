@@ -33,7 +33,7 @@ title(ax, "MG2 Speed (rpm)")
 hold off
 
 ax = nexttile(tl);
-vals = getValuesFromLogsout(logsout.get("Engine Speed"));
+vals = getValuesFromLogsout(logsout.get("Eng Speed"));
 plot(ax, vals.Time, vals.Data, 'LineWidth',2)
 hold on;  grid on
 xlim([0 x_end])

@@ -25,12 +25,12 @@ checkModelFileExists(refSubName)
 set_param( modelName + "/DC-DC Converter", ...
   ReferencedSubsystem = refSubName);
 
-refSubName = "PowerSplitDriveUnitBasic_refsub";
+refSubName = "PowerSplitDriveUnit_refsub_Basic";
 checkModelFileExists(refSubName)
 set_param( modelName + "/Power Split Drive Unit", ...
   ReferencedSubsystem = refSubName);
 
-refSubName = "Vehicle1D_refsub_Driveline"; 
+refSubName = "Vehicle1D_refsub_Basic"; 
 checkModelFileExists(refSubName)
 set_param( modelName + "/Longitudinal Vehicle", ...
   ReferencedSubsystem = refSubName);

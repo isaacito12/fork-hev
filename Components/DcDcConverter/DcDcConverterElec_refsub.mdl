@@ -41,8 +41,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2021-01-11T13:56:09Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-21T16:48:29Z</dcterms:modified>
-  <cp:revision>5.1</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-22T14:46:18Z</dcterms:modified>
+  <cp:revision>5.2</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -112,7 +112,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.1&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.2&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ScheduleConnectors">off</P>
@@ -133,7 +133,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
       <Object PropName="InstrumentedSignals" ObjectID="2" ClassName="Simulink.HMI.InstrumentedSignals">
         <Array PropName="Persistence" Type="Struct" Dimension="6*1">
           <MATStruct>
-            <Field Name="UUID" Class="char">2b58f155-c279-4723-8341-6665c159f06e</Field>
+            <Field Name="UUID" Class="char">e77d2aba-7cbb-4ea5-81eb-c4460dcba241</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From</Field>
             <Field Name="SID_" Class="char">3441</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -153,7 +153,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">cb7f7a57-b09b-4864-8fbc-45baa45aa619</Field>
+            <Field Name="UUID" Class="char">84c5b6d5-304c-4090-ae31-7342b632a5aa</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From1</Field>
             <Field Name="SID_" Class="char">3442</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -173,7 +173,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">e36e0149-ace5-4395-acb6-cf75a2925621</Field>
+            <Field Name="UUID" Class="char">b43b4092-46f2-4de9-b83b-acec30cc83b5</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From2</Field>
             <Field Name="SID_" Class="char">3424</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -193,7 +193,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">f177871f-721a-4927-9f21-7e80acddabc7</Field>
+            <Field Name="UUID" Class="char">968ae658-b546-45c8-8963-61f103fb5975</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From3</Field>
             <Field Name="SID_" Class="char">3425</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -213,7 +213,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">275329dd-c388-4c04-8563-5eddc43c4214</Field>
+            <Field Name="UUID" Class="char">8c1ec94c-5d48-4232-957e-8c1e12839e91</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From4</Field>
             <Field Name="SID_" Class="char">3426</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -233,7 +233,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">993e6674-36a9-4468-81dc-1b37958acf1f</Field>
+            <Field Name="UUID" Class="char">7289fe7d-7fa4-4474-8d21-001de7771843</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From5</Field>
             <Field Name="SID_" Class="char">3427</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -1262,8 +1262,8 @@ Converter</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="3eb9c64f-4f9c-413a-b174-945e46c5c8b2">
-    <Interface type="Interface" uuid="43dba7d6-792a-4ec9-ab13-bbbe5edfa3ee"/>
+  <System type="System" uuid="b81a6ec8-bab0-473e-8bc6-3012c59155b1">
+    <Interface type="Interface" uuid="16c1c2a0-2564-4664-8892-b7a15507c862"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -2149,14 +2149,13 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[8, 39, 1106, 739]</P>
-  <P Name="Open">on</P>
   <List ListType="InterfaceData">
     <P Name="Version">0</P>
-    <P Name="ModelData">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:null,&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfChildren&quot;:[{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;9e2d3140-dfc1-4432-875a-14e426cd2ebd&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;4c44f906-6b7e-4ee2-a3b1-42a7fe573df3&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;3426ce1b-0489-42ff-8b82-7ef2712dc47a&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;4ac9a5b1-4fd1-48b1-80ce-a5e999c274b8&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;77e9a4c8-8e23-4bf7-b130-3fdf2ed236a6&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;737416f2-bce2-4c5c-a888-2073f88d013a&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;9ca129bc-0063-4040-86fa-e73268a61a0e&quot;}],&quot;children&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:1,&quot;name&quot;:&quot;LoadCurr&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;9e2d3140-dfc1-4432-875a-14e426cd2ebd&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;A&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;ae57ff75-087e-4091-bf45-624c7a682f2d&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;e4f0c222-c9d2-4b42-80fb-d85e69e0d6ac&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:2,&quot;name&quot;:&quot;LoadV&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;4c44f906-6b7e-4ee2-a3b1-42a7fe573df3&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;V&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;2d1ad7a5-05dc-41d2-9389-42a0532445bb&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;64aa17f8-b8a8-47e1-9035-712c3b1cda48&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:3,&quot;name&quot;:&quot;LoadPower&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;3426ce1b-0489-42ff-8b82-7ef2712dc47a&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;kW&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;e7b4fce4-b05c-470a-ac8a-75163238b2b1&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;2c43ff96-f7d5-4942-ae83-786c504830d5&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:4,&quot;name&quot;:&quot;PowerDiff&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;4ac9a5b1-4fd1-48b1-80ce-a5e999c274b8&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;kW&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;2d40ece5-23c1-4720-9764-5edec313a28d&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;da5c7a0e-5295-41cc-b4df-06bd0820cafd&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:5,&quot;name&quot;:&quot;BattPower&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;77e9a4c8-8e23-4bf7-b130-3fdf2ed236a6&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;kW&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;14791291-35e7-4c49-a5b7-6f912a59ff2f&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;23fc4c66-7b2a-41b3-a05a-489496300eed&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:6,&quot;name&quot;:&quot;BattCurr&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;737416f2-bce2-4c5c-a888-2073f88d013a&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;A&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;9fc60d8f-e65e-4871-bf0b-805b7de35940&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;25b70363-1924-4394-a5e8-280b2ca5c930&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;indexOne&quot;:7,&quot;name&quot;:&quot;BattV&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;9ca129bc-0063-4040-86fa-e73268a61a0e&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;V&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;de602fdd-7f40-41a1-84da-d1715ed19f84&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;879356d7-d22b-4483-932a-f668bbb0d349&quot;}]},&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;8c10b666-b983-48fc-a227-67ab03af4018&quot;},&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:null},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;d6af8f85-3524-43f7-bd58-835f065bccd3&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/mm_tree_node_datamodel/R2018b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
-    <P Name="Mappings">{&quot;port-tree&quot;:{&quot;bep-out&quot;:{&quot;1&quot;:&quot;d6af8f85-3524-43f7-bd58-835f065bccd3&quot;}}}</P>
+    <P Name="ModelData">{&quot;entries&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:null,&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfChildren&quot;:[{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;acda2ef8-8385-49db-83b2-b1cc88063618&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;17c57db0-ad72-4433-8dfc-9980b5ccb077&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;1b5d0830-a428-4075-848a-02b5ad7ba906&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;f921cba9-68d9-4782-965c-6a10f8d5c4c6&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;a4319584-90d2-4929-b34b-704a5fbd5022&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;df90566b-4f4e-4e6a-97c1-96fd374b916f&quot;},{&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;dea2f9f4-3f30-4398-92f6-825f3963b709&quot;}],&quot;children&quot;:[{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:1,&quot;name&quot;:&quot;LoadCurr&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;acda2ef8-8385-49db-83b2-b1cc88063618&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;A&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;fd3a66f1-20b3-40d0-a32f-8e69b56a4b0f&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;985c9d31-cba4-47bc-99e2-8f8cbbae1a06&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:2,&quot;name&quot;:&quot;LoadV&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;17c57db0-ad72-4433-8dfc-9980b5ccb077&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;V&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;3d2a9c3f-cedf-43ca-ba96-f9a4ec1539cf&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;ef0a4d58-f8a2-4bb4-8ecc-5d22fc861d80&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:3,&quot;name&quot;:&quot;LoadPower&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;1b5d0830-a428-4075-848a-02b5ad7ba906&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;kW&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;fe71e226-3d5b-4b6f-931e-16bb418faa36&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;133db17d-bcea-4fa7-a824-0d33b66b9003&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:4,&quot;name&quot;:&quot;PowerDiff&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;f921cba9-68d9-4782-965c-6a10f8d5c4c6&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;kW&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;2faf8b2e-f85a-47ea-97d1-763ab4b5fd3a&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;c5e2e28c-1698-48b2-8eca-b4dd3bc51e3c&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:5,&quot;name&quot;:&quot;BattPower&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;a4319584-90d2-4929-b34b-704a5fbd5022&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;kW&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;f0a08706-ea6f-4875-861b-05697d0934e1&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;25797273-6849-4ab5-901f-10454bbbee30&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:6,&quot;name&quot;:&quot;BattCurr&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;df90566b-4f4e-4e6a-97c1-96fd374b916f&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;A&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;f097089b-55ff-4ef3-910d-cfbd54dd583d&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;24433e71-7f7c-4fcb-bc93-de7e1320f4c6&quot;},{&quot;content&quot;:{&quot;blockAttrs&quot;:null,&quot;busTypeElementAttrs&quot;:null,&quot;busTypeRootAttrs&quot;:null,&quot;childAttrs&quot;:{&quot;content&quot;:{&quot;attrsOfParent&quot;:{&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;indexOne&quot;:7,&quot;name&quot;:&quot;BattV&quot;},&quot;type&quot;:&quot;treeNode.ChildAttributes&quot;,&quot;uuid&quot;:&quot;dea2f9f4-3f30-4398-92f6-825f3963b709&quot;},&quot;msgQueueAttrs&quot;:null,&quot;parentAttrs&quot;:null,&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:{&quot;content&quot;:{&quot;unit&quot;:&quot;V&quot;},&quot;type&quot;:&quot;treeNode.SignalAttributes&quot;,&quot;uuid&quot;:&quot;e3edda25-1d47-4bc3-a977-5a73cbb1bea5&quot;}},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;4ded1741-e896-4ddf-bc66-d91aa89fb003&quot;}]},&quot;type&quot;:&quot;treeNode.ParentAttributes&quot;,&quot;uuid&quot;:&quot;359483c0-f325-47dd-bbb2-37ef00756d62&quot;},&quot;propAttrs&quot;:null,&quot;signalAttrs&quot;:null},&quot;type&quot;:&quot;treeNode.TreeNode&quot;,&quot;uuid&quot;:&quot;dd0e77d4-2581-45b3-9d43-7a1b0a9a2eb7&quot;}],&quot;packageUris&quot;:[&quot;http://schema.mathworks.com/mf0/mm_tree_node_datamodel/R2018b&quot;],&quot;version&quot;:&quot;1.0&quot;}</P>
+    <P Name="Mappings">{&quot;port-tree&quot;:{&quot;bep-out&quot;:{&quot;1&quot;:&quot;dd0e77d4-2581-45b3-9d43-7a1b0a9a2eb7&quot;}}}</P>
   </List>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">17675</P>
+  <P Name="SIDHighWatermark">17679</P>
   <Block BlockType="Inport" Name="Inputs" SID="3444">
     <P Name="Position">[440, 143, 470, 157]</P>
     <P Name="ZOrder">176</P>
@@ -2477,6 +2476,7 @@ Converters/Converters/DC-DC Converter</P>
     <P Name="ZOrder">37</P>
     <P Name="BlockMirror">on</P>
     <P Name="HideAutomaticName">off</P>
+    <P Name="AttributesFormatString">%&lt;ConnectionType&gt;</P>
     <P Name="HierarchyStrings">Plus;Minus</P>
     <P Name="ConnectionType">Bus: Bus_HighVoltage</P>
   </Block>
@@ -2485,6 +2485,7 @@ Converters/Converters/DC-DC Converter</P>
     <P Name="Position">[1185, 211, 1270, 264]</P>
     <P Name="ZOrder">39</P>
     <P Name="HideAutomaticName">off</P>
+    <P Name="AttributesFormatString">%&lt;ConnectionType&gt;</P>
     <P Name="HierarchyStrings">Plus;Minus</P>
     <P Name="ConnectionType">Bus: Bus_HighVoltage</P>
   </Block>
@@ -2618,190 +2619,190 @@ Converters/Converters/DC-DC Converter</P>
     </List>
   </Block>
   <Line LineType="Connection">
-    <P Name="ZOrder">596</P>
-    <P Name="Src">2775#lconn:2</P>
-    <P Name="Points">[-11, 0; 0, 15]</P>
+    <P Name="ZOrder">4985</P>
+    <P Name="Src">4#lconn:1</P>
+    <P Name="Points">[0, -30; -1, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">2775#lconn:2</P>
+      <P Name="Points">[-11, 0; 0, 15]</P>
+    </Branch>
     <Branch ConnectType="DEST_SRC">
       <P Name="Dst">3278#rconn:2</P>
     </Branch>
-    <Branch ConnectType="DEST_DEST">
-      <P Name="Src">4#lconn:1</P>
-      <P Name="Points">[0, -30; -1, 0]</P>
-    </Branch>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">599</P>
-    <P Name="Src">5#lconn:1</P>
-    <P Name="Points">[0, -50]</P>
+    <P Name="ZOrder">4988</P>
+    <P Name="Src">3278#lconn:2</P>
+    <P Name="Points">[-100, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">5#lconn:1</P>
+      <P Name="Points">[0, -50]</P>
+    </Branch>
     <Branch ConnectType="DEST_SRC">
       <P Name="Dst">2764#rconn:2</P>
     </Branch>
-    <Branch ConnectType="DEST_DEST">
-      <P Name="Src">3278#lconn:2</P>
-      <P Name="Points">[-100, 0]</P>
-    </Branch>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25315</P>
+    <P Name="ZOrder">25347</P>
     <P Name="Src">14#rconn:1</P>
     <P Name="Dst">10#rconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25316</P>
+    <P Name="ZOrder">25348</P>
     <P Name="Src">11#rconn:1</P>
     <P Name="Dst">15#rconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25317</P>
+    <P Name="ZOrder">25349</P>
     <P Name="Src">10#lconn:1</P>
     <P Name="Dst">2764#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25318</P>
+    <P Name="ZOrder">25350</P>
     <P Name="Src">2764#lconn:2</P>
     <P Name="Dst">10#lconn:2</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25319</P>
+    <P Name="ZOrder">25351</P>
     <P Name="Src">2775#rconn:1</P>
     <P Name="Dst">11#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25320</P>
+    <P Name="ZOrder">25352</P>
     <P Name="Src">2775#rconn:2</P>
     <P Name="Dst">11#lconn:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25321</P>
+    <P Name="ZOrder">25353</P>
     <P Name="Src">2764#out:1</P>
     <P Name="Points">[0, -24]</P>
     <P Name="Dst">2789#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25322</P>
+    <P Name="ZOrder">25354</P>
     <P Name="Src">2775#out:1</P>
     <P Name="Points">[0, -29]</P>
     <P Name="Dst">2791#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25323</P>
+    <P Name="ZOrder">25355</P>
     <P Name="Src">2790#out:1</P>
     <P Name="Dst">2793#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25324</P>
+    <P Name="ZOrder">25356</P>
     <P Name="Src">2792#out:1</P>
     <P Name="Dst">2794#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Current&gt;</P>
-    <P Name="ZOrder">25325</P>
+    <P Name="ZOrder">25357</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">2794#out:1</P>
     <P Name="Dst">16#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Voltage&gt;</P>
-    <P Name="ZOrder">25326</P>
+    <P Name="ZOrder">25358</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">2794#out:2</P>
     <P Name="Dst">2798#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Power&gt;</P>
-    <P Name="ZOrder">25329</P>
+    <P Name="ZOrder">25361</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">2794#out:3</P>
     <P Name="Points">[63, 0]</P>
     <Branch>
-      <P Name="ZOrder">25328</P>
+      <P Name="ZOrder">25360</P>
       <P Name="Dst">2799#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">25327</P>
+      <P Name="ZOrder">25359</P>
       <P Name="Points">[0, 35]</P>
       <P Name="Dst">2819#in:1</P>
     </Branch>
   </Line>
   <Line>
     <P Name="Name">&lt;Power&gt;</P>
-    <P Name="ZOrder">25330</P>
+    <P Name="ZOrder">25362</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">2793#out:1</P>
     <P Name="Dst">2801#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Current&gt;</P>
-    <P Name="ZOrder">25331</P>
+    <P Name="ZOrder">25363</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">2793#out:2</P>
     <P Name="Dst">2802#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Voltage&gt;</P>
-    <P Name="ZOrder">25334</P>
+    <P Name="ZOrder">25366</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">2793#out:3</P>
     <P Name="Points">[60, 0]</P>
     <Branch>
-      <P Name="ZOrder">25333</P>
+      <P Name="ZOrder">25365</P>
       <P Name="Dst">2803#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">25332</P>
+      <P Name="ZOrder">25364</P>
       <P Name="Points">[0, 35]</P>
       <P Name="Dst">2818#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">25335</P>
+    <P Name="ZOrder">25367</P>
     <P Name="Src">2817#out:1</P>
     <P Name="Dst">2800#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25336</P>
+    <P Name="ZOrder">25368</P>
     <P Name="Src">2820#out:1</P>
     <P Name="Points">[10, 0; 0, -10]</P>
     <P Name="Dst">2817#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25337</P>
+    <P Name="ZOrder">25369</P>
     <P Name="Src">2821#out:1</P>
     <P Name="Dst">2817#in:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25338</P>
+    <P Name="ZOrder">25370</P>
     <P Name="Src">3278#rconn:1</P>
     <P Name="Dst">2775#lconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25339</P>
+    <P Name="ZOrder">25371</P>
     <P Name="Src">3278#lconn:1</P>
     <P Name="Dst">2764#rconn:1</P>
   </Line>
   <Line LineType="Connection">
-    <P Name="ZOrder">25340</P>
+    <P Name="ZOrder">25372</P>
     <P Name="Src">3279#rconn:1</P>
     <P Name="Dst">3278#lconn:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25341</P>
+    <P Name="ZOrder">25373</P>
     <P Name="Src">3429#out:1</P>
     <P Name="Dst">3421#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25342</P>
+    <P Name="ZOrder">25374</P>
     <P Name="Src">3430#out:1</P>
     <P Name="Dst">3421#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">25343</P>
+    <P Name="ZOrder">25375</P>
     <P Name="Src">3444#out:1</P>
     <P Name="Dst">3446#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;signal1&gt;</P>
-    <P Name="ZOrder">25344</P>
+    <P Name="ZOrder">25376</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">3446#out:1</P>
     <P Name="Dst">3445#in:1</P>
@@ -2815,7 +2816,7 @@ p, li { white-space: pre-wrap; }
     <P Name="Position">[775, 360, 1002, 376]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-31</P>
+    <P Name="ZOrder">-455</P>
   </Annotation>
 </System>
 
@@ -2890,7 +2891,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">a71ce2c1-991e-4e4f-af3c-19a4a340a137</P>
     </Object>
-    <P Name="BDUuid" Class="char">3a03ff99-9a47-4179-879e-0b6646a03a1f</P>
+    <P Name="BDUuid" Class="char">7d81f36b-7811-430b-97d2-5a6448e1abbd</P>
   </Object>
 </WindowsInfo>
 
