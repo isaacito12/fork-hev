@@ -18,8 +18,10 @@ motorGenerator2.trq_eff_Nm = 50;
 
 motorGenerator2.thermalMass_J_perK = 5000;
 
-motorGenerator2.dampSpringStiffness_Nm_per_rad = 10000;
-motorGenerator2.dampSpringFriction_Nm_per_rpm = 100;
+% motorGenerator2.dampSpringStiffness_Nm_per_rad = 10000;
+% motorGenerator2.dampSpringFriction_Nm_per_rpm = 100;
+motorGenerator2.dampSpringStiffness_Nm_per_rad = 1000;
+motorGenerator2.dampSpringFriction_Nm_per_rpm = 10000;
 
 smoothing.MG2_dampSpringVelTol_rpm = 0.1;
 

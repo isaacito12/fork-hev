@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2020-08-04T16:28:06Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2022-12-22T15:11:08Z</dcterms:modified>
-  <cp:revision>6.1</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-01-06T08:00:30Z</dcterms:modified>
+  <cp:revision>6.2</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -67,11 +67,11 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2022b Release -->
 <MathWorks_version_info>
-  <version>9.13.0.2143701</version>
+  <version>9.13.0.2158767</version>
   <release>R2022b</release>
-  <description>Update 3</description>
-  <date>Dec 08 2022</date>
-  <checksum>3517180572</checksum>
+  <description>Update 4</description>
+  <date>Dec 31 2022</date>
+  <checksum>433223369</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -111,7 +111,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.1&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.2&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ScheduleConnectors">off</P>
@@ -132,7 +132,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
       <Object PropName="InstrumentedSignals" ObjectID="2" ClassName="Simulink.HMI.InstrumentedSignals">
         <Array PropName="Persistence" Type="Struct" Dimension="13*1">
           <MATStruct>
-            <Field Name="UUID" Class="char">adfa09ae-6d12-4b3d-a3e7-87e4a59b4ee3</Field>
+            <Field Name="UUID" Class="char">08ee85e0-5d1f-426c-a16f-93c4c3700afe</Field>
             <Field Name="BlockPath_" Class="char">Measurement/Constant</Field>
             <Field Name="SID_" Class="char">4541</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -152,7 +152,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">e139476a-fbe1-430f-a223-1ff1789bc8f4</Field>
+            <Field Name="UUID" Class="char">27c8f083-e499-4a9c-948c-8e29899fe229</Field>
             <Field Name="BlockPath_" Class="char">Measurement/Constant1</Field>
             <Field Name="SID_" Class="char">4543</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -172,7 +172,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">33d26eef-6880-4875-ac74-83b2fa64887a</Field>
+            <Field Name="UUID" Class="char">0423fe39-2ef8-4c73-8e57-b6a4a5907f5a</Field>
             <Field Name="BlockPath_" Class="char">Measurement/Constant2</Field>
             <Field Name="SID_" Class="char">4544</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -192,7 +192,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">8ea6f33a-7bf0-48f0-bf8d-94b83050cb2b</Field>
+            <Field Name="UUID" Class="char">60b451c3-e75f-4435-97a7-ef775d477af2</Field>
             <Field Name="BlockPath_" Class="char">Measurement/Constant3</Field>
             <Field Name="SID_" Class="char">4546</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -212,7 +212,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">7361993f-b0e0-4c49-af09-213880d5e22e</Field>
+            <Field Name="UUID" Class="char">1cc402a7-05ea-4ccc-b554-c676bbf85984</Field>
             <Field Name="BlockPath_" Class="char">Measurement/Constant4</Field>
             <Field Name="SID_" Class="char">4548</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -232,7 +232,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">02292a14-0d98-4e91-ae12-1e6c3e51892d</Field>
+            <Field Name="UUID" Class="char">9a108e00-27f4-4933-9e58-96f4ac2e1ad5</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From</Field>
             <Field Name="SID_" Class="char">3353</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -252,7 +252,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">97254885-ace3-4da1-9ed4-3b375c88e3ff</Field>
+            <Field Name="UUID" Class="char">f3fba062-84c2-48a4-86b4-5504b955def2</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From1</Field>
             <Field Name="SID_" Class="char">3354</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -272,7 +272,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">71222a6e-5258-4da9-8e5d-9c153f36c4d9</Field>
+            <Field Name="UUID" Class="char">d49b234f-5849-4c1c-9c3c-c71e678ed6a4</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From2</Field>
             <Field Name="SID_" Class="char">3355</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -292,7 +292,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">73b1df4d-c0c3-42bd-a6c0-bdf255a1dadb</Field>
+            <Field Name="UUID" Class="char">a22fb096-831c-4f41-bcb4-a2ef41c1e4b9</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From3</Field>
             <Field Name="SID_" Class="char">3356</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -312,7 +312,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">b8acc011-f4c5-4d97-a0ca-b7b6d28596ab</Field>
+            <Field Name="UUID" Class="char">539a5419-dbb9-454a-8c01-745e85bd261c</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From4</Field>
             <Field Name="SID_" Class="char">3357</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -332,7 +332,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">679309a7-fb24-403e-997d-080c71ad8c4e</Field>
+            <Field Name="UUID" Class="char">6d71f375-e64e-45ec-a55f-1a88327eb037</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From5</Field>
             <Field Name="SID_" Class="char">3490</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -352,7 +352,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">cef06c47-1440-4677-b7b9-14fc926c0463</Field>
+            <Field Name="UUID" Class="char">da150051-8b2f-41ee-96fe-924fd23d04c3</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From6</Field>
             <Field Name="SID_" Class="char">3491</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -372,7 +372,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
             <Field Name="VisualType_" Class="char"/>
           </MATStruct>
           <MATStruct>
-            <Field Name="UUID" Class="char">2818c72d-4b9f-4c1d-afa0-51f8f5849487</Field>
+            <Field Name="UUID" Class="char">4e240ba7-03dd-42d7-a0fa-c1c999ce3fbc</Field>
             <Field Name="BlockPath_" Class="char">Measurement/From7</Field>
             <Field Name="SID_" Class="char">3497</Field>
             <Field Name="SubPath_" Class="char"/>
@@ -1316,8 +1316,8 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="0746548d-b666-4cb8-9d2c-782395fd6581">
-    <Interface type="Interface" uuid="ba5a58ea-37e3-4b12-8157-9342d05bb938"/>
+  <System type="System" uuid="982c10a3-c9c5-4fdf-8927-d7e87cd132aa">
+    <Interface type="Interface" uuid="3ab442d1-a993-405c-ab2a-c0d589ccdd8a"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
@@ -1861,7 +1861,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[87, 19, 1213, 793]</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">17753</P>
+  <P Name="SIDHighWatermark">19149</P>
   <Block BlockType="Inport" Name="FromPlant" SID="3177">
     <P Name="Position">[70, 13, 100, 27]</P>
     <P Name="ZOrder">26314</P>
@@ -2081,7 +2081,7 @@ Interpolate: %&lt;Interpolate&gt;</P>
   </Block>
   <Line>
     <P Name="Name">&lt;RoadGrade&gt;</P>
-    <P Name="ZOrder">1191</P>
+    <P Name="ZOrder">1223</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:1</P>
     <P Name="Points">[160, 0]</P>
@@ -2089,169 +2089,169 @@ Interpolate: %&lt;Interpolate&gt;</P>
   </Line>
   <Line>
     <P Name="Name">&lt;BrakeForce&gt;</P>
-    <P Name="ZOrder">1192</P>
+    <P Name="ZOrder">1224</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:2</P>
     <P Name="Points">[160, 0]</P>
     <P Name="Dst">3247#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1195</P>
+    <P Name="ZOrder">1227</P>
     <P Name="Src">2190#out:1</P>
     <P Name="Points">[48, 0]</P>
     <Branch>
-      <P Name="ZOrder">1194</P>
+      <P Name="ZOrder">1226</P>
       <P Name="Points">[0, -25]</P>
       <P Name="Dst">3344#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1193</P>
+      <P Name="ZOrder">1225</P>
       <P Name="Dst">2191#in:1</P>
     </Branch>
   </Line>
   <Line>
     <P Name="Name">&lt;MG2TrqCmd&gt;</P>
-    <P Name="ZOrder">1196</P>
+    <P Name="ZOrder">1228</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:3</P>
     <P Name="Dst">2190#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;MG1TrqCmd&gt;</P>
-    <P Name="ZOrder">1197</P>
+    <P Name="ZOrder">1229</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:4</P>
     <P Name="Dst">2190#in:2</P>
   </Line>
   <Line>
     <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    <P Name="ZOrder">1198</P>
+    <P Name="ZOrder">1230</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">2218#out:5</P>
     <P Name="Dst">2190#in:3</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1199</P>
+    <P Name="ZOrder">1231</P>
     <P Name="Src">2219#out:1</P>
     <P Name="Dst">2218#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1202</P>
+    <P Name="ZOrder">1234</P>
     <P Name="Src">3234#out:1</P>
     <P Name="Points">[25, 0]</P>
     <Branch>
-      <P Name="ZOrder">1201</P>
+      <P Name="ZOrder">1233</P>
       <P Name="Dst">3236#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1200</P>
+      <P Name="ZOrder">1232</P>
       <P Name="Points">[0, -75]</P>
       <P Name="Dst">3329#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">1203</P>
+    <P Name="ZOrder">1235</P>
     <P Name="Src">3177#out:1</P>
     <P Name="Dst">3246#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1206</P>
+    <P Name="ZOrder">1238</P>
     <P Name="Src">3247#out:1</P>
     <P Name="Points">[28, 0]</P>
     <Branch>
-      <P Name="ZOrder">1205</P>
+      <P Name="ZOrder">1237</P>
       <P Name="Dst">3248#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">1204</P>
+      <P Name="ZOrder">1236</P>
       <P Name="Points">[0, -20]</P>
       <P Name="Dst">3342#in:1</P>
     </Branch>
   </Line>
   <Line>
     <P Name="Name">HeatFlow</P>
-    <P Name="ZOrder">1207</P>
+    <P Name="ZOrder">1239</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">3336#out:1</P>
     <P Name="Dst">3334#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1208</P>
+    <P Name="ZOrder">1240</P>
     <P Name="Src">3334#out:1</P>
     <P Name="Dst">3338#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1209</P>
+    <P Name="ZOrder">1241</P>
     <P Name="Src">3333#out:1</P>
     <P Name="Dst">3337#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1210</P>
+    <P Name="ZOrder">1242</P>
     <P Name="Src">3335#out:1</P>
     <P Name="Dst">3333#in:1</P>
   </Line>
   <Line>
     <P Name="Name">VehSpdRef</P>
-    <P Name="ZOrder">1211</P>
+    <P Name="ZOrder">1243</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3339#out:1</P>
     <P Name="Dst">3234#in:6</P>
   </Line>
   <Line>
     <P Name="Name">SOC</P>
-    <P Name="ZOrder">1212</P>
+    <P Name="ZOrder">1244</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3340#out:1</P>
     <P Name="Dst">3234#in:7</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1213</P>
+    <P Name="ZOrder">1245</P>
     <P Name="Src">3341#out:1</P>
     <P Name="Dst">3343#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;RoadGrade&gt;</P>
-    <P Name="ZOrder">1214</P>
+    <P Name="ZOrder">1246</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3343#out:1</P>
     <P Name="Dst">3234#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;BrakeForce&gt;</P>
-    <P Name="ZOrder">1215</P>
+    <P Name="ZOrder">1247</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3343#out:2</P>
     <P Name="Dst">3234#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">1216</P>
+    <P Name="ZOrder">1248</P>
     <P Name="Src">3345#out:1</P>
     <P Name="Dst">3346#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;MG2TrqCmd&gt;</P>
-    <P Name="ZOrder">1217</P>
+    <P Name="ZOrder">1249</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3346#out:1</P>
     <P Name="Dst">3234#in:3</P>
   </Line>
   <Line>
     <P Name="Name">&lt;MG1TrqCmd&gt;</P>
-    <P Name="ZOrder">1218</P>
+    <P Name="ZOrder">1250</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3346#out:2</P>
     <P Name="Dst">3234#in:4</P>
   </Line>
   <Line>
     <P Name="Name">&lt;EngTrqCmd&gt;</P>
-    <P Name="ZOrder">1219</P>
+    <P Name="ZOrder">1251</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3346#out:3</P>
     <P Name="Dst">3234#in:5</P>
   </Line>
   <Line>
     <P Name="Name">ChgLvl</P>
-    <P Name="ZOrder">1220</P>
+    <P Name="ZOrder">1252</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">3495#out:1</P>
     <P Name="Dst">3234#in:8</P>
@@ -2265,7 +2265,7 @@ p, li { white-space: pre-wrap; }
     <P Name="Position">[273, 236, 500, 252]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="Interpreter">rich</P>
-    <P Name="ZOrder">-557</P>
+    <P Name="ZOrder">-40</P>
   </Annotation>
 </System>
 
@@ -2340,7 +2340,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">1c1326c8-8e3c-43be-a3c7-67492addd3a2</P>
     </Object>
-    <P Name="BDUuid" Class="char">82321360-b38e-450d-a11e-530a41d67c93</P>
+    <P Name="BDUuid" Class="char">563323da-bf7e-475b-98e4-98a51ccbd996</P>
   </Object>
 </WindowsInfo>
 

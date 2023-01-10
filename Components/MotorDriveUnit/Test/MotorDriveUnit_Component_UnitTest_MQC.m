@@ -11,19 +11,11 @@ classdef MotorDriveUnit_Component_UnitTest_MQC < matlab.unittest.TestCase
 % which can not only run tests but also generates summary and
 % measures code coverage report.
 
-% Copyright 2021-2022 The MathWorks, Inc.
+% Copyright 2021-2023 The MathWorks, Inc.
 
 methods (Test)
 
 %% Component's top folder
-
-% function MQC_run_main_script(~)
-%   close all
-%   bdclose all
-%   MotorDriveUnit_Component_main_script
-%   close all
-%   bdclose all
-% end
 
 function MQC_run_Basic_params(~)
   close all

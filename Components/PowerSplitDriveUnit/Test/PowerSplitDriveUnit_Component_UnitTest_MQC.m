@@ -127,7 +127,7 @@ end
 function MQC_run_harness_reset(~)
   close all
   bdclose all
-  PowerSplitDriveUnit_Component_harness_reset
+  PowerSplitDriveUnit_Component_resetHarness
   close all
   bdclose all
 end

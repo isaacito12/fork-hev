@@ -1,112 +1,464 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" name="BatteryHV_UnitTest" skipped="0" tests="15" time="49.9234">
-    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Basic" time="1.7463"/>
-    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Driveline" time="0.66821"/>
-    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Electrical" time="0.83141"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Basic_refsub" time="3.1036"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Driveline_refsub" time="2.8289"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Electrical_refsub" time="3.3222"/>
-    <testcase classname="BatteryHV_UnitTest" name="input_Constant" time="0.030042"/>
-    <testcase classname="BatteryHV_UnitTest" name="input_Charge" time="2.6659"/>
-    <testcase classname="BatteryHV_UnitTest" name="input_Discharge" time="0.65579"/>
-    <testcase classname="BatteryHV_UnitTest" name="input_LoadCurrentStep3" time="3.4975"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_testcase_Charge" time="4.3519"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_testcase_Discharge" time="3.4434"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_testcase_LoadCurrentStep3" time="2.8327"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_main_script_1" time="12.5189"/>
-    <testcase classname="BatteryHV_UnitTest" name="run_takeScreenshots" time="7.4267"/>
+  <testsuite errors="0" failures="0" name="BatteryHV_UnitTest" skipped="0" tests="15" time="93.5772">
+    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Basic" time="3.5462"/>
+    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Driveline" time="1.099"/>
+    <testcase classname="BatteryHV_UnitTest" name="blockParameters_BatteryHV_Electrical" time="1.6232"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Basic_refsub" time="5.5738"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Driveline_refsub" time="6.1043"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_harness_model_with_Electrical_refsub" time="8.5939"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_Constant" time="0.054588"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_Charge" time="3.676"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_Discharge" time="0.67908"/>
+    <testcase classname="BatteryHV_UnitTest" name="input_LoadCurrentStep3" time="3.9464"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_testcase_Charge" time="6.7805"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_testcase_Discharge" time="4.3148"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_testcase_LoadCurrentStep3" time="3.9202"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_main_script_1" time="27.8866"/>
+    <testcase classname="BatteryHV_UnitTest" name="run_takeScreenshots" time="15.7784"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="DrivePattern_UnitTest" skipped="0" tests="16" time="42.0857">
-    <testcase classname="DrivePattern_UnitTest" name="run_harness_model_1" time="4.206"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_Constant" time="0.051359"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_Step3" time="0.34621"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_Step5" time="0.2418"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_Accelerate_Decelerate" time="1.5645"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_Accelerate_Decelerate_Twice" time="0.23"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_SimpleDrivePattern" time="0.22991"/>
-    <testcase classname="DrivePattern_UnitTest" name="input_FTP75" time="0.031391"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_1" time="4.8833"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_2" time="4.5777"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_3" time="4.4346"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_4" time="4.0585"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_5" time="4.22"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_6" time="4.1259"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_testcase_7" time="3.8152"/>
-    <testcase classname="DrivePattern_UnitTest" name="run_main_script_1" time="5.0694"/>
+  <testsuite errors="0" failures="0" name="DrivePattern_UnitTest" skipped="0" tests="16" time="61.501">
+    <testcase classname="DrivePattern_UnitTest" name="run_harness_model_1" time="6.9047"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Constant" time="0.058516"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Step3" time="0.47387"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Step5" time="0.33323"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Accelerate_Decelerate" time="1.9198"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_Accelerate_Decelerate_Twice" time="0.36608"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_SimpleDrivePattern" time="0.39396"/>
+    <testcase classname="DrivePattern_UnitTest" name="input_FTP75" time="0.14401"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_1" time="8.1448"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_2" time="5.7876"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_3" time="6.1376"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_4" time="5.5515"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_5" time="5.7388"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_6" time="6.5007"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_testcase_7" time="5.5714"/>
+    <testcase classname="DrivePattern_UnitTest" name="run_main_script_1" time="7.4745"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="Engine_UnitTest" skipped="0" tests="10" time="22.5213">
-    <testcase classname="Engine_UnitTest" name="defaultReferencedSubsystem_1" time="0.63143"/>
-    <testcase classname="Engine_UnitTest" name="defaultReferencedSubsystem_2" time="0.51982"/>
-    <testcase classname="Engine_UnitTest" name="run_harnessSimple_1" time="1.8407"/>
-    <testcase classname="Engine_UnitTest" name="run_harnessSimple_2_1" time="1.97"/>
-    <testcase classname="Engine_UnitTest" name="run_harnessSimple_2_2" time="2.0093"/>
-    <testcase classname="Engine_UnitTest" name="run_harnessPowerSplit_1" time="3.2172"/>
-    <testcase classname="Engine_UnitTest" name="run_harnessPowerSplit_2_1" time="3.453"/>
-    <testcase classname="Engine_UnitTest" name="run_harnessPowerSplit_2_2" time="3.1275"/>
-    <testcase classname="Engine_UnitTest" name="plot_script_1" time="1.0272"/>
-    <testcase classname="Engine_UnitTest" name="run_main_script_1" time="4.7252"/>
+  <testsuite errors="0" failures="0" name="Engine_Component_UnitTest_MQC" skipped="0" tests="6" time="21.8224">
+    <testcase classname="Engine_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.004937"/>
+    <testcase classname="Engine_Component_UnitTest_MQC" name="MQC_run_harness_model" time="5.2114"/>
+    <testcase classname="Engine_Component_UnitTest_MQC" name="MQC_run_setup" time="0.026122"/>
+    <testcase classname="Engine_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="8.0172"/>
+    <testcase classname="Engine_Component_UnitTest_MQC" name="MQC_run_testcase_StartEngine_1" time="4.2809"/>
+    <testcase classname="Engine_Component_UnitTest_MQC" name="MQC_run_testcase_StartEngine_2" time="4.2819"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="PowerSplitDriveUnit_UnitTest" skipped="0" tests="10" time="81.2088">
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_harness_model_1" time="6.8183"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_harness_model_2_1" time="7.0518"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_harness_model_2_2" time="6.2014"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_main_script_1" time="14.0036"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_1" time="8.0553"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_2" time="7.9187"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_3" time="7.6483"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_4" time="7.4858"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_5" time="7.4095"/>
-    <testcase classname="PowerSplitDriveUnit_UnitTest" name="run_script_6" time="8.6161"/>
+  <testsuite errors="0" failures="0" name="MotorDriveUnit_Component_UnitTest_MQC" skipped="0" tests="5" time="20.7266">
+    <testcase classname="MotorDriveUnit_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.002999"/>
+    <testcase classname="MotorDriveUnit_Component_UnitTest_MQC" name="MQC_run_harness_model_with_Basic_refsub" time="6.1541"/>
+    <testcase classname="MotorDriveUnit_Component_UnitTest_MQC" name="MQC_run_setup" time="0.01431"/>
+    <testcase classname="MotorDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="8.2254"/>
+    <testcase classname="MotorDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_Drive" time="6.3299"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="Vehicle1D_UnitTest" skipped="0" tests="14" time="37.1055">
-    <testcase classname="Vehicle1D_UnitTest" name="blockParameters_Vehicle1D_Driveline" time="0.32502"/>
-    <testcase classname="Vehicle1D_UnitTest" name="blockParameters_Vehicle1D_Custom" time="0.41836"/>
-    <testcase classname="Vehicle1D_UnitTest" name="run_harness_model_1" time="1.8542"/>
-    <testcase classname="Vehicle1D_UnitTest" name="block_info_script_1" time="1.0539"/>
-    <testcase classname="Vehicle1D_UnitTest" name="input_Constant" time="0.072728"/>
-    <testcase classname="Vehicle1D_UnitTest" name="input_Brake3" time="0.31491"/>
-    <testcase classname="Vehicle1D_UnitTest" name="input_RoadGrade3" time="0.37528"/>
-    <testcase classname="Vehicle1D_UnitTest" name="input_DriveAxle" time="1.5213"/>
-    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_2" time="2.617"/>
-    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_3" time="2.5563"/>
-    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_4" time="2.4661"/>
-    <testcase classname="Vehicle1D_UnitTest" name="run_testcase_5" time="2.4776"/>
-    <testcase classname="Vehicle1D_UnitTest" name="run_main_script_1" time="11.8477"/>
-    <testcase classname="Vehicle1D_UnitTest" name="harness_with_non_default_refsub_1" time="9.2051"/>
+  <testsuite errors="0" failures="0" name="MotorGenerator1_Component_UnitTest_MQC" skipped="0" tests="7" time="35.6947">
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.005415"/>
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_harness_model" time="6.8401"/>
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_setup" time="0.007764"/>
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="8.8226"/>
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_testcase_Generate" time="6.8167"/>
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_testcase_StartEngine" time="6.7936"/>
+    <testcase classname="MotorGenerator1_Component_UnitTest_MQC" name="MQC_run_testcase_StopEngine" time="6.4085"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="PowerSplitHEV_DirectInput_UnitTest" skipped="0" tests="15" time="217.695">
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_1" time="11.0066"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_2_1" time="8.3567"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_2_2" time="8.9587"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Constant" time="9.745"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Downhill" time="9.6173"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Downhill_2" time="9.793"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_EngineDrive" time="9.0662"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG1Drive" time="11.765"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive" time="11.5803"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_2" time="12.0501"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_StartEng" time="9.3045"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_StartEng_2" time="8.0078"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Parked_EngChgBatt" time="8.1302"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_PowerSplitDrive" time="9.6526"/>
-    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_main_script" time="80.6608"/>
+  <testsuite errors="0" failures="0" name="MotorGenerator2_Component_UnitTest_MQC" skipped="0" tests="6" time="30.9024">
+    <testcase classname="MotorGenerator2_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.015681"/>
+    <testcase classname="MotorGenerator2_Component_UnitTest_MQC" name="MQC_run_harness_model" time="6.1016"/>
+    <testcase classname="MotorGenerator2_Component_UnitTest_MQC" name="MQC_run_setup" time="0.003629"/>
+    <testcase classname="MotorGenerator2_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="10.6866"/>
+    <testcase classname="MotorGenerator2_Component_UnitTest_MQC" name="MQC_run_testcase_Drive" time="7.405"/>
+    <testcase classname="MotorGenerator2_Component_UnitTest_MQC" name="MQC_run_testcase_Regen" time="6.6899"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="PowerSplitHEV_SpeedTracking_UnitTest" skipped="0" tests="10" time="349.7765">
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_1" time="12.3563"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_2_1" time="12.1505"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_2_2" time="12.618"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_basic" time="11.9935"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_highSpeed" time="16.5744"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_Accelerate_Decelerate" time="14.4683"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_SimpleDrivePattern" time="15.6473"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_FTP75" time="58.3718"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_main_script" time="116.9842"/>
-    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_sweep" time="78.6122"/>
+  <testsuite errors="0" failures="0" name="PowerSplitGeartrain_Component_UnitTest_MQC" skipped="0" tests="8" time="41.4445">
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.006748"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_harness_model_with_Basic_refsub" time="5.135"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_setup" time="0.00697"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="6.9477"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_testcase_Engine" time="7.5045"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_testcase_MG1" time="7.2913"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_testcase_MG2" time="7.1458"/>
+    <testcase classname="PowerSplitGeartrain_Component_UnitTest_MQC" name="MQC_run_testcase_VehSpd" time="7.4065"/>
   </testsuite>
-  <testsuite errors="0" failures="0" name="PowerSplitHEV_UnitTest" skipped="0" tests="3" time="48.2921">
-    <testcase classname="PowerSplitHEV_UnitTest" name="run_system_model_1" time="13.3452"/>
-    <testcase classname="PowerSplitHEV_UnitTest" name="run_report_script_1" time="5.3069"/>
-    <testcase classname="PowerSplitHEV_UnitTest" name="run_main_script_1" time="29.6401"/>
+  <testsuite errors="0" failures="0" name="PowerSplitDriveUnit_Component_UnitTest_MQC" skipped="0" tests="13" time="118.2882">
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.017119"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_harness_model_with_Basic_refsub" time="10.3794"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_setup" time="0.036121"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_Accelerate" time="13.9819"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="11.5227"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_DriveEngine" time="10.7656"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_DriveMG1" time="10.3332"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_DriveMG2" time="10.5153"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_DriveMG2Engine" time="10.7303"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_DrivePowerSplit" time="11.9191"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_StandStillGenerate" time="11.4019"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_testcase_StopCharging" time="12.3969"/>
+    <testcase classname="PowerSplitDriveUnit_Component_UnitTest_MQC" name="MQC_run_harness_reset" time="4.2888"/>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="Vehicle1D_Component_UnitTest_MQC" skipped="0" tests="7" time="20.4917">
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_Basic_params" time="0.006471"/>
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_harness_model_with_Basic_refsub" time="4.5308"/>
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_setup" time="0.013785"/>
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_testcase_Brake" time="6.8399"/>
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_testcase_Coastdown" time="3.8018"/>
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_testcase_Constant" time="4.0911"/>
+    <testcase classname="Vehicle1D_Component_UnitTest_MQC" name="MQC_run_harness_reset" time="1.2078"/>
+  </testsuite>
+  <testsuite errors="14" failures="0" name="PowerSplitHEV_DirectInput_UnitTest" skipped="0" tests="14" time="109.1577">
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_1" time="12.4625">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/openAndRun_1 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DirectInput_UnitTest/openAndRun_1
+    Error due to multiple causes.
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_2_1" time="2.5857">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/openAndRun_2_1 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'Simulink:Commands:InvSimulinkObjectName'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DirectInput_UnitTest/openAndRun_2_1
+    Invalid Simulink object name: 'PowerSplitHEV_system_model/Power Split Drive Unit/Engine'.
+    
+    Caused by:
+        Error using PowerSplitHEV_DirectInput_UnitTest/openAndRun_2_1
+        No block called 'Engine' could be found.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="openAndRun_2_2" time="1.5393">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/openAndRun_2_2 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'Simulink:Commands:InvSimulinkObjectName'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DirectInput_UnitTest/openAndRun_2_2
+    Invalid Simulink object name: 'PowerSplitHEV_system_model/Power Split Drive Unit/Engine'.
+    
+    Caused by:
+        Error using PowerSplitHEV_DirectInput_UnitTest/openAndRun_2_2
+        No block called 'Engine' could be found.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Constant" time="2.8998">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_Constant and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_Constant
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_Constant (line 142)
+      PowerSplitHEV_DI_testcase_Constant
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Downhill" time="6.7296">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_Downhill and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_Downhill
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_Downhill (line 151)
+      PowerSplitHEV_DI_testcase_Downhill
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_Downhill_2" time="3.7905">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_Downhill_2 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_Downhill_2
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_Downhill_2 (line 159)
+      PowerSplitHEV_DI_testcase_Downhill_2
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_EngineDrive" time="3.06">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_EngineDrive and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_EngineDrive
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_EngineDrive (line 167)
+      PowerSplitHEV_DI_testcase_EngineDrive
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG1Drive" time="3.8455">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG1Drive and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_MG1Drive
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG1Drive (line 175)
+      PowerSplitHEV_DI_testcase_MG1Drive
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive" time="3.6187">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_MG2Drive
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive (line 183)
+      PowerSplitHEV_DI_testcase_MG2Drive
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_2" time="7.5805">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive_2 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_MG2Drive_2
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive_2 (line 191)
+      PowerSplitHEV_DI_testcase_MG2Drive_2
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_StartEng" time="3.7933">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive_StartEng and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_MG2Drive_StartEngine
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive_StartEng (line 199)
+      PowerSplitHEV_DI_testcase_MG2Drive_StartEngine
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_MG2Drive_StartEng_2" time="6.5679">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive_StartEng_2 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_MG2Drive_StartEngine_2
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_MG2Drive_StartEng_2 (line 207)
+      PowerSplitHEV_DI_testcase_MG2Drive_StartEngine_2
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_DirectInput_PowerSplitDrive" time="4.1138">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_PowerSplitDrive and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DI_testcase_PowerSplitDrive
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_DirectInput_PowerSplitDrive (line 223)
+      PowerSplitHEV_DI_testcase_PowerSplitDrive
+    
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using Simulink.Simulation.internal.DesktopSimHelper&gt;@(simIn)builtin('sim',simIn)
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_DirectInput_UnitTest" name="runLiveScript_main_script" time="46.5706">
+      <error>Error occurred in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_main_script and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using PowerSplitHEV_DirectInput_example
+    Error due to multiple causes.
+    
+    Error in PowerSplitHEV_DirectInput_main_script (line 7)
+    PowerSplitHEV_DirectInput_example("Parked_EngineChargeBattery")
+    
+    Error in PowerSplitHEV_DirectInput_UnitTest/runLiveScript_main_script (line 238)
+      PowerSplitHEV_DirectInput_main_script
+    
+    Caused by:
+        Error using PowerSplitHEV_DirectInput_example
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Longitudinal Vehicle','error')"&gt;PowerSplitHEV_system_model/Longitudinal Vehicle&lt;/a&gt;' is missing sub model 'Vehicle1D_refsub_Driveline'.
+        Error using PowerSplitHEV_DirectInput_example
+        Subsystem reference block '&lt;a href="matlab:open_and_hilite_hyperlink ('PowerSplitHEV_system_model/Power Split Drive Unit','error')"&gt;PowerSplitHEV_system_model/Power Split Drive Unit&lt;/a&gt;' is missing sub model 'PowerSplitDriveUnitBasic_refsub'.</error>
+    </testcase>
+  </testsuite>
+  <testsuite errors="0" failures="0" name="PowerSplitHEV_SpeedTracking_UnitTest" skipped="0" tests="8" time="459.2504">
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="openAndRun_1" time="29.0227"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_basic" time="17.3104"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_highSpeed" time="23.8043"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_Accelerate_Decelerate" time="21.2093"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_SimpleDrivePattern" time="21.5982"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_FTP75" time="63.624"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_main_script" time="210.5259"/>
+    <testcase classname="PowerSplitHEV_SpeedTracking_UnitTest" name="runLiveScript_sweep" time="72.1556"/>
+  </testsuite>
+  <testsuite errors="2" failures="0" name="PowerSplitHEV_UnitTest" skipped="0" tests="3" time="75.9302">
+    <testcase classname="PowerSplitHEV_UnitTest" name="run_system_model_1" time="34.4037"/>
+    <testcase classname="PowerSplitHEV_UnitTest" name="run_report_script_1" time="4.6122">
+      <error>Error occurred in PowerSplitHEV_UnitTest/run_report_script_1 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:undefinedVarOrClass'
+    --------------
+    Error Details:
+    --------------
+    Unable to resolve the name 'Vehicle1DUtility.getVehicle1DDrivelineBlockInfo'.
+    
+    Error in PowerSplitHEV_reportBlockProperty (line 20)
+    block_info = Vehicle1DUtility.getVehicle1DDrivelineBlockInfo(gcbh);
+    
+    Error in PowerSplitHEV_UnitTest/run_report_script_1 (line 42)
+      PowerSplitHEV_reportBlockProperty</error>
+    </testcase>
+    <testcase classname="PowerSplitHEV_UnitTest" name="run_main_script_1" time="36.9144">
+      <error>Error occurred in PowerSplitHEV_UnitTest/run_main_script_1 and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'glue2:portal:CannotSaveFile_InvalidParentDir'
+    --------------
+    Error Details:
+    --------------
+    Error using print
+    Cannot save file '/mathworks/devel/sandbox/isaacito/github-hev/hev-22b/utils/image_PowerSplitHEV_system_model.png' because the parent directory does not exist
+    
+    Error in screenshotSimulink (line 117)
+      print("-s" + subsystemFullPath, ...
+    
+    Error in PowerSplitHEV_main_script (line 6)
+    screenshotSimulink( ...
+    
+    Error in PowerSplitHEV_UnitTest/run_main_script_1 (line 51)
+      PowerSplitHEV_main_script</error>
+    </testcase>
+  </testsuite>
+  <testsuite errors="1" failures="0" name="HEV_System_UnitTest_MQC" skipped="0" tests="4" time="98.8047">
+    <testcase classname="HEV_System_UnitTest_MQC" name="MQC_run_main_script" time="64.4037"/>
+    <testcase classname="HEV_System_UnitTest_MQC" name="MQC_run_CheckProject" time="32.9186">
+      <error>Error occurred in HEV_System_UnitTest_MQC/MQC_run_CheckProject and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:assertion:failed'
+    --------------
+    Error Details:
+    --------------
+    Error using assert
+    Assertion failed.
+    
+    Error in HEVPorject_CheckProject (line 8)
+    assert(all(resultTable.Passed==true))
+    
+    Error in HEV_System_UnitTest_MQC/MQC_run_CheckProject (line 33)
+      HEVPorject_CheckProject</error>
+    </testcase>
+    <testcase classname="HEV_System_UnitTest_MQC" name="MQC_run_openFile" time="0.87936"/>
+    <testcase classname="HEV_System_UnitTest_MQC" name="MQC_run_openFile_main_script" time="0.60304"/>
   </testsuite>
 </testsuites>

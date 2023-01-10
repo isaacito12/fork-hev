@@ -15,8 +15,10 @@ motorDriveUnit.trq_eff_Nm = 50;
 
 motorDriveUnit.thermalMass_J_perK = 5000;
 
-motorDriveUnit.dampSpringStiffness_Nm_per_rad = 10000;
-motorDriveUnit.dampSpringFriction_Nm_per_rpm = 100;
+% motorDriveUnit.dampSpringStiffness_Nm_per_rad = 10000;
+% motorDriveUnit.dampSpringFriction_Nm_per_rpm = 100;
+motorDriveUnit.dampSpringStiffness_Nm_per_rad = 1000;
+motorDriveUnit.dampSpringFriction_Nm_per_rpm = 10000;
 
 smoothing.MDU_dampSpringVelTol_rpm = 0.1;
 

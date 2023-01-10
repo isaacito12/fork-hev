@@ -15,18 +15,15 @@ motorGenerator1.trq_eff_Nm = 20;
 
 motorGenerator1.thermalMass_J_perK = 5000;
 
-motorGenerator1.dampSpringStiffness_Nm_per_rad = 10000;
-motorGenerator1.dampSpringFriction_Nm_per_rpm = 100;
-
-% motorGenerator1.iron_loss_to_nominal_ratio = 0.1;
-% motorGenerator1.elecLossConst_W = 20;
-% motorGenerator1.rotorInertia_kg_m2 = 0.001;
-% motorGenerator1.kDamp_Nm_per_radPerS = 0.005;
+% motorGenerator1.dampSpringStiffness_Nm_per_rad = 10000;
+% motorGenerator1.dampSpringFriction_Nm_per_rpm = 100;
+motorGenerator1.dampSpringStiffness_Nm_per_rad = 1000;
+motorGenerator1.dampSpringFriction_Nm_per_rpm = 10000;
 
 smoothing.MG1_dampSpringVelTol_rpm = 0.1;
 
 %% Initial conditions
 
-initial.MG1_Temperature_degC = 20;
+initial.MG1_Temperature_K = 273.15 + 20;
 
-initial.MG1_AirTemp_degC = 20;
+initial.MG1_AirTemp_K = 273.15 + 20;
