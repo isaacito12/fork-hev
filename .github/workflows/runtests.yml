@@ -11,7 +11,7 @@
 
 # Copyright 2021-2022 The MathWorks, Inc.
 
-name: MATLAB R2022b
+name: Run tests in MATLAB R2022b
 
 on:
   push:
@@ -40,7 +40,7 @@ jobs:
     steps:
 
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup MATLAB
         uses: matlab-actions/setup-matlab@v1
