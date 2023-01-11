@@ -25,8 +25,10 @@ function MQC_run_main_script(~)
   bdclose all
 end
 
-%% Utility Folder
+%% test folder
 
+%{
+% Check Project script is run separately and directly in GitHub Actions.
 function MQC_run_CheckProject(~)
   close all
   bdclose all
@@ -34,6 +36,9 @@ function MQC_run_CheckProject(~)
   close all
   bdclose all
 end
+%}
+
+%% Utility Folder
 
 function MQC_run_openFile(~)
   close all
