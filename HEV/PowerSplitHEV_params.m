@@ -29,8 +29,8 @@ vehicle.roadLoadB_N_per_kph = 0;
 vehicle.roadLoadC_N_per_kph2 = 0.032;  % C = 0.5 * Cd * frontal_area * air_density
 vehicle.roadLoad_gravAccel_m_per_s2 = 9.81;
 
-smoothing.vehicle_speedThreshold_kph = 1;
-smoothing.vehicle_axleSpeedThreshold_rpm = 1;
+smoothing.vehicle_speedThreshold_kph = 1;  % 0.3 m/s
+smoothing.vehicle_axleSpeedThreshold_rpm = 1;  % 0.01 rad/s
 
 initial.vehicle_speed_kph = 0;
 

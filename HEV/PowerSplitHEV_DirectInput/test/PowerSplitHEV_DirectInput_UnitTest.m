@@ -1,7 +1,7 @@
 classdef PowerSplitHEV_DirectInput_UnitTest < matlab.unittest.TestCase
 % Class implementation of unit test
 
-% Copyright 2021-2022 The MathWorks, Inc.
+% Copyright 2021-2023 The MathWorks, Inc.
 
 properties (Constant)
   modelName = "PowerSplitHEV_system_model";
@@ -34,10 +34,10 @@ function setReferencedSubsystems(testCase)
     ReferencedSubsystem = "DcDcConverterElec_refsub");
 
   set_param( mdl + "/Power Split Drive Unit", ...
-    ReferencedSubsystem = "PowerSplitDriveUnitBasic_refsub");
+    ReferencedSubsystem = "PowerSplitDriveUnit_refsub_Basic");
 
   set_param( mdl + "/Longitudinal Vehicle", ...
-    ReferencedSubsystem = "Vehicle1D_refsub_Driveline");
+    ReferencedSubsystem = "Vehicle1D_refsub_Basic");
 
   save_system(mdl)
 
@@ -83,13 +83,10 @@ function openAndRun_2_1(testCase)
   load_system(mdl)
 
   set_param(mdl+"/High Voltage Battery", ...
-    ReferencedSubsystem = "BatteryHV_refsub_Basic")
+    ReferencedSubsystem = "BatteryHV_refsub_Electrical")
 
   set_param(mdl+"/DC-DC Converter", ...
     ReferencedSubsystem = "DcDcConverterBasic_refsub")
-
-  set_param(mdl+"/Power Split Drive Unit/Engine", ...
-    ReferencedSubsystem = "EngineBasic_refsub")
 
   simIn = Simulink.SimulationInput(mdl);
   simIn = setModelParameter(simIn, "StopTime",num2str(t_end));
@@ -113,13 +110,10 @@ function openAndRun_2_2(testCase)
   load_system(mdl)
 
   set_param(mdl+"/High Voltage Battery", ...
-    ReferencedSubsystem = "BatteryHV_refsub_Electrical")
+    ReferencedSubsystem = "BatteryHV_refsub_Driveline")
 
   set_param(mdl+"/DC-DC Converter", ...
     ReferencedSubsystem = "DcDcConverterElec_refsub")
-
-  set_param(mdl+"/Power Split Drive Unit/Engine", ...
-    ReferencedSubsystem = "EngineCustom_refsub")
 
   simIn = Simulink.SimulationInput(mdl);
   simIn = setModelParameter(simIn, "StopTime",num2str(t_end));

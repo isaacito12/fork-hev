@@ -1,5 +1,6 @@
-function PowerSplitDriveUnit_Component_plotTorqueCommands()
+function PowerSplitDriveUnit_Component_plotInputs()
 % Plots torque commands defined in the blocks in the harness model.
+% This assumes that the model is already open.
 
 % Copyright 2023 The MathWorks, Inc.
 
@@ -56,6 +57,8 @@ sig.DeltaX = deltaT;
 update(sig)
 BrakeForceTimeData = sig.Data.X;
 BrakeForceData = sig.Data.Y;
+
+figure
 
 ti = tiledlayout(5, 1);
 ti.TileSpacing = 'compact';

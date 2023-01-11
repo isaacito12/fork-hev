@@ -94,12 +94,12 @@ if sigObj.Type == "step" || sigObj.Type == "timedstep"
   % Check X data points
   xPoints = sigObj.XYData(:, 1);
   assert( issorted(xPoints, "strictascend"), ...
-    "X must be strictly asending.")
+    "SignalDesigner: X must be strictly asending.")
 
   % Check Y data points
   yPoints = sigObj.XYData(:, 2);
   assert( all(not(isnan(yPoints))), ...
-    "Y start data points cannot have NaN.")
+    "SignalDesigner: Y start data points cannot have NaN.")
 
   % Build data
   newData = table(xPoints, yPoints);
@@ -343,10 +343,10 @@ arguments
 end
 
 assert( sigObj.Type ~= "step", ...
-  "Signal of type step cannot be converted to timed data." )
+  "SignalDesigner: Signal of type step cannot be converted to timed data." )
 
 assert( sigObj.Type ~= "continuous", ...
-  "Signal of type continuous cannot be converted to timed data." )
+  "SignalDesigner: Signal of type continuous cannot be converted to timed data." )
 
 timeVector = sigObj.XDurationHandle( data.(sigObj.XVarName) );
 
@@ -373,10 +373,10 @@ arguments
 end
 
 assert( sigObj.Type ~= "step", ...
-  "Signal of type step cannot be converted to timed data." )
+  "SignalDesigner: Signal of type step cannot be converted to timed data." )
 
 assert( sigObj.Type ~= "continuous", ...
-  "Signal of type continuous cannot be converted to timed data." )
+  "SignalDesigner: Signal of type continuous cannot be converted to timed data." )
 
 sigObj.TimedData = buildTimedData(sigObj, sigObj.Data );
 
@@ -412,15 +412,15 @@ numInputRows = height(xyData);
 
 xPoints = xyData(:, [1 2]);
 
-assert(issorted(xPoints(:,1), 'strictascend'), ...
-  "X start vector must be strictly asending.")
+assert(issorted(xPoints(:,1), "strictascend"), ...
+  "SignalDesigner: X start vector must be strictly asending.")
 
 tmpVec = xPoints(:,2);
 lix = not(isnan(tmpVec));  % logical index
 if any(lix)
   tmpVec = tmpVec(lix);
-  assert(issorted(tmpVec, 'strictascend'), ...
-    "X end vector must be strictly asending.")
+  assert(issorted(tmpVec, "strictascend"), ...
+    "SignalDesigner: X end vector must be strictly asending.")
 
   dx = xPoints(:,2) - xPoints(:,1);
 
@@ -429,7 +429,7 @@ if any(lix)
   violating = not(cond_dx_is_nan | cond_dx_is_pos);
   lix = find(violating);  % logical index
   assert(isempty(lix), ...
-    "X start is after X end, which is invalid, at these rows: " + num2str(lix'));
+    "SignalDesigner: X start is after X end, which is invalid, at these rows: " + num2str(lix'));
 
 end  % if
 
@@ -438,7 +438,7 @@ end  % if
 yPoints = xyData(:, 3);
 
 assert(all( not(isnan( yPoints )) ), ...
-  "Y start data points cannot have NaN.")
+  "SignalDesigner: Y start data points cannot have NaN.")
 
 % Build data
 
@@ -493,7 +493,7 @@ end  % for
 transformedData(end).Refine = false;
 
 dx = diff([transformedData.X]);
-assert(all(dx > 0), "X data points are not strictly ascending.")
+assert(all(dx > 0), "SignalDesigner: X data points are not strictly ascending.")
 
 result = struct2table(transformedData);
 
@@ -520,7 +520,7 @@ nextElementIndices = indices + 1;
 x_refine = transformedData.X;
 dx = x_refine(nextElementIndices) - x_refine(indices);
 assert(x_delta <= min(dx)/2, ...
-  "Delta X must be smaller than the half of min(dx) in interpolating segments.")
+  "SignalDesigner: Delta X must be smaller than the half of min(dx) in interpolating segments.")
 
 x_refined = transpose(x_1 : x_delta : x_end);
 
@@ -580,7 +580,8 @@ while idx < height(sigObj.TransformedData) - 1
   end
 end
 
-assert(issorted(newData.(sigObj.XVarName), "strictascend"))
+assert(issorted(newData.(sigObj.XVarName), "strictascend"), ...
+  "SignalDesigner: Generated data are not strictly asending.")
 
 result = newData;
 

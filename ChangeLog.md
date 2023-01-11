@@ -1,11 +1,30 @@
 # Change Log
 
-## Version 1.6 ... work-in-progress
+## Version 1.6
 
+- Signal Source Block Library (`Utility` > `SignalDesigner` folder)
+  is newly introduced to replace Input Signal Builder
+  for streamlined workflow to design and use input signals.
+  In this update, it is used in the harness model for
+  Power Split Drive Unit component.
+  It will be deployed to other models in future updates.
 - Motor Drive Unit (MDU) component is revamped with
   a new harness model and tests.
 - Motor Generator 1 (MG1) and Motor Generator 2 (MG2) components
   are updated to use the new MDU component.
+- Engine component is revamped using Generic Engine block in
+  Simscape Driveline which now supports torque command
+  in addition to throttle.
+  Tests are updated too.
+- Power Split Drive Unit is revamped with the updated motor drive unit
+  and engine components as well as the new Signal Source Block Library.
+- All test cases of Power-Split HEV system model with direct torque input
+  (`HEV` > `PowerSplitHEV_DirectInput`)
+  now work without any warnings during simulation.
+  Previously some of the test cases had many warnings during simulation,
+  but they are all removed properly in this update.
+  The root cause was a wrong block configuration in From Workspace block
+  where interpolation had to be on, but it was off.
 
 ## Version 1.5
 

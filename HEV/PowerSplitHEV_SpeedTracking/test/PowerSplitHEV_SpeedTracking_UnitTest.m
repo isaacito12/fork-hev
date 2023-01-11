@@ -67,69 +67,6 @@ function openAndRun_1(testCase)
   bdclose all
 end  % function
 
-% function openAndRun_2_1(testCase)
-% %% Check that the model runs without any warnings or errors.
-% % Test referenced subsystems that are different from this unit test's default.
-% 
-%   close all
-%   bdclose all
-% 
-%   mdl = testCase.modelName;
-% 
-%   t_end = 10;  % Simulation stop time in seconds
-% 
-%   load_system(mdl)
-% 
-%   set_param(mdl+"/High Voltage Battery", ...
-%     ReferencedSubsystem = "BatteryHV_refsub_Basic")
-% 
-%   set_param(mdl+"/DC-DC Converter", ...
-%     ReferencedSubsystem = "DcDcConverterBasic_refsub")
-% 
-%   set_param(mdl+"/Power Split Drive Unit/Engine", ...
-%     ReferencedSubsystem = "EngineBasic_refsub")
-% 
-%   set_param(mdl+"/Longitudinal Vehicle", ...
-%     ReferencedSubsystem = "Vehicle1D_refsub_Custom")
-% 
-%   simIn = Simulink.SimulationInput(mdl);
-%   simIn = setModelParameter(simIn, StopTime=num2str(t_end));
-%   sim(simIn);
-% 
-%   close all
-%   bdclose all
-% end  % function
-
-% function openAndRun_2_2(testCase)
-% %% Check that the model runs without any warnings or errors.
-% % Test referenced subsystems that are different from this unit test's default.
-% 
-%   close all
-%   bdclose all
-% 
-%   mdl = testCase.modelName;
-% 
-%   t_end = 10;  % Simulation stop time in seconds
-% 
-%   load_system(mdl)
-% 
-%   set_param(mdl+"/High Voltage Battery", ...
-%     ReferencedSubsystem = "BatteryHV_refsub_Electrical")
-% 
-%   set_param(mdl+"/DC-DC Converter", ...
-%     ReferencedSubsystem = "DcDcConverterElec_refsub")
-% 
-%   set_param(mdl+"/Power Split Drive Unit/Engine", ...
-%     ReferencedSubsystem = "EngineCustom_refsub")
-% 
-%   simIn = Simulink.SimulationInput(mdl);
-%   simIn = setModelParameter(simIn, StopTime=num2str(t_end));
-%   sim(simIn);
-% 
-%   close all
-%   bdclose all
-% end  % function
-
 %%
 
 function runLiveScript_basic(~)

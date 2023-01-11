@@ -7,7 +7,7 @@
 % Copyright 2021-2022 The MathWorks, Inc.
 
 relstr = matlabRelease().Release;
-disp("This is MATLAB " + relstr)
+disp("This is MATLAB " + relstr + ".")
 
 %% Create test suite
 
