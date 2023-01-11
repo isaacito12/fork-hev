@@ -13,18 +13,14 @@
 - Motor Generator 1 (MG1) and Motor Generator 2 (MG2) components
   are updated to use the new MDU component.
 - Engine component is revamped using Generic Engine block in
-  Simscape Driveline which now supports torque command
-  in addition to throttle.
+  Simscape Driveline which now supports torque command input
+  for hybrid vehicle applications.
   Tests are updated too.
 - Power Split Drive Unit is revamped with the updated motor drive unit
   and engine components as well as the new Signal Source Block Library.
 - All test cases of Power-Split HEV system model with direct torque input
   (`HEV` > `PowerSplitHEV_DirectInput`)
-  now work without any warnings during simulation.
-  Previously some of the test cases had many warnings during simulation,
-  but they are all removed properly in this update.
-  The root cause was a wrong block configuration in From Workspace block
-  where interpolation had to be on, but it was off.
+  now work properly without any warnings during simulation.
 
 ## Version 1.5
 

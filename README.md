@@ -2,7 +2,7 @@
 
 [![View Hybrid Electric Vehicle Model in Simscape on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/92820-hybrid-electric-vehicle-model-in-simscape)
 
-Version 1.6 (work-in-progress)
+Version 1.6
 
 ## Introduction
 
@@ -46,9 +46,9 @@ The HEV model and its component files are managed
 by a MATLAB project and
 some components come with their own test setups.
 
-![Model Screenshot](utils/image_PowerSplitHEV_system_model.png)
+![Model Screenshot](Utility/image_PowerSplitHEV_system_model.png)
 
-![Plot of Simulation Result](utils/image_simulation_results_ftp75.png)
+![Plot of Simulation Result](Utility/image_simulation_results_ftp75.png)
 
 ## For MATLAB R2022b
 
