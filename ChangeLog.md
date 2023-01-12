@@ -26,7 +26,7 @@
 
 - Simulink Connection Bus is used in all high-voltage electrical ports.
 - Motor drive unit component uses
-  Motor & Drive block feom simscape Driveline.
+  Motor & Drive block from simscape Driveline.
 - Motor drive unit component has been updated with
   new harness model and tests.
 

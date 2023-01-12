@@ -25,36 +25,5 @@ function MQC_run_main_script(~)
   bdclose all
 end
 
-%% test folder
-
-%{
-% Check Project script is run separately and directly in GitHub Actions.
-function MQC_run_CheckProject(~)
-  close all
-  bdclose all
-  HEVPorject_CheckProject
-  close all
-  bdclose all
-end
-%}
-
-%% Utility Folder
-
-function MQC_run_openFile(~)
-  close all
-  bdclose all
-  openFile
-  close all
-  bdclose all
-end
-
-function MQC_run_openFile_main_script(~)
-  close all
-  bdclose all
-  openFile_PowerSplitHEV_main_script
-  close all
-  bdclose all
-end
-
 end  % methods (Test)
 end  % classdef

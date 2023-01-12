@@ -9,27 +9,24 @@ disp("This is MATLAB " + RelStr + ".")
 
 TopFolder = currentProject().RootFolder;
 
-%% Test suite
+%% Create test suite
 
 suite = matlab.unittest.TestSuite.fromFile( ...
   fullfile(TopFolder, "Test", "CheckProject", "HEVProject_UnitTest_CheckProject.m"));
 
-%% Test runner
+%% Create test runner
 
 runner = matlab.unittest.TestRunner.withTextOutput( ...
             OutputDetail = matlab.unittest.Verbosity.Detailed );
 
 %% JUnit Style Test Result
 
-% Test result file is created. Don't check its existance.
-TestResultFile = "TestResults_" + RelStr + ".xml";
-
 plugin = matlab.unittest.plugins.XMLPlugin.producingJUnitFormat( ...
-            fullfile(TopFolder, "Test", "CheckProject", TestResultFile));
+            fullfile(TopFolder, "Test", "CheckProject", "TestResults_"+RelStr+".xml"));
 
 addPlugin(runner, plugin)
 
-%%
+%% Run tests
 
 results = run(runner, suite);
 

@@ -6,14 +6,23 @@
 
 % Copyright 2021-2022 The MathWorks, Inc.
 
-relstr = matlabRelease().Release;
-disp("This is MATLAB " + relstr + ".")
+RelStr = matlabRelease().Release;
+disp("This is MATLAB " + RelStr + ".")
 
 %% Create test suite
 
-prjroot = currentProject().RootFolder;
+TopFolder = currentProject().RootFolder;
 
-suite = matlab.unittest.TestSuite.fromFolder(prjroot, "IncludingSubfolders",true);
+suite_1 = matlab.unittest.TestSuite.fromFolder( ...
+  fullfile(TopFolder, "Components"), IncludingSubfolders = true);
+
+suite_2 = matlab.unittest.TestSuite.fromFolder( ...
+  fullfile(TopFolder, "HEV"), IncludingSubfolders = true);
+
+suite_3 = matlab.unittest.TestSuite.fromFile( ...
+    fullfile(TopFolder, "Test", "HEV_System_UnitTest_MQC.m"));
+
+suite = [suite_1 suite_2 suite_3];
 
 %% Create test runner
 
@@ -23,7 +32,7 @@ runner = matlab.unittest.TestRunner.withTextOutput( ...
 %% JUnit style test result
 
 plugin = matlab.unittest.plugins.XMLPlugin.producingJUnitFormat( ...
-          fullfile("Test", "TestResults_"+relstr+".xml"));
+          fullfile("Test", "TestResults_"+RelStr+".xml"));
 
 addPlugin(runner, plugin)
 
