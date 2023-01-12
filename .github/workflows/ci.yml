@@ -9,13 +9,13 @@
 # For details about the syntax of this file, see
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
-# Copyright 2021-2022 The MathWorks, Inc.
+# Copyright 2021-2023 The MathWorks, Inc.
 
-name: Run tests in MATLAB R2022b
+name: CI using MATLAB
 
 on:
   push:
-    branches: [ main, R2022b ]
+    branches: [ R2022b ]
     paths-ignore:
       - 'docs/**'
       - '**.md'
@@ -25,7 +25,7 @@ on:
       - '**.xml'
 
   pull_request:
-    branches: [ main, R2022b ]
+    branches: [ R2022b ]
     paths-ignore:
       - 'docs/**'
       - '**.md'
@@ -35,7 +35,29 @@ on:
       - '**.xml'
 
 jobs:
-  matlab-22b:
+
+  job-check-project:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup MATLAB
+        uses: matlab-actions/setup-matlab@v1
+        with:
+          release: R2022b
+
+      - name: Run tests
+        uses: matlab-actions/run-command@v1
+        with:
+          command: openProject(pwd); HEVProject_runtests_CheckProject;
+
+  job-run-tests:
+
+    # This job starts only if the previous job is successful.
+    needs: job-check-project
+
     runs-on: ubuntu-latest
     steps:
 
