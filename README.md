@@ -57,7 +57,7 @@ The latest version 1.6 is available.
 You can download the ZIP archive of the project from the link below.
 It does not include Git repository data.
 
-- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/archive/refs/tags/v1.6.0.zip
+- https://github.com/mathworks/Simscape-Hybrid-Electric-Vehicle-Model/archive/refs/tags/v1.6.1.zip
 
 This version requires
 [MATLAB](https://www.mathworks.com/products/matlab.html),
