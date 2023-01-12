@@ -203,13 +203,13 @@ function runLiveScript_DirectInput_MG2Drive_StartEng_2(~)
   bdclose all
 end
 
-% function runLiveScript_DirectInput_Parked_EngChgBatt(~)
-%   close all
-%   bdclose all
-%   PowerSplitHEV_DI_testcase_Parked_EngineChargeBattery
-%   close all
-%   bdclose all
-% end
+function runLiveScript_DirectInput_Parked_EngChgBatt(~)
+  close all
+  bdclose all
+  PowerSplitHEV_DI_testcase_Parked_EngineChargeBattery
+  close all
+  bdclose all
+end
 
 function runLiveScript_DirectInput_PowerSplitDrive(~)
   close all
@@ -222,24 +222,7 @@ end
 function runLiveScript_main_script(~)
   close all
   bdclose all
-
   PowerSplitHEV_DirectInput_main_script
-
-% The code below fails in the batch mode, for example in CI pipeline.
-%{
-  % Delete the png files of simulation result plots.
-  imgFolder = fullfile( ...
-    currentProject().RootFolder, "HEV", "PowerSplitHEV_DirectInput", "images");
-  delete(fullfile(imgFolder, "*.png"))
-
-  % First run creates png files.
-  PowerSplitHEV_DirectInput_main_script
-
-  % Second run uses existing png files.
-  % This is to improve code coverage.
-  PowerSplitHEV_DirectInput_main_script
-%}
-
   close all
   bdclose all
 end
