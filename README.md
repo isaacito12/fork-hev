@@ -131,6 +131,6 @@ See [`ChangeLog.md`](ChangeLog.md) for changes in each version.
 
 ## License
 
-See [`LICENSE.txt`](LICENSE.txt).
+See LICENSE.txt
 
 _Copyright 2021-2022 The MathWorks, Inc._
