@@ -1,5 +1,11 @@
 # Change Log
 
+_Copyright 2021-2023 The MathWorks, Inc._
+
+## Version 2.0
+
+- The project has been upgraded to MATLAB R2023a.
+
 ## Version 1.6
 
 - Signal Source Block Library (`Utility` > `SignalDesigner` folder)
