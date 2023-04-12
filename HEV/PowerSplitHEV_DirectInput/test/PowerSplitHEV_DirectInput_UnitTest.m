@@ -48,23 +48,15 @@ end  % methods (TestClassSetup)
 methods (Test)
 %% Test for Models
 
-function openAndRun_1(testCase)
-%% Most basic check - open model and run simulation.
-% Check that the model runs without any warnings or errors.
-
+function openAndRun_1(~)
   close all
   bdclose all
-
-  mdl = testCase.modelName;
-
-  t_end = 10;  % Simulation stop time in seconds
-
+  mdl = "PowerSplitHEV_system_model";
+  evalin("base", "PowerSplitHEV_params")
   load_system(mdl)
-
   simIn = Simulink.SimulationInput(mdl);
-  simIn = setModelParameter(simIn, "StopTime",num2str(t_end));
+  simIn = setModelParameter(simIn, StopTime ="10");
   sim(simIn);
-
   close all
   bdclose all
 end  % function

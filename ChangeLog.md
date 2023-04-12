@@ -5,6 +5,10 @@ _Copyright 2021-2023 The MathWorks, Inc._
 ## Version 2.0
 
 - The project has been upgraded to MATLAB R2023a.
+- A shortcut button to open [MATLAB Test Manager][url-mltestmgr] is adde to
+  the Project Shortcut tab in the toolstrip.
+
+[url-mltestmgr]: https://www.mathworks.com/help/matlab-test/ref/matlabtestmanager-app.html
 
 ## Version 1.6
 

@@ -54,6 +54,8 @@ some components come with their own test setups.
 
 Version 2.0 is available.
 
+See the [change log](ChangeLog.md) for the details.
+
 ## For MATLAB R2022b
 
 Version 1.6 is available.
