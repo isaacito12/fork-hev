@@ -20,6 +20,9 @@ function setReferencedSubsystems(testCase)
   % In this case, recover the "global default" referenced subsystems.
   addTeardown(testCase, @PowerSplitHEV_resetReferencedSubsystems, testCase.modelName)
 
+  defineBus_HighVoltage
+  defineBus_Rotational
+
   mdl = testCase.modelName;
   load_system(mdl)
 
@@ -28,7 +31,6 @@ function setReferencedSubsystems(testCase)
 
   set_param( mdl + "/High Voltage Battery", ...
     ReferencedSubsystem = "BatteryHV_refsub_Basic");
-%     ReferencedSubsystem = "BatteryHV_refsub_Electrical");
 
   set_param( mdl + "/DC-DC Converter", ...
     ReferencedSubsystem = "DcDcConverterElec_refsub");
@@ -52,6 +54,10 @@ function openAndRun_1(~)
   close all
   bdclose all
   mdl = "PowerSplitHEV_system_model";
+
+  defineBus_HighVoltage
+  defineBus_Rotational
+
   evalin("base", "PowerSplitHEV_params")
   load_system(mdl)
   simIn = Simulink.SimulationInput(mdl);
@@ -72,10 +78,14 @@ function openAndRun_2_1(testCase)
 
   t_end = 10;  % Simulation stop time in seconds
 
+  defineBus_HighVoltage
+  defineBus_Rotational
+
   load_system(mdl)
 
+  evalin("base", "BatteryHV_refsub_System_params")
   set_param(mdl+"/High Voltage Battery", ...
-    ReferencedSubsystem = "BatteryHV_refsub_Electrical")
+    ReferencedSubsystem = "BatteryHV_refsub_System")
 
   set_param(mdl+"/DC-DC Converter", ...
     ReferencedSubsystem = "DcDcConverterBasic_refsub")
@@ -99,10 +109,14 @@ function openAndRun_2_2(testCase)
 
   t_end = 10;  % Simulation stop time in seconds
 
+  defineBus_HighVoltage
+  defineBus_Rotational
+
   load_system(mdl)
 
+  evalin("base", "BatteryHV_refsub_SystemSimple_params")
   set_param(mdl+"/High Voltage Battery", ...
-    ReferencedSubsystem = "BatteryHV_refsub_Driveline")
+    ReferencedSubsystem = "BatteryHV_refsub_SystemSimple")
 
   set_param(mdl+"/DC-DC Converter", ...
     ReferencedSubsystem = "DcDcConverterElec_refsub")
