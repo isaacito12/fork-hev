@@ -1,5 +1,9 @@
 # List of untracked files to ignore
 
+TestResults_*.xml
+
+derived/
+
 # Autosave files
 *.asv
 *.m~
