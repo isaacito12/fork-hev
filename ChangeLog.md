@@ -4,8 +4,12 @@ _Copyright 2021-2023 The MathWorks, Inc._
 
 ## Version 2.1
 
+Component
+
 - High voltage battery component has been updated to use the one developed
   for [Battery Electric Vehicle model][utl-gh-bev].
+
+MATLAB Release
 
 - All model files have been saved in R2023a.
 
