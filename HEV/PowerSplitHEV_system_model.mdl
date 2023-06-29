@@ -47,8 +47,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dc:creator>MathWorks</dc:creator>
   <dc:description></dc:description>
   <cp:lastModifiedBy>isaacito</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-04-13T08:38:30Z</dcterms:modified>
-  <cp:revision>7.39</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-06-28T09:01:25Z</dcterms:modified>
+  <cp:revision>7.45</cp:revision>
   <cp:version>R2023a</cp:version>
 </cp:coreProperties>
 
@@ -70,11 +70,11 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2023a Release -->
 <MathWorks_version_info>
-  <version>9.14.0.2206163</version>
+  <version>9.14.0.2286388</version>
   <release>R2023a</release>
-  <description></description>
-  <date>Feb 22 2023</date>
-  <checksum>2058108452</checksum>
+  <description>Update 3</description>
+  <date>May 25 2023</date>
+  <checksum>921240961</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -152,7 +152,7 @@ PowerSplitHEV_system_model_setup
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:7.39&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:7.45&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ShowEditTimeWarnings">off</P>
@@ -1727,8 +1727,8 @@ Configuration</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
-  <System type="System" uuid="ea4d1b88-32ac-4be8-a4b7-c5217570fec3">
-    <Interface type="Interface" uuid="9088ffac-62ad-4c67-98f2-947ef9dfe6d9"/>
+  <System type="System" uuid="0966e006-9826-4b33-af2a-46149fbeba83">
+    <Interface type="Interface" uuid="78a735af-36e3-44c0-8b44-79ab4b2a2e32"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/LogicAnalyzerPlugin.xml
@@ -3891,7 +3891,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[49, 46, 1249, 789]</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">25017</P>
+  <P Name="SIDHighWatermark">25410</P>
   <Block BlockType="BusCreator" Name="Bus&#xA;Creator" SID="3324">
     <PortCounts in="4" out="1"/>
     <P Name="Position">[210, 157, 215, 203]</P>
@@ -5632,7 +5632,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">758d041b-2a89-446a-a178-7700d6a6ccba</P>
     </Object>
-    <P Name="BDUuid" Class="char">10b95321-4ce7-461c-abb6-442fa20ac6e8</P>
+    <P Name="BDUuid" Class="char">5a92da60-e5e7-433f-b1ab-5166542adace</P>
   </Object>
 </WindowsInfo>
 
